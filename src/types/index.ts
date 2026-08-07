@@ -1,0 +1,83 @@
+export interface SEOMeta {
+  title: string;
+  description: string;
+  keywords?: string[];
+}
+
+export interface Category {
+  id: string;
+  slug: string;
+  title: string;
+  shortDescription: string;
+  description: string;
+  heroImage: string;
+  heroImageAlt: string;
+  featuredImage: string;
+  featuredImageAlt: string;
+  productCount: number;
+  icon: string;
+  seo: SEOMeta;
+}
+
+export type Availability = "In Stock" | "Made to Order" | "Limited Stock" | "On Request";
+
+export interface Product {
+  id: string;
+  slug: string;
+  name: string;
+  categorySlug: string;
+  brand: string;
+  image: string;
+  imageAlt: string;
+  description: string;
+  features: string[];
+  availability: Availability;
+  material?: string;
+}
+
+export interface Brand {
+  id: string;
+  name: string;
+  logo: string;
+}
+
+export interface Founder {
+  id: string;
+  name: string;
+  role: string;
+  image: string;
+  imageAlt: string;
+  bio: string;
+  quote: string;
+}
+
+export interface Testimonial {
+  id: string;
+  name: string;
+  location: string;
+  rating: number;
+  quote: string;
+  avatar?: string;
+}
+
+export interface Milestone {
+  year: string;
+  title: string;
+  description: string;
+}
+
+export interface CoreValue {
+  title: string;
+  description: string;
+  icon: string;
+}
+
+export interface NavLink {
+  label: string;
+  href: string;
+}
+
+export interface FooterLinkGroup {
+  title: string;
+  links: NavLink[];
+}
