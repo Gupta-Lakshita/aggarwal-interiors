@@ -1,18 +1,18 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
+import { SafeImage } from "@/components/ui/SafeImage";
 import { fadeUp, fadeIn, staggerContainer } from "@/lib/animations";
 import { company } from "@/data/company";
 
 export function Hero() {
   return (
     <section className="relative flex h-[92vh] min-h-[640px] items-end overflow-hidden bg-espresso-950">
-      <Image
-        src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2400&auto=format&fit=crop"
+      <SafeImage
+        src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=2400&auto=format&fit=crop"
         alt="Premium interior showcasing rich walnut wood surfaces and natural light"
         fill
         priority

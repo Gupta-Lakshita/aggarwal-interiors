@@ -1,13 +1,13 @@
-import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
+import { SafeImage } from "@/components/ui/SafeImage";
 import { fadeUp } from "@/lib/animations";
 
 export function CTASection() {
   return (
     <section className="relative overflow-hidden bg-espresso-950 py-24 md:py-32">
-      <Image
+      <SafeImage
         src="https://images.unsplash.com/photo-1493552152660-f915ab47ae9d?q=80&w=2000&auto=format&fit=crop"
         alt="Warm wooden interior detail"
         fill

@@ -1,10 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { hoverLift, imageZoom } from "@/lib/animations";
+import { SafeImage } from "@/components/ui/SafeImage";
 import type { Category } from "@/types";
 
 export function CategoryCard({ category }: { category: Category }) {
@@ -16,7 +16,7 @@ export function CategoryCard({ category }: { category: Category }) {
       >
         <div className="relative aspect-[4/3] overflow-hidden">
           <motion.div variants={imageZoom} className="h-full w-full">
-            <Image
+            <SafeImage
               src={category.featuredImage}
               alt={category.featuredImageAlt}
               fill

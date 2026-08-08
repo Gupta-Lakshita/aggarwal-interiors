@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import { SafeImage } from "@/components/ui/SafeImage";
 import { PageHero } from "@/components/ui/PageHero";
 import { Container } from "@/components/ui/Container";
 import { SectionTitle } from "@/components/ui/SectionTitle";
@@ -46,7 +46,7 @@ export default function FoundersPage() {
       <section className="wood-texture bg-ivory-200 py-20 md:py-28">
         <Container className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
           <AnimatedSection variants={fadeIn} className="relative aspect-[4/5] overflow-hidden rounded-[16px]">
-            <Image
+            <SafeImage
               src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop"
               alt="Founders in discussion at the showroom entrance"
               fill
@@ -119,7 +119,7 @@ export default function FoundersPage() {
             className="mx-auto"
           />
           <div className="relative mx-auto mt-14 aspect-[21/9] max-w-4xl overflow-hidden rounded-[16px]">
-            <Image
+            <SafeImage
               src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1600&auto=format&fit=crop"
               alt="The full team gathered at the flagship showroom"
               fill

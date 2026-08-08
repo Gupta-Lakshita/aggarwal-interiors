@@ -1,39 +1,39 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 330" role="img" aria-label="Aggarwal Hardware &amp; Plywood Company logo">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#FDE58A"/>
-      <stop offset="1" stop-color="#F7C948"/>
+      <stop offset="0" stop-color="#F2EEE7"/>
+      <stop offset="1" stop-color="#DDD5C9"/>
     </linearGradient>
   </defs>
 
-  <rect x="4" y="4" width="292" height="292" rx="26" fill="url(#bg)"/>
+  <rect x="4" y="4" width="292" height="292" rx="26" fill="url(#bg)" stroke="#C8C2B8" stroke-width="2"/>
 
   <!-- roof accent -->
-  <path d="M150 40 L138 58 L150 52 L162 58 Z" fill="#D62B1F"/>
+  <path d="M150 40 L138 58 L150 52 L162 58 Z" fill="#6F7C5B"/>
 
   <!-- house outline -->
   <path d="M60 150 L150 78 L240 150"
-        fill="none" stroke="#D62B1F" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+        fill="none" stroke="#4D3B2F" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
   <path d="M78 132 V222 H222 V132"
-        fill="none" stroke="#D62B1F" stroke-width="12" stroke-linejoin="round"/>
+        fill="none" stroke="#4D3B2F" stroke-width="12" stroke-linejoin="round"/>
 
   <!-- interior furniture silhouette -->
-  <g fill="#D62B1F">
+  <g fill="#4D3B2F">
     <rect x="98" y="176" width="16" height="46" rx="3"/>
     <rect x="98" y="168" width="42" height="10" rx="3"/>
     <rect x="126" y="176" width="16" height="46" rx="3"/>
     <rect x="104" y="186" width="32" height="26" rx="4" opacity="0.85"/>
-    <circle cx="176" cy="182" r="10"/>
-    <rect x="172" y="192" width="8" height="30"/>
-    <path d="M160 176 L192 176 L184 192 L168 192 Z"/>
+    <circle cx="176" cy="182" r="10" fill="#6F7C5B"/>
+    <rect x="172" y="192" width="8" height="30" fill="#6F7C5B"/>
+    <path d="M160 176 L192 176 L184 192 L168 192 Z" fill="#6F7C5B"/>
   </g>
 
-  <text x="150" y="252" text-anchor="middle" font-family="Georgia, 'Playfair Display', serif" font-weight="700" font-size="38" fill="#D62B1F" letter-spacing="2">AGGARWAL</text>
+  <text x="150" y="252" text-anchor="middle" font-family="Georgia, 'Playfair Display', serif" font-weight="700" font-size="38" fill="#3E2F26" letter-spacing="2">AGGARWAL</text>
 
   <g>
-    <path d="M20 264 L280 264 L268 296 L32 296 Z" fill="#1A1A1A"/>
-    <path d="M20 264 L34 264 L26 296 L8 296 Z" fill="#0D0D0D"/>
-    <path d="M280 264 L266 264 L274 296 L292 296 Z" fill="#0D0D0D"/>
-    <text x="150" y="285" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="15" fill="#F7C948" letter-spacing="0.5">HARDWARE &amp; PLYWOOD CO.</text>
+    <path d="M20 264 L280 264 L268 296 L32 296 Z" fill="#2E2B28"/>
+    <path d="M20 264 L34 264 L26 296 L8 296 Z" fill="#221F1C"/>
+    <path d="M280 264 L266 264 L274 296 L292 296 Z" fill="#221F1C"/>
+    <text x="150" y="285" text-anchor="middle" font-family="Arial, sans-serif" font-weight="700" font-size="15" fill="#B69A5A" letter-spacing="0.5">HARDWARE &amp; PLYWOOD CO.</text>
   </g>
 </svg>

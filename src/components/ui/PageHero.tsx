@@ -1,6 +1,6 @@
-import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Breadcrumb, type BreadcrumbItem } from "@/components/ui/Breadcrumb";
+import { SafeImage } from "@/components/ui/SafeImage";
 
 export function PageHero({
   eyebrow,
@@ -19,7 +19,7 @@ export function PageHero({
 }) {
   return (
     <section className="relative flex min-h-[52vh] items-end overflow-hidden bg-espresso-950 text-ivory-100 md:min-h-[60vh]">
-      <Image
+      <SafeImage
         src={image}
         alt={imageAlt}
         fill

@@ -1,10 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { Check, MessageCircle } from "lucide-react";
 import { hoverLift, imageZoom } from "@/lib/animations";
 import { Badge } from "@/components/ui/Badge";
+import { SafeImage } from "@/components/ui/SafeImage";
 import type { Product } from "@/types";
 
 export function ProductCard({
@@ -26,7 +26,7 @@ export function ProductCard({
     >
       <div className="relative aspect-[4/3] overflow-hidden">
         <motion.div variants={imageZoom} className="h-full w-full">
-          <Image
+          <SafeImage
             src={product.image}
             alt={product.imageAlt}
             fill

@@ -15,14 +15,16 @@
   --color-olive-600: #6f7c5b;
   --color-sage-500: #74816a;
   --color-sage-400: #7a8f73;
+  --color-sage-100: #eef0e6;
+  --color-sage-50: #f3f4ec;
 
-  --color-terracotta-600: #a8311f;
-  --color-terracotta-500: #bf3d27;
-  --color-terracotta-400: #c9573f;
+  --color-terracotta-600: #a66c4a;
+  --color-terracotta-500: #b26a4b;
+  --color-terracotta-400: #b56b4c;
   --color-clay-600: #c67a44;
 
-  --color-gold-600: #c99a2e;
-  --color-gold-500: #d4af37;
+  --color-gold-600: #b6935c;
+  --color-gold-500: #b69a5a;
 
   --color-stone-400: #c8ae8b;
   --color-stone-300: #c8c2b8;
@@ -73,6 +75,8 @@
   --color-olive-600: var(--color-olive-600);
   --color-sage-500: var(--color-sage-500);
   --color-sage-400: var(--color-sage-400);
+  --color-sage-100: var(--color-sage-100);
+  --color-sage-50: var(--color-sage-50);
 
   --color-terracotta-600: var(--color-terracotta-600);
   --color-terracotta-500: var(--color-terracotta-500);

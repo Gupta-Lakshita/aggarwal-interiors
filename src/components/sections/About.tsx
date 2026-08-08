@@ -1,7 +1,7 @@
-import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { StatCard } from "@/components/cards/StatCard";
+import { SafeImage } from "@/components/ui/SafeImage";
 import { fadeUp, fadeIn } from "@/lib/animations";
 import { company } from "@/data/company";
 
@@ -10,9 +10,9 @@ export function About() {
     <section className="wood-texture bg-ivory-200 py-20 md:py-32">
       <Container className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
         <AnimatedSection variants={fadeIn} className="relative aspect-[4/5] overflow-hidden rounded-[16px]">
-          <Image
-            src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1200&auto=format&fit=crop"
-            alt="Craftsman inspecting a sheet of premium plywood in the workshop"
+          <SafeImage
+            src="https://images.unsplash.com/photo-1601058268499-e52658b8bb88?q=80&w=1200&auto=format&fit=crop"
+            alt="Close-up of rich walnut wood grain texture"
             fill
             sizes="(min-width: 1024px) 50vw, 100vw"
             className="object-cover"

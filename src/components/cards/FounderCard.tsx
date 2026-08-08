@@ -1,11 +1,11 @@
-import Image from "next/image";
+import { SafeImage } from "@/components/ui/SafeImage";
 import type { Founder } from "@/types";
 
 export function FounderCard({ founder }: { founder: Founder }) {
   return (
     <div className="group">
       <div className="relative aspect-[3/4] overflow-hidden rounded-[16px]">
-        <Image
+        <SafeImage
           src={founder.image}
           alt={founder.imageAlt}
           fill
