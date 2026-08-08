@@ -10,6 +10,7 @@ export function Testimonials() {
     <section className="wood-texture bg-ivory-200 py-20 md:py-32">
       <Container>
         <SectionTitle
+          number="06"
           eyebrow="Testimonials"
           title="What Our Customers Say"
           align="center"
