@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
@@ -41,14 +42,23 @@ export function Navbar() {
       )}
     >
       <Container className="flex h-20 items-center justify-between">
-        <Link
-          href="/"
-          className={cn(
-            "focus-ring rounded font-heading text-xl tracking-tight transition-colors",
-            solid ? "text-espresso-950" : "text-ivory-50"
-          )}
-        >
-          {company.name}
+        <Link href="/" className="focus-ring flex items-center gap-3 rounded">
+          <Image
+            src="/logo.svg"
+            alt={`${company.name} logo`}
+            width={44}
+            height={48}
+            className="h-11 w-auto shrink-0"
+            priority
+          />
+          <span
+            className={cn(
+              "hidden font-heading text-lg leading-tight tracking-tight transition-colors sm:block",
+              solid ? "text-espresso-950" : "text-ivory-50"
+            )}
+          >
+            {company.shortName}
+          </span>
         </Link>
 
         <nav className="hidden items-center gap-9 md:flex" aria-label="Primary">

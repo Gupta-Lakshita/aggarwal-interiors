@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://www.aggarwalinteriors.in/sitemap.xml",
+    sitemap: "https://www.aggarwalhardware.in/sitemap.xml",
   };
 }

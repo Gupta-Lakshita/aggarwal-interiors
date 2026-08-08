@@ -15,7 +15,7 @@ import { founders, milestones, coreValues } from "@/data/founders";
 export const metadata: Metadata = {
   title: "Our Founders",
   description:
-    "Meet the family behind Aggarwal Interiors — three generations of craftsmanship, integrity, and dedication to premium interior materials.",
+    "Meet the family behind Aggarwal Hardware & Plywood Company — three generations of craftsmanship, integrity, and dedication to premium interior materials.",
   alternates: { canonical: "/founders" },
 };
 

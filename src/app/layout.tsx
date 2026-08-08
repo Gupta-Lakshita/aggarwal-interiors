@@ -17,7 +17,7 @@ const inter = Inter({
   display: "swap",
 });
 
-const siteUrl = "https://www.aggarwalinteriors.in";
+const siteUrl = "https://www.aggarwalhardware.in";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -33,7 +33,8 @@ export const metadata: Metadata = {
     "hardware",
     "modular kitchen accessories",
     "interior materials",
-    "Aggarwal Interiors",
+    "Aggarwal Hardware & Plywood",
+    "Pathankot hardware store",
   ],
   authors: [{ name: company.name }],
   openGraph: {
@@ -72,7 +73,9 @@ const organizationJsonLd = {
   address: {
     "@type": "PostalAddress",
     streetAddress: company.address.line1,
-    addressLocality: company.address.line2,
+    addressLocality: "Pathankot",
+    addressRegion: "Punjab",
+    postalCode: "145001",
     addressCountry: company.address.country,
   },
   sameAs: Object.values(company.social),

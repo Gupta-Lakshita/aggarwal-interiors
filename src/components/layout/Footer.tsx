@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { MapPin, Phone, Mail } from "lucide-react";
 import { Container } from "@/components/ui/Container";
@@ -13,8 +14,9 @@ export function Footer() {
     <footer className="wood-texture bg-espresso-950 text-ivory-200">
       <Container className="grid grid-cols-1 gap-12 py-16 md:grid-cols-2 lg:grid-cols-4 lg:py-20">
         <div>
-          <p className="font-heading text-xl text-ivory-50">{company.name}</p>
-          <p className="mt-4 max-w-xs text-sm leading-relaxed text-ivory-200/80">
+          <Image src="/logo.svg" alt={`${company.name} logo`} width={64} height={70} className="h-16 w-auto" />
+          <p className="mt-4 font-heading text-xl text-ivory-50">{company.name}</p>
+          <p className="mt-3 max-w-xs text-sm leading-relaxed text-ivory-200/80">
             {company.supportingCopy}
           </p>
           <div className="mt-6 flex gap-3">

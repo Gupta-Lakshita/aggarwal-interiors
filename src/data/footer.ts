@@ -4,9 +4,7 @@ export const footerGroups: FooterLinkGroup[] = [
   {
     title: "Company",
     links: [
-      { label: "About Us", href: "/founders" },
       { label: "Our Founders", href: "/founders" },
-      { label: "Careers", href: "/contact" },
       { label: "Contact", href: "/contact" },
     ],
   },

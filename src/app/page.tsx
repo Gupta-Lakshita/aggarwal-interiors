@@ -10,7 +10,7 @@ import { CTASection } from "@/components/sections/CTASection";
 export const metadata: Metadata = {
   title: "Premium Plywood, Laminates & Interior Hardware",
   description:
-    "Aggarwal Interiors supplies premium plywood, laminates, veneers, hardware, and modular fittings for architects, designers, and homeowners across Delhi NCR.",
+    "Aggarwal Hardware & Plywood Company supplies premium plywood, laminates, veneers, hardware, and modular fittings for architects, designers, and homeowners across Pathankot and the wider region.",
   alternates: { canonical: "/" },
 };
 

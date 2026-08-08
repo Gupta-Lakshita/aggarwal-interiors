@@ -9,7 +9,7 @@ import { company } from "@/data/company";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Get in touch with Aggarwal Interiors for enquiries on plywood, laminates, hardware, and modular kitchen materials.",
+    "Get in touch with Aggarwal Hardware & Plywood Company for enquiries on plywood, laminates, hardware, and modular kitchen materials.",
   alternates: { canonical: "/contact" },
 };
 

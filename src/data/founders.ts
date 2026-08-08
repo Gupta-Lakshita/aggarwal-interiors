@@ -41,13 +41,13 @@ export const milestones: Milestone[] = [
     year: "1988",
     title: "The First Storefront",
     description:
-      "Prakash Aggarwal opens a modest plywood and hardware shop in Karol Bagh, New Delhi, with a promise of honest pricing and genuine materials.",
+      "Prakash Aggarwal opens a modest plywood and hardware shop on Dalhousie Road, Pathankot, with a promise of honest pricing and genuine materials.",
   },
   {
     year: "1997",
     title: "Expanding into Laminates",
     description:
-      "Partnership with leading laminate manufacturers positions the company as a trusted destination for decorative surfaces across Delhi NCR.",
+      "Partnership with leading laminate manufacturers positions the company as a trusted destination for decorative surfaces across Pathankot and the surrounding region.",
   },
   {
     year: "2005",
