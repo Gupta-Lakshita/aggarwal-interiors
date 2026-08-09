@@ -60,18 +60,6 @@ export interface Testimonial {
   avatar?: string;
 }
 
-export interface Milestone {
-  year: string;
-  title: string;
-  description: string;
-}
-
-export interface CoreValue {
-  title: string;
-  description: string;
-  icon: string;
-}
-
 export interface NavLink {
   label: string;
   href: string;

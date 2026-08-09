@@ -46,7 +46,7 @@ export function Navbar() {
           <Image
             src="/logo.svg"
             alt={`${company.name} logo`}
-            width={44}
+            width={52}
             height={48}
             className="h-11 w-auto shrink-0"
             priority

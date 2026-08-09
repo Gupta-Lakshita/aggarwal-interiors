@@ -4,7 +4,7 @@ import { categories } from "@/data/categories";
 const siteUrl = "https://www.aggarwalhardware.in";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticRoutes = ["", "/products", "/founders", "/contact"].map((route) => ({
+  const staticRoutes = ["", "/products", "/contact"].map((route) => ({
     url: `${siteUrl}${route}`,
     lastModified: new Date(),
     changeFrequency: "weekly" as const,

@@ -6,6 +6,7 @@ import { ExploreMaterials } from "@/components/sections/ExploreMaterials";
 import { WhyChooseUs } from "@/components/sections/WhyChooseUs";
 import { FeaturedBrands } from "@/components/sections/FeaturedBrands";
 import { Testimonials } from "@/components/sections/Testimonials";
+import { FounderSection } from "@/components/sections/FounderSection";
 import { CTASection } from "@/components/sections/CTASection";
 
 export const metadata: Metadata = {
@@ -25,6 +26,7 @@ export default function Home() {
       <WhyChooseUs />
       <FeaturedBrands />
       <Testimonials />
+      <FounderSection />
       <CTASection />
     </>
   );
