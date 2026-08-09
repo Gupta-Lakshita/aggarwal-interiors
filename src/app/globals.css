@@ -1,42 +1,42 @@
 @import "tailwindcss";
 
 :root {
-  --color-espresso-950: #2c2721;
-  --color-espresso-900: #332b22;
-  --color-espresso-800: #473a2c;
-  --color-espresso-700: #5a4635;
-  --color-walnut-600: #5a4635;
+  --color-espresso-950: #241f1a;
+  --color-espresso-900: #2c2419;
+  --color-espresso-800: #3d3021;
+  --color-espresso-700: #4a3826;
+  --color-walnut-600: #4a3826;
 
-  --color-charcoal-900: #2c2721;
-  --color-charcoal-800: #3a352f;
-  --color-charcoal-700: #665f54;
+  --color-charcoal-900: #241f1a;
+  --color-charcoal-800: #2c2419;
+  --color-charcoal-700: #55503f;
 
-  --color-olive-700: #55604a;
-  --color-olive-600: #65705a;
-  --color-sage-500: #9aa28c;
-  --color-sage-400: #a9b09c;
-  --color-sage-100: #e7e9df;
-  --color-sage-50: #f1f2ea;
+  --color-olive-700: #384026;
+  --color-olive-600: #48542f;
+  --color-sage-500: #5c6a44;
+  --color-sage-400: #71805a;
+  --color-sage-100: #dee3d0;
+  --color-sage-50: #eaeee0;
 
-  --color-terracotta-600: #8f6a50;
-  --color-terracotta-500: #a47b62;
-  --color-terracotta-400: #b08d74;
-  --color-clay-600: #ad8567;
+  --color-terracotta-600: #6f4a2c;
+  --color-terracotta-500: #855c39;
+  --color-terracotta-400: #9c7048;
+  --color-clay-600: #855c39;
 
-  --color-gold-600: #b7a183;
-  --color-gold-500: #c9bdae;
+  --color-gold-600: #8c7550;
+  --color-gold-500: #a8926e;
 
-  --color-stone-400: #c9bdae;
-  --color-stone-300: #d6ccbf;
-  --color-stone-200: #e2dace;
-  --color-stone-100: #ece6db;
+  --color-stone-400: #b0a082;
+  --color-stone-300: #c2b499;
+  --color-stone-200: #d6cbb5;
+  --color-stone-100: #e5dcc9;
 
-  --color-ivory-500: #e5dfd2;
-  --color-ivory-400: #ede8dc;
-  --color-ivory-300: #f0ebe1;
-  --color-ivory-200: #f2eee5;
-  --color-ivory-100: #f4f0e8;
-  --color-ivory-50: #f8f5ef;
+  --color-ivory-500: #dcd3bf;
+  --color-ivory-400: #e6dfcd;
+  --color-ivory-300: #ede7d8;
+  --color-ivory-200: #f0ebde;
+  --color-ivory-100: #f3efe2;
+  --color-ivory-50: #f8f5ec;
 
   --background: var(--color-ivory-100);
   --foreground: var(--color-espresso-950);
@@ -153,17 +153,17 @@ h1, h2, h3, h4, h5, h6 {
   pointer-events: none;
   background-image: repeating-linear-gradient(
       92deg,
-      #2c2721 0px,
+      #241f1a 0px,
       transparent 1px,
       transparent 3px,
-      #2c2721 4px
+      #241f1a 4px
     ),
     repeating-linear-gradient(
       2deg,
-      #332b22 0px,
+      #2c2419 0px,
       transparent 2px,
       transparent 22px,
-      #332b22 24px
+      #2c2419 24px
     );
 }
 

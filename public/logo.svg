@@ -1,21 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="40 30 220 202" role="img" aria-label="Aggarwal Hardware &amp; Plywood Company logo">
   <!-- roof accent -->
-  <path d="M150 40 L138 58 L150 52 L162 58 Z" fill="#65705A"/>
+  <path d="M150 40 L138 58 L150 52 L162 58 Z" fill="#48542F"/>
 
   <!-- house outline -->
   <path d="M60 150 L150 78 L240 150"
-        fill="none" stroke="#473A2C" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+        fill="none" stroke="#3D3021" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
   <path d="M78 132 V222 H222 V132"
-        fill="none" stroke="#473A2C" stroke-width="12" stroke-linejoin="round"/>
+        fill="none" stroke="#3D3021" stroke-width="12" stroke-linejoin="round"/>
 
   <!-- interior furniture silhouette -->
-  <g fill="#473A2C">
+  <g fill="#3D3021">
     <rect x="98" y="176" width="16" height="46" rx="3"/>
     <rect x="98" y="168" width="42" height="10" rx="3"/>
     <rect x="126" y="176" width="16" height="46" rx="3"/>
     <rect x="104" y="186" width="32" height="26" rx="4" opacity="0.85"/>
-    <circle cx="176" cy="182" r="10" fill="#65705A"/>
-    <rect x="172" y="192" width="8" height="30" fill="#65705A"/>
-    <path d="M160 176 L192 176 L184 192 L168 192 Z" fill="#65705A"/>
+    <circle cx="176" cy="182" r="10" fill="#48542F"/>
+    <rect x="172" y="192" width="8" height="30" fill="#48542F"/>
+    <path d="M160 176 L192 176 L184 192 L168 192 Z" fill="#48542F"/>
   </g>
 </svg>
