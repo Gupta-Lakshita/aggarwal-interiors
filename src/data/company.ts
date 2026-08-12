@@ -13,7 +13,7 @@ export const company = {
   },
   phone: "+91 94176 35709",
   whatsapp: "919417635709",
-  email: "hello@aggarwalhardware.in",
+  email: "aggarwalhardwareplywood@gmail.com",
   hours: [
     { day: "Monday – Saturday", time: "9:30 AM – 7:30 PM" },
     { day: "Sunday", time: "10:00 AM – 2:00 PM" },
