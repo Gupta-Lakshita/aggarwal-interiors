@@ -32,7 +32,7 @@ export function Hero() {
         className="absolute inset-0 -top-[10%] h-[120%] w-full"
       >
         <SafeImage
-          src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=2400&auto=format&fit=crop"
+          src="https://images.unsplash.com/photo-1493666694104-c8f1b7c8e4a0?q=80&w=2400&auto=format&fit=crop"
           alt="Premium interior showcasing rich walnut wood surfaces and natural light"
           fill
           priority

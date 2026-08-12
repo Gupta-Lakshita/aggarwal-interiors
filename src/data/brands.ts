@@ -16,4 +16,10 @@ export const brands: Brand[] = [
   { id: "b13", name: "Jivanjor", logo: "/brands/jivanjor.png" },
   { id: "b14", name: "Starrs", logo: "/brands/starrs.png" },
   { id: "b15", name: "Galaxy", logo: "/brands/galaxy.png" },
+  { id: "b16", name: "Yafa", logo: "/brands/yafa.png" },
+  { id: "b17", name: "Sunshine", logo: "/brands/sunshine.png" },
+  { id: "b18", name: "Vrinda", logo: "/brands/vrinda.png" },
+  { id: "b19", name: "Rehau", logo: "/brands/rehau.png" },
+  { id: "b20", name: "Sainik 710", logo: "/brands/sainik-710.png" },
+  { id: "b21", name: "Royal Crown", logo: "/brands/royal-crown.png" },
 ];

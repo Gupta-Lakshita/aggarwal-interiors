@@ -9,10 +9,10 @@ import type { Category } from "@/types";
 
 export function CategoryCard({ category }: { category: Category }) {
   return (
-    <motion.div initial="rest" whileHover="hover" animate="rest" variants={hoverLift}>
+    <motion.div initial="rest" whileHover="hover" animate="rest" variants={hoverLift} className="h-full">
       <Link
         href={`/products/${category.slug}`}
-        className="focus-ring group block overflow-hidden rounded-[16px] border border-border-subtle bg-surface"
+        className="focus-ring group flex h-full flex-col overflow-hidden rounded-[16px] border border-border-subtle bg-surface"
       >
         <div className="relative aspect-[4/3] overflow-hidden">
           <motion.div variants={imageZoom} className="h-full w-full">
@@ -26,7 +26,7 @@ export function CategoryCard({ category }: { category: Category }) {
           </motion.div>
           <div className="absolute inset-0 bg-gradient-to-t from-espresso-950/50 via-transparent to-transparent" />
         </div>
-        <div className="p-6">
+        <div className="flex flex-1 flex-col p-6">
           <div className="flex items-start justify-between gap-3">
             <h3 className="text-xl text-espresso-950">{category.title}</h3>
             <ArrowUpRight
@@ -34,7 +34,7 @@ export function CategoryCard({ category }: { category: Category }) {
               className="mt-1 shrink-0 text-terracotta-500 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
             />
           </div>
-          <p className="mt-2 text-sm leading-relaxed text-charcoal-700">
+          <p className="mt-2 flex-1 text-sm leading-relaxed text-charcoal-700">
             {category.shortDescription}
           </p>
           <p className="mt-4 text-xs font-medium uppercase tracking-wide text-olive-700">
