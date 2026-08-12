@@ -12,7 +12,7 @@ export function About() {
       <Container className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
         <AnimatedSection variants={fadeIn} className="relative aspect-[4/5] overflow-hidden rounded-[16px]">
           <SafeImage
-            src="https://images.unsplash.com/photo-1601058268499-e52658b8bb88?q=80&w=1200&auto=format&fit=crop"
+            src="https://images.unsplash.com/photo-1616046229478-9901c5536a45?q=80&w=1200&auto=format&fit=crop"
             alt="Close-up of rich walnut wood grain texture"
             fill
             sizes="(min-width: 1024px) 50vw, 100vw"
