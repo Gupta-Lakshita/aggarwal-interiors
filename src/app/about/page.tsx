@@ -6,11 +6,10 @@ import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { SafeImage } from "@/components/ui/SafeImage";
 import { StatCard } from "@/components/cards/StatCard";
 import { FeatureCard } from "@/components/cards/FeatureCard";
-import { QuoteBlock } from "@/components/ui/QuoteBlock";
 import { Button } from "@/components/ui/Button";
 import { fadeUp, fadeIn, staggerContainer } from "@/lib/animations";
 import { company } from "@/data/company";
-import { founder } from "@/data/founders";
+import { teamPhoto } from "@/data/team";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -170,13 +169,10 @@ export default function AboutPage() {
                 A Team That Knows Your Project by Name
               </h2>
               <p className="mt-5 text-base leading-relaxed text-charcoal-700 md:text-lg">
-                Led by {founder.name}, our team of material specialists, in-house carpenters,
+                {teamPhoto.name} and our team of material specialists, in-house carpenters,
                 and design consultants work together on every enquiry — from a single box of
                 handles to a full home fit-out.
               </p>
-            </AnimatedSection>
-            <AnimatedSection variants={fadeUp} delay={0.1} className="mt-10">
-              <QuoteBlock quote={founder.quote} attribution={`${founder.name}, ${founder.role}`} align="left" />
             </AnimatedSection>
           </div>
         </Container>

@@ -41,14 +41,11 @@ export interface Brand {
   logo: string;
 }
 
-export interface Founder {
+export interface TeamPhoto {
   id: string;
   name: string;
-  role: string;
   image: string;
   imageAlt: string;
-  bio: string;
-  quote: string;
 }
 
 export interface Testimonial {
