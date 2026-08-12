@@ -20,7 +20,6 @@ export function WhyChooseUs() {
     <section className="bg-sage-100 py-20 md:py-32">
       <Container>
         <SectionTitle
-          number="05"
           eyebrow="Why Choose Us"
           title="Built on Trust, Backed by Experience"
           align="center"

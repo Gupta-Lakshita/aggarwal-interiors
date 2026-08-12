@@ -2,14 +2,12 @@ import { cn } from "@/lib/utils";
 
 export function SectionTitle({
   eyebrow,
-  number,
   title,
   description,
   align = "left",
   className,
 }: {
   eyebrow?: string;
-  number?: string;
   title: string;
   description?: string;
   align?: "left" | "center";
@@ -30,14 +28,7 @@ export function SectionTitle({
             align === "center" && "justify-center"
           )}
         >
-          {number && (
-            <>
-              <span className="font-heading text-sm normal-case tracking-normal text-sage-500">
-                {number}
-              </span>
-              <span className="h-px w-10 bg-border-subtle" />
-            </>
-          )}
+          <span className="h-px w-10 bg-border-subtle" />
           {eyebrow}
         </p>
       )}

@@ -69,7 +69,6 @@ export default function AboutPage() {
           <div className="lg:order-1">
             <AnimatedSection variants={fadeUp}>
               <p className="mb-4 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-terracotta-600">
-                <span className="font-heading text-sm normal-case tracking-normal text-sage-500">01</span>
                 <span className="h-px w-10 bg-border-subtle" />
                 How It Started
               </p>
@@ -113,7 +112,6 @@ export default function AboutPage() {
         <Container className="relative z-10">
           <AnimatedSection variants={fadeUp} className="max-w-xl">
             <p className="mb-4 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-terracotta-400">
-              <span className="font-heading text-sm normal-case tracking-normal text-sage-400">02</span>
               <span className="h-px w-10 bg-ivory-100/30" />
               Craftsmanship
             </p>
@@ -132,7 +130,6 @@ export default function AboutPage() {
       <section className="bg-sage-100 py-20 md:py-32">
         <Container>
           <SectionTitle
-            number="03"
             eyebrow="What We Stand For"
             title="The Values Behind Every Sale"
             align="center"
@@ -166,7 +163,6 @@ export default function AboutPage() {
           <div>
             <AnimatedSection variants={fadeUp}>
               <p className="mb-4 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-terracotta-600">
-                <span className="font-heading text-sm normal-case tracking-normal text-sage-500">04</span>
                 <span className="h-px w-10 bg-border-subtle" />
                 The People Behind It
               </p>

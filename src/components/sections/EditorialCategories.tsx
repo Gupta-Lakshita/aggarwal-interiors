@@ -18,7 +18,6 @@ export function EditorialCategories() {
         <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
           <AnimatedSection variants={fadeUp} className="max-w-xl">
             <div className="mb-4 flex items-center gap-3">
-              <span className="font-heading text-sm text-sage-500">03</span>
               <span className="h-px w-10 bg-border-subtle" />
               <span className="text-xs font-semibold uppercase tracking-[0.2em] text-terracotta-600">
                 Materials

@@ -51,7 +51,6 @@ export function Hero() {
             className="max-w-3xl"
           >
             <motion.div variants={fadeUp} className="mb-6 flex items-center gap-3">
-              <span className="font-heading text-sm text-sage-400">01</span>
               <span className="h-px w-10 bg-ivory-100/30" />
               <span className="text-xs font-semibold uppercase tracking-[0.25em] text-stone-300">
                 {company.yearsInBusiness}+ Years of Craftsmanship

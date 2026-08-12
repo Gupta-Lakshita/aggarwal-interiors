@@ -20,7 +20,6 @@ export function ExploreMaterials() {
     <section className="bg-espresso-950 py-20 text-ivory-100 md:py-32">
       <Container>
         <div className="mb-4 flex items-center gap-3">
-          <span className="font-heading text-sm text-sage-400">04</span>
           <span className="h-px w-10 bg-ivory-100/20" />
           <span className="text-xs font-semibold uppercase tracking-[0.2em] text-stone-300">
             Explore Materials

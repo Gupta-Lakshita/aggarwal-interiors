@@ -23,7 +23,6 @@ export function About() {
         <div>
           <AnimatedSection variants={fadeUp}>
             <p className="mb-4 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-terracotta-600">
-              <span className="font-heading text-sm normal-case tracking-normal text-sage-500">02</span>
               <span className="h-px w-10 bg-border-subtle" />
               Our Story
             </p>
