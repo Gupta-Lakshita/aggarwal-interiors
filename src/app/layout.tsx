@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     description: company.supportingCopy,
     images: [
       {
-        url: "https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?q=80&w=1200&auto=format&fit=crop",
+        url: "https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?q=80&w=1200&auto=format&fit=crop",
         width: 1200,
         height: 630,
         alt: company.name,

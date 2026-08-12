@@ -11,7 +11,7 @@ export const products: Product[] = [
     name: "Ply",
     categorySlug: "wooden",
     brand: "CenturyPly",
-    image: img("photo-1595515107092-2d3e4f5a6b7c"),
+    image: img("photo-1595515106969-1ce29566ff1c"),
     imageAlt: "Stack of premium plywood sheets",
     description:
       "BWP-grade structural plywood engineered for strength, moisture resistance, and long-term stability in furniture and construction applications.",
@@ -39,7 +39,7 @@ export const products: Product[] = [
     name: "Wooden Moulding",
     categorySlug: "wooden",
     brand: "Local Craft Mill",
-    image: img("photo-1601058268622-3e4f5a6b7c8d"),
+    image: img("photo-1601058268499-e52658b8bb88"),
     imageAlt: "Decorative wooden moulding profiles",
     description:
       "Precision-milled decorative mouldings for ceilings, walls, and furniture edges, adding architectural detail to any interior.",
@@ -97,7 +97,7 @@ export const products: Product[] = [
     name: "PVC Panels",
     categorySlug: "pvc",
     brand: "Merino",
-    image: img("photo-1618221196345-1e4b0c8f2a3d"),
+    image: img("photo-1618221195710-dd6b41faaea6"),
     imageAlt: "Textured PVC wall panels",
     description:
       "Lightweight, waterproof PVC wall panels ideal for kitchens, bathrooms, and false ceilings where moisture resistance is essential.",
@@ -111,7 +111,7 @@ export const products: Product[] = [
     name: "WPC Louvers",
     categorySlug: "pvc",
     brand: "Local Fabricator",
-    image: img("photo-1631679707032-2f5c1d9a4b6e"),
+    image: img("photo-1631679706909-1844bbd07221"),
     imageAlt: "WPC louver wall cladding",
     description:
       "Wood-plastic composite louvers that bring warm timber aesthetics with the durability and low maintenance of PVC.",
@@ -125,7 +125,7 @@ export const products: Product[] = [
     name: "Fluted Panels",
     categorySlug: "pvc",
     brand: "Merino",
-    image: img("photo-1618220179551-3a6d2e0b5c7f"),
+    image: img("photo-1618220179428-22790b461013"),
     imageAlt: "Fluted panel wall texture",
     description:
       "Vertically grooved fluted panels for statement walls and cabinetry fronts, available in a range of matte and textured finishes.",
@@ -153,7 +153,7 @@ export const products: Product[] = [
     name: "PVC Board",
     categorySlug: "pvc",
     brand: "Merino",
-    image: img("photo-1600607687920-4e2a09cf159d"),
+    image: img("photo-1600585154340-be6161a56a0c"),
     imageAlt: "White PVC foam boards stacked",
     description:
       "Dense foam PVC boards used as a plywood alternative in moisture-prone areas such as bathrooms and utility spaces.",
@@ -211,7 +211,7 @@ export const products: Product[] = [
     name: "Detergent Rack",
     categorySlug: "kitchen-hardware",
     brand: "Hettich",
-    image: img("photo-1556910633-5099dc3d1f0f"),
+    image: img("photo-1556909212-d5b604d0c90d"),
     imageAlt: "Pull-out detergent storage rack",
     description:
       "Compact pull-out rack for organising detergents and cleaning supplies within sink-base cabinets.",
@@ -225,7 +225,7 @@ export const products: Product[] = [
     name: "Bottle Pull Out (BPO)",
     categorySlug: "kitchen-hardware",
     brand: "Hafele",
-    image: img("photo-1590794056739-3b729b3cbc47"),
+    image: img("photo-1584622650111-993a426fbf0a"),
     imageAlt: "Bottle pull-out kitchen organiser",
     description:
       "Space-saving bottle pull-out unit that maximises narrow cabinet spaces for bottle and jar storage.",
@@ -239,7 +239,7 @@ export const products: Product[] = [
     name: "Cutlery",
     categorySlug: "kitchen-hardware",
     brand: "Hettich",
-    image: img("photo-1590794056486-58c2f14dfb85"),
+    image: img("photo-1600585154340-be6161a56a0c"),
     imageAlt: "Cutlery organiser tray insert",
     description:
       "Modular cutlery tray insert with segmented compartments for organised, accessible drawer storage.",
@@ -253,7 +253,7 @@ export const products: Product[] = [
     name: "Magic Corner",
     categorySlug: "kitchen-hardware",
     brand: "Hafele",
-    image: img("photo-1556909211-32a5b8c2d1a2"),
+    image: img("photo-1556909212-d5b604d0c90d"),
     imageAlt: "Magic corner kitchen storage mechanism",
     description:
       "Rotating corner unit that transforms hard-to-reach cabinet corners into fully accessible storage.",
@@ -267,7 +267,7 @@ export const products: Product[] = [
     name: "S-Corner",
     categorySlug: "kitchen-hardware",
     brand: "Hafele",
-    image: img("photo-1585909695284-32d2985ac9c0"),
+    image: img("photo-1600585154340-be6161a56a0c"),
     imageAlt: "S-corner kitchen cabinet mechanism",
     description:
       "S-shaped sliding corner mechanism offering smooth, space-efficient access to blind corner cabinets.",
@@ -281,7 +281,7 @@ export const products: Product[] = [
     name: "Innotech",
     categorySlug: "kitchen-hardware",
     brand: "Hafele",
-    image: img("photo-1585909695072-9d3c5b3f5f7d"),
+    image: img("photo-1584622650111-993a426fbf0a"),
     imageAlt: "Innotech drawer system components",
     description:
       "Premium drawer system with concealed runners and soft-close technology for a refined, quiet drawer experience.",
@@ -295,7 +295,7 @@ export const products: Product[] = [
     name: "Dish Rack",
     categorySlug: "kitchen-hardware",
     brand: "Ebco",
-    image: img("photo-1556909135-4b0e1a2c6f8e"),
+    image: img("photo-1556909212-d5b604d0c90d"),
     imageAlt: "Overhead cabinet dish rack",
     description:
       "In-cabinet dish drying rack designed to keep crockery organised and out of sight while draining efficiently.",
@@ -309,7 +309,7 @@ export const products: Product[] = [
     name: "Kitchen Socket",
     categorySlug: "kitchen-hardware",
     brand: "Local Supplier",
-    image: img("photo-1556909172-54557c7e4fb7"),
+    image: img("photo-1600585154340-be6161a56a0c"),
     imageAlt: "Pop-up kitchen countertop socket",
     description:
       "Pop-up countertop socket unit providing discreet, convenient power access on kitchen worktops.",
@@ -323,7 +323,7 @@ export const products: Product[] = [
     name: "Shutter",
     categorySlug: "kitchen-hardware",
     brand: "Merino",
-    image: img("photo-1615874959473-8b6c2f3e4a1c"),
+    image: img("photo-1615874959474-d609969a20ed"),
     imageAlt: "Modular kitchen cabinet shutters",
     description:
       "Ready-to-fit cabinet shutters in a range of finishes, engineered for a precise fit and long-lasting hinge performance.",
@@ -337,7 +337,7 @@ export const products: Product[] = [
     name: "Wicker Basket",
     categorySlug: "kitchen-hardware",
     brand: "Ebco",
-    image: img("photo-1595259230685-333f9c7a8e9c"),
+    image: img("photo-1584622650111-993a426fbf0a"),
     imageAlt: "Wicker-style kitchen storage basket",
     description:
       "Ventilated wicker-pattern pull-out basket ideal for storing vegetables and produce with airflow to extend freshness.",
@@ -351,7 +351,7 @@ export const products: Product[] = [
     name: "Gas Stove",
     categorySlug: "kitchen-hardware",
     brand: "Local Supplier",
-    image: img("photo-1556910638-6a2f9c7e3d5b"),
+    image: img("photo-1556909212-d5b604d0c90d"),
     imageAlt: "Built-in modular kitchen gas stove",
     description:
       "Built-in hob designed for seamless integration into modular kitchen countertops with reliable, even flame performance.",
@@ -365,7 +365,7 @@ export const products: Product[] = [
     name: "Chimney",
     categorySlug: "kitchen-hardware",
     brand: "Local Supplier",
-    image: img("photo-1556909190-eccf4a8bf97a"),
+    image: img("photo-1600585154340-be6161a56a0c"),
     imageAlt: "Modern kitchen chimney installation",
     description:
       "High-suction kitchen chimney with efficient filtration, designed to keep modular kitchens smoke and odour free.",
@@ -379,7 +379,7 @@ export const products: Product[] = [
     name: "Sink",
     categorySlug: "kitchen-hardware",
     brand: "Local Supplier",
-    image: img("photo-1584622781564-1d987f7333c1"),
+    image: img("photo-1584622650111-993a426fbf0a"),
     imageAlt: "Stainless steel kitchen sink",
     description:
       "Deep-bowl stainless steel kitchen sinks engineered for durability, scratch resistance, and quiet drainage.",
@@ -395,7 +395,7 @@ export const products: Product[] = [
     name: "Nails",
     categorySlug: "hardware",
     brand: "Local Supplier",
-    image: img("photo-1609205594505-2c3a0b6f9d7e"),
+    image: img("photo-1609205807107-171dabc73d17"),
     imageAlt: "Assorted nails in a hardware bin",
     description:
       "A full range of nails for carpentry, framing, and finishing work, sized for every application from trim to structural.",
@@ -409,7 +409,7 @@ export const products: Product[] = [
     name: "Screw",
     categorySlug: "hardware",
     brand: "Local Supplier",
-    image: img("photo-1609205594662-4b6c2f9e1a3d"),
+    image: img("photo-1609205807107-171dabc73d17"),
     imageAlt: "Assorted screws organised by size",
     description:
       "Precision-threaded wood and machine screws in a wide range of sizes for furniture assembly and fixing work.",
@@ -423,7 +423,7 @@ export const products: Product[] = [
     name: "Hinges",
     categorySlug: "hardware",
     brand: "Hettich",
-    image: img("photo-1620127807695-8e5f1b4d3c0a"),
+    image: img("photo-1620127807580-990c3ecebefb"),
     imageAlt: "Cabinet door hinges close-up",
     description:
       "Soft-close concealed hinges engineered for smooth, silent cabinet door operation over hundreds of thousands of cycles.",
@@ -437,7 +437,7 @@ export const products: Product[] = [
     name: "Railings",
     categorySlug: "hardware",
     brand: "Local Fabricator",
-    image: img("photo-1620127807812-9f6a2c5e4d1b"),
+    image: img("photo-1620127807580-990c3ecebefb"),
     imageAlt: "Modern staircase railing hardware",
     description:
       "Sturdy railing hardware and fittings for staircases, balconies, and partitions with a refined, modern profile.",
@@ -451,7 +451,7 @@ export const products: Product[] = [
     name: "Handles",
     categorySlug: "hardware",
     brand: "Hafele",
-    image: img("photo-1620912189777-5b2f8e3c1a9d"),
+    image: img("photo-1609205807107-171dabc73d17"),
     imageAlt: "Brushed metal cabinet handles",
     description:
       "Cabinet and door handles in brushed, matte, and polished finishes to complement any interior design language.",
@@ -465,7 +465,7 @@ export const products: Product[] = [
     name: "Tower Bolt",
     categorySlug: "hardware",
     brand: "Godrej Locking",
-    image: img("photo-1620127807934-0a7b3d6f5e2c"),
+    image: img("photo-1620127807580-990c3ecebefb"),
     imageAlt: "Tower bolt door lock fitting",
     description:
       "Heavy-duty tower bolts for doors and windows offering reliable, tamper-resistant securing.",
@@ -479,7 +479,7 @@ export const products: Product[] = [
     name: "Locks",
     categorySlug: "hardware",
     brand: "Godrej Locking",
-    image: img("photo-1620912189925-6c3e9f2a1b8d"),
+    image: img("photo-1609205807107-171dabc73d17"),
     imageAlt: "Door lock and key set",
     description:
       "Mortise and cylindrical locks providing dependable security for main doors, bedrooms, and cabinets.",
@@ -493,7 +493,7 @@ export const products: Product[] = [
     name: "Sliding Channels",
     categorySlug: "hardware",
     brand: "Ebco",
-    image: img("photo-1620127808055-1b8c4e7a6f3d"),
+    image: img("photo-1620127807580-990c3ecebefb"),
     imageAlt: "Drawer sliding channel hardware",
     description:
       "Ball-bearing sliding channels for drawers and sliding doors delivering smooth, quiet, full-extension movement.",
@@ -507,7 +507,7 @@ export const products: Product[] = [
     name: "Handle Profiles",
     categorySlug: "hardware",
     brand: "Hafele",
-    image: img("photo-1620912189533-7d4f0a3c2e9b"),
+    image: img("photo-1609205807107-171dabc73d17"),
     imageAlt: "Aluminium handle profile section",
     description:
       "Integrated aluminium handle profiles for handleless kitchen and wardrobe shutters, giving a seamless minimal look.",
@@ -523,7 +523,7 @@ export const products: Product[] = [
     name: "Fevicol",
     categorySlug: "wooden-adhesive",
     brand: "Fevicol",
-    image: img("photo-1581092162384-1b9e2c5f8a3d"),
+    image: img("photo-1581092160607-ee22621dd758"),
     imageAlt: "Fevicol wood adhesive bottle",
     description:
       "India's most trusted wood adhesive, delivering a strong, durable bond for furniture and carpentry applications.",
@@ -537,7 +537,7 @@ export const products: Product[] = [
     name: "Heat-X",
     categorySlug: "wooden-adhesive",
     brand: "Fevicol",
-    image: img("photo-1581092162497-2c0f3d6a9b4e"),
+    image: img("photo-1581092160607-ee22621dd758"),
     imageAlt: "Heat-X adhesive product",
     description:
       "Heat-activated adhesive designed for edge-banding applications, delivering a fast, durable bond.",
@@ -551,7 +551,7 @@ export const products: Product[] = [
     name: "Lock N Lock",
     categorySlug: "wooden-adhesive",
     brand: "Fevicol",
-    image: img("photo-1616627562189-5f3c6a9d2e7b"),
+    image: img("photo-1616627561950-9f746e330187"),
     imageAlt: "Lock N Lock adhesive tube",
     description:
       "Instant-grip contact adhesive for laminate and veneer bonding, offering strong initial tack and lasting hold.",
@@ -565,7 +565,7 @@ export const products: Product[] = [
     name: "Ezee Spray",
     categorySlug: "wooden-adhesive",
     brand: "Fevicol",
-    image: img("photo-1581092162715-3d1a4e7b0c5f"),
+    image: img("photo-1581092160607-ee22621dd758"),
     imageAlt: "Ezee Spray adhesive can",
     description:
       "Spray-on contact adhesive offering fast, even coverage for large laminate and veneer surfaces.",
@@ -579,7 +579,7 @@ export const products: Product[] = [
     name: "Silicon",
     categorySlug: "wooden-adhesive",
     brand: "Local Supplier",
-    image: img("photo-1616627562311-6a4d7b0e3f8c"),
+    image: img("photo-1616627561950-9f746e330187"),
     imageAlt: "Silicon sealant cartridge",
     description:
       "Weatherproof silicon sealant for glass, wood, and metal joints requiring a flexible, waterproof seal.",
@@ -593,7 +593,7 @@ export const products: Product[] = [
     name: "Fevi Kwik 463",
     categorySlug: "wooden-adhesive",
     brand: "Fevicol",
-    image: img("photo-1581092162839-4e2b5f8c1d6a"),
+    image: img("photo-1581092160607-ee22621dd758"),
     imageAlt: "Fevi Kwik instant adhesive",
     description:
       "Instant-bond adhesive for quick fixes and small repairs across wood, plastic, and metal surfaces.",
@@ -607,7 +607,7 @@ export const products: Product[] = [
     name: "Marinkoat",
     categorySlug: "wooden-adhesive",
     brand: "Local Supplier",
-    image: img("photo-1616627562433-7b5e8c1f4a9d"),
+    image: img("photo-1616627561950-9f746e330187"),
     imageAlt: "Marinkoat wood coating product",
     description:
       "Protective marine-grade coating for wood surfaces exposed to moisture, offering a durable, glossy finish.",
@@ -623,7 +623,7 @@ export const products: Product[] = [
     name: "Modular Kitchen",
     categorySlug: "manufacturer",
     brand: "In-House Manufacturing",
-    image: img("photo-1600566753313-4b5c6d7e8f9a"),
+    image: img("photo-1600566753190-17f0baa2a6c3"),
     imageAlt: "Custom-built modular kitchen",
     description:
       "End-to-end custom modular kitchen design and manufacturing, from layout planning to hardware fitting and finishing.",
@@ -637,7 +637,7 @@ export const products: Product[] = [
     name: "Wardrobe",
     categorySlug: "manufacturer",
     brand: "In-House Manufacturing",
-    image: img("photo-1556911220401-4b7e3f1c6d8a"),
+    image: img("photo-1556911220-bff31c812dba"),
     imageAlt: "Custom-built wardrobe interior",
     description:
       "Bespoke wardrobe manufacturing tailored to your space, with configurable interior storage systems and finishes.",
@@ -651,7 +651,7 @@ export const products: Product[] = [
     name: "Wooden & PVC Temples",
     categorySlug: "manufacturer",
     brand: "In-House Manufacturing",
-    image: img("photo-1600566753436-5c6d7e8f9a0b"),
+    image: img("photo-1600566753190-17f0baa2a6c3"),
     imageAlt: "Custom-built home temple unit",
     description:
       "Handcrafted wooden and PVC temple units designed to fit any home, combining traditional detailing with modern durability.",
@@ -667,7 +667,7 @@ export const products: Product[] = [
     name: "PVC Cutting",
     categorySlug: "cnc-machine-work",
     brand: "In-House CNC",
-    image: img("photo-1565193566296-2f3a4b5c6d7e"),
+    image: img("photo-1565193566173-7a0ee3dbe261"),
     imageAlt: "CNC machine cutting PVC sheet",
     description:
       "Precision CNC PVC cutting service for panels, signage, and decorative applications with tight tolerances.",
@@ -681,7 +681,7 @@ export const products: Product[] = [
     name: "HDHMR Doors & Jali",
     categorySlug: "cnc-machine-work",
     brand: "In-House CNC",
-    image: img("photo-1581092919179-9c0d1e2f3a4b"),
+    image: img("photo-1581092918056-0c4c3acd3789"),
     imageAlt: "CNC cut HDHMR jali door panel",
     description:
       "High-density HDHMR doors and decorative jali panels, CNC-machined for intricate, durable pattern work.",
@@ -695,7 +695,7 @@ export const products: Product[] = [
     name: "3D Doors",
     categorySlug: "cnc-machine-work",
     brand: "In-House CNC",
-    image: img("photo-1581092919302-0d1e2f3a4b5c"),
+    image: img("photo-1581092918056-0c4c3acd3789"),
     imageAlt: "3D CNC carved wooden door",
     description:
       "Sculptural 3D-carved door faces created with precision CNC machining for a striking architectural statement.",
@@ -709,7 +709,7 @@ export const products: Product[] = [
     name: "2D Doors",
     categorySlug: "cnc-machine-work",
     brand: "In-House CNC",
-    image: img("photo-1565193566419-3a4b5c6d7e8f"),
+    image: img("photo-1565193566173-7a0ee3dbe261"),
     imageAlt: "2D CNC engraved wooden door",
     description:
       "Flat-panel CNC-engraved door designs offering subtle texture and pattern for a refined, contemporary look.",
@@ -723,7 +723,7 @@ export const products: Product[] = [
     name: "Wall Design",
     categorySlug: "cnc-machine-work",
     brand: "In-House CNC",
-    image: img("photo-1581092919425-1e2f3a4b5c6d"),
+    image: img("photo-1581092918056-0c4c3acd3789"),
     imageAlt: "CNC cut decorative wall panel design",
     description:
       "Custom CNC-cut decorative wall panels for feature walls, adding depth and texture to interior spaces.",
@@ -739,7 +739,7 @@ export const products: Product[] = [
     name: "Fluted Glass",
     categorySlug: "glass-type",
     brand: "Saint-Gobain",
-    image: img("photo-1600607687820-1a2b3c4d5e6f"),
+    image: img("photo-1600607687644-c7171b42498f"),
     imageAlt: "Fluted textured glass panel",
     description:
       "Vertically ribbed fluted glass offering privacy with diffused light transmission, popular for partitions and cabinet fronts.",
@@ -753,7 +753,7 @@ export const products: Product[] = [
     name: "Looking Glass",
     categorySlug: "glass-type",
     brand: "Saint-Gobain",
-    image: img("photo-1519710184362-1a2b3c4d5e6f"),
+    image: img("photo-1519710164239-da123dc03ef4"),
     imageAlt: "Clear mirror looking glass",
     description:
       "High-clarity mirror glass for wardrobes, dressing areas, and decorative wall applications.",
@@ -767,7 +767,7 @@ export const products: Product[] = [
     name: "Colour Glass",
     categorySlug: "glass-type",
     brand: "Saint-Gobain",
-    image: img("photo-1600607687943-2b3c4d5e6f7a"),
+    image: img("photo-1600607687644-c7171b42498f"),
     imageAlt: "Coloured decorative glass panel",
     description:
       "Vibrant lacquered colour glass panels for kitchen backsplashes, partitions, and decorative accents.",
@@ -781,7 +781,7 @@ export const products: Product[] = [
     name: "Lacquer Glass",
     categorySlug: "glass-type",
     brand: "Saint-Gobain",
-    image: img("photo-1519710184485-2b3c4d5e6f7a"),
+    image: img("photo-1519710164239-da123dc03ef4"),
     imageAlt: "Glossy lacquered glass panel",
     description:
       "Back-painted lacquer glass with a smooth glossy finish, ideal for modern kitchen and furniture surfaces.",
@@ -795,7 +795,7 @@ export const products: Product[] = [
     name: "Toughened Glass",
     categorySlug: "glass-type",
     brand: "Saint-Gobain",
-    image: img("photo-1600607688066-3c4d5e6f7a8b"),
+    image: img("photo-1600607687644-c7171b42498f"),
     imageAlt: "Toughened safety glass panel",
     description:
       "Heat-treated toughened glass offering significantly greater strength and safety than standard annealed glass.",
@@ -809,7 +809,7 @@ export const products: Product[] = [
     name: "Plain Glass",
     categorySlug: "glass-type",
     brand: "Saint-Gobain",
-    image: img("photo-1519710184608-3c4d5e6f7a8b"),
+    image: img("photo-1519710164239-da123dc03ef4"),
     imageAlt: "Clear plain glass sheet",
     description:
       "Standard clear float glass suited for windows, cabinet doors, and general glazing applications.",
@@ -823,7 +823,7 @@ export const products: Product[] = [
     name: "Brick Glass",
     categorySlug: "glass-type",
     brand: "Saint-Gobain",
-    image: img("photo-1600607688189-4d5e6f7a8b9c"),
+    image: img("photo-1600607687644-c7171b42498f"),
     imageAlt: "Textured brick pattern glass panel",
     description:
       "Textured brick-pattern glass adding architectural character to partitions, doors, and decorative windows.",
@@ -837,7 +837,7 @@ export const products: Product[] = [
     name: "LED Mirror",
     categorySlug: "glass-type",
     brand: "Local Fabricator",
-    image: img("photo-1519710184731-4d5e6f7a8b9c"),
+    image: img("photo-1519710164239-da123dc03ef4"),
     imageAlt: "Backlit LED mirror panel",
     description:
       "Backlit LED mirrors combining functional lighting with a sleek, modern mirror surface for bathrooms and dressing areas.",
@@ -853,7 +853,7 @@ export const products: Product[] = [
     name: "Etching Work",
     categorySlug: "glass-work",
     brand: "In-House Artisans",
-    image: img("photo-1617104551845-5e6f7a8b9c0d"),
+    image: img("photo-1617104551722-3b2d51366400"),
     imageAlt: "Etched pattern on decorative glass",
     description:
       "Custom acid and sandblast etching work creating frosted patterns and motifs on glass surfaces.",
@@ -867,7 +867,7 @@ export const products: Product[] = [
     name: "Beveling Work",
     categorySlug: "glass-work",
     brand: "In-House Artisans",
-    image: img("photo-1620121692152-7a8b9c0d1e2f"),
+    image: img("photo-1620121692029-d088224ddc74"),
     imageAlt: "Beveled edge glass panel",
     description:
       "Precision edge beveling that gives glass panels a refined, faceted border that catches and refracts light.",
@@ -881,7 +881,7 @@ export const products: Product[] = [
     name: "Crystal Work",
     categorySlug: "glass-work",
     brand: "In-House Artisans",
-    image: img("photo-1617104551968-6f7a8b9c0d1e"),
+    image: img("photo-1617104551722-3b2d51366400"),
     imageAlt: "Crystal cut decorative glass",
     description:
       "Ornamental crystal-cut glass work adding a luxurious, faceted sparkle to doors and decorative panels.",
@@ -895,7 +895,7 @@ export const products: Product[] = [
     name: "Colour Work",
     categorySlug: "glass-work",
     brand: "In-House Artisans",
-    image: img("photo-1620121692275-8b9c0d1e2f3a"),
+    image: img("photo-1620121692029-d088224ddc74"),
     imageAlt: "Coloured artistic glass work",
     description:
       "Hand-applied colour work on glass, creating bespoke artistic patterns for doors, partitions, and feature panels.",
