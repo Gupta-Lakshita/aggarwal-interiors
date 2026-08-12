@@ -2,6 +2,7 @@ import { Container } from "@/components/ui/Container";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { StatCard } from "@/components/cards/StatCard";
 import { SafeImage } from "@/components/ui/SafeImage";
+import { Button } from "@/components/ui/Button";
 import { fadeUp, fadeIn } from "@/lib/animations";
 import { company } from "@/data/company";
 
@@ -37,6 +38,12 @@ export function About() {
               manufacturing — without ever losing the personal, consultative approach that
               built our reputation.
             </p>
+          </AnimatedSection>
+
+          <AnimatedSection variants={fadeUp} delay={0.15} className="mt-8">
+            <Button href="/about" variant="outline">
+              Learn More About Us
+            </Button>
           </AnimatedSection>
 
           <div className="mt-12 grid grid-cols-2 gap-8">

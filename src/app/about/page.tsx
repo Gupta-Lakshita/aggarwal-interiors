@@ -1,0 +1,279 @@
+import type { Metadata } from "next";
+import { PageHero } from "@/components/ui/PageHero";
+import { Container } from "@/components/ui/Container";
+import { SectionTitle } from "@/components/ui/SectionTitle";
+import { AnimatedSection } from "@/components/ui/AnimatedSection";
+import { SafeImage } from "@/components/ui/SafeImage";
+import { StatCard } from "@/components/cards/StatCard";
+import { FeatureCard } from "@/components/cards/FeatureCard";
+import { QuoteBlock } from "@/components/ui/QuoteBlock";
+import { Button } from "@/components/ui/Button";
+import { fadeUp, fadeIn, staggerContainer } from "@/lib/animations";
+import { company } from "@/data/company";
+import { founder } from "@/data/founders";
+
+export const metadata: Metadata = {
+  title: "About Us",
+  description:
+    "Meet Aggarwal Hardware & Plywood Company — three generations of craftsmanship supplying premium plywood, laminates, hardware, glass, and modular kitchen solutions.",
+  alternates: { canonical: "/about" },
+};
+
+const milestones = [
+  {
+    year: "1988",
+    title: "A Single Storefront",
+    description:
+      "Prakash Aggarwal opens the first store on Dalhousie Road, Pathankot, with a simple promise: sell only what you'd use in your own home.",
+  },
+  {
+    year: "1999",
+    title: "Hardware Range Expands",
+    description:
+      "Growing demand from carpenters and contractors leads to a dedicated hardware division — hinges, handles, locks, and channels.",
+  },
+  {
+    year: "2010",
+    title: "In-House Manufacturing",
+    description:
+      "We launch our own manufacturing unit, producing bespoke modular kitchens and wardrobes using the same materials we sell.",
+  },
+  {
+    year: "2018",
+    title: "CNC & Glass Studio",
+    description:
+      "A precision CNC facility and glass studio are added, bringing 3D doors, jali work, and artisanal glass etching under one roof.",
+  },
+  {
+    year: "Today",
+    title: "A Full-Service Destination",
+    description:
+      "Three generations in, we serve architects, designers, and homeowners across the region with 60+ trusted brands and a 40,000 sq. ft. warehouse.",
+  },
+];
+
+const values = [
+  {
+    icon: "ShieldCheck",
+    title: "Integrity First",
+    description: "Honest recommendations over easy upsells — every time, for every customer.",
+  },
+  {
+    icon: "Gem",
+    title: "Uncompromising Quality",
+    description: "If we wouldn't use it in our own homes, it doesn't reach our shelves.",
+  },
+  {
+    icon: "Hammer",
+    title: "Craft & Precision",
+    description: "From CNC cutting to glass etching, our in-house teams sweat every detail.",
+  },
+  {
+    icon: "Users",
+    title: "People, Not Transactions",
+    description: "Three generations of relationships built on remembering names, not just orders.",
+  },
+];
+
+export default function AboutPage() {
+  return (
+    <>
+      <PageHero
+        eyebrow="About Us"
+        title="Three Generations. One Standard of Craft."
+        description="From a single storefront in 1988 to a full-service materials and manufacturing destination — this is the story of Aggarwal Hardware & Plywood Company."
+        image="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1920&auto=format&fit=crop"
+        imageAlt="Warm, minimal modern interior living space"
+        breadcrumb={[{ label: "Home", href: "/" }, { label: "About" }]}
+      />
+
+      <section className="bg-surface py-20 md:py-28">
+        <Container className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
+          <AnimatedSection variants={fadeIn} className="relative aspect-[4/5] overflow-hidden rounded-[16px] lg:order-2">
+            <SafeImage
+              src="https://images.unsplash.com/photo-1553413077-190dd305871c?q=80&w=1200&auto=format&fit=crop"
+              alt="Rows of stacked plywood and boards inside our warehouse"
+              fill
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              className="object-cover"
+            />
+          </AnimatedSection>
+
+          <div className="lg:order-1">
+            <AnimatedSection variants={fadeUp}>
+              <p className="mb-4 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-terracotta-600">
+                <span className="font-heading text-sm normal-case tracking-normal text-sage-500">01</span>
+                <span className="h-px w-10 bg-border-subtle" />
+                How It Started
+              </p>
+              <h2 className="text-3xl leading-tight text-espresso-950 md:text-4xl lg:text-[2.75rem]">
+                Built on a Simple Promise
+              </h2>
+              <p className="mt-5 text-base leading-relaxed text-charcoal-700 md:text-lg">
+                Since {company.foundedYear}, {company.name} has supplied architects, interior
+                designers, and homeowners with materials that meet the highest standards of
+                quality. What began as a single storefront on Dalhousie Road has grown into a
+                full-service supplier of plywood, laminates, hardware, glass, and bespoke
+                manufacturing — while holding on to the personal, consultative approach that
+                built our reputation in the first place.
+              </p>
+              <p className="mt-4 text-base leading-relaxed text-charcoal-700 md:text-lg">
+                Today, that promise is carried forward by the second and third generations of
+                the family, backed by a team that treats every enquiry — big or small — with the
+                same care.
+              </p>
+            </AnimatedSection>
+
+            <div className="mt-12 grid grid-cols-2 gap-8 sm:grid-cols-4">
+              {company.stats.map((stat, i) => (
+                <AnimatedSection key={stat.label} variants={fadeUp} delay={i * 0.08}>
+                  <StatCard value={stat.value} suffix={stat.suffix} label={stat.label} />
+                </AnimatedSection>
+              ))}
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      <section className="bg-ivory-200 py-20 md:py-28">
+        <Container>
+          <SectionTitle
+            number="02"
+            eyebrow="Our Journey"
+            title="Milestones Along the Way"
+            align="center"
+            className="mx-auto"
+          />
+          <AnimatedSection
+            variants={staggerContainer}
+            className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-5"
+          >
+            {milestones.map((milestone) => (
+              <AnimatedSection key={milestone.year} variants={fadeUp} as="div" className="relative">
+                <div className="rounded-[16px] border border-border-subtle bg-surface p-6 h-full">
+                  <p className="font-heading text-2xl text-terracotta-600">{milestone.year}</p>
+                  <h3 className="mt-3 text-lg text-espresso-950">{milestone.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-charcoal-700">
+                    {milestone.description}
+                  </p>
+                </div>
+              </AnimatedSection>
+            ))}
+          </AnimatedSection>
+        </Container>
+      </section>
+
+      <section className="relative overflow-hidden py-20 md:py-28">
+        <SafeImage
+          src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1920&auto=format&fit=crop"
+          alt="Craftsman carefully measuring and shaping a wooden panel"
+          fill
+          sizes="100vw"
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-espresso-950/95 via-espresso-950/80 to-espresso-950/50" />
+        <Container className="relative z-10">
+          <AnimatedSection variants={fadeUp} className="max-w-xl">
+            <p className="mb-4 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-terracotta-400">
+              <span className="font-heading text-sm normal-case tracking-normal text-sage-400">03</span>
+              <span className="h-px w-10 bg-ivory-100/30" />
+              Craftsmanship
+            </p>
+            <h2 className="text-3xl leading-tight text-ivory-50 md:text-4xl lg:text-[2.75rem]">
+              Precision Isn&apos;t Outsourced Here
+            </h2>
+            <p className="mt-5 text-base leading-relaxed text-ivory-200/90 md:text-lg">
+              Our CNC, manufacturing, and glass studios sit under the same roof as our
+              showroom — so every measurement, cut, and finish is held to a standard we set
+              ourselves, not one we hope a vendor meets.
+            </p>
+          </AnimatedSection>
+        </Container>
+      </section>
+
+      <section className="bg-sage-100 py-20 md:py-32">
+        <Container>
+          <SectionTitle
+            number="04"
+            eyebrow="What We Stand For"
+            title="Values That Haven't Changed Since 1988"
+            align="center"
+            className="mx-auto"
+          />
+          <AnimatedSection
+            variants={staggerContainer}
+            className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4"
+          >
+            {values.map((value) => (
+              <AnimatedSection key={value.title} variants={fadeUp} as="div">
+                <FeatureCard {...value} />
+              </AnimatedSection>
+            ))}
+          </AnimatedSection>
+        </Container>
+      </section>
+
+      <section className="bg-surface py-20 md:py-28">
+        <Container className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
+          <AnimatedSection variants={fadeIn} className="relative aspect-[4/5] overflow-hidden rounded-[16px]">
+            <SafeImage
+              src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1200&auto=format&fit=crop"
+              alt="Our team gathered together at the showroom"
+              fill
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              className="object-cover"
+            />
+          </AnimatedSection>
+
+          <div>
+            <AnimatedSection variants={fadeUp}>
+              <p className="mb-4 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-terracotta-600">
+                <span className="font-heading text-sm normal-case tracking-normal text-sage-500">05</span>
+                <span className="h-px w-10 bg-border-subtle" />
+                The People Behind It
+              </p>
+              <h2 className="text-3xl leading-tight text-espresso-950 md:text-4xl lg:text-[2.75rem]">
+                A Team That Knows Your Project by Name
+              </h2>
+              <p className="mt-5 text-base leading-relaxed text-charcoal-700 md:text-lg">
+                Led by {founder.name}, our team of material specialists, in-house carpenters,
+                and design consultants work together on every enquiry — from a single box of
+                handles to a full home fit-out.
+              </p>
+            </AnimatedSection>
+            <AnimatedSection variants={fadeUp} delay={0.1} className="mt-10">
+              <QuoteBlock quote={founder.quote} attribution={`${founder.name}, ${founder.role}`} align="left" />
+            </AnimatedSection>
+          </div>
+        </Container>
+      </section>
+
+      <section className="bg-espresso-950 py-20 md:py-28">
+        <Container>
+          <AnimatedSection variants={fadeUp} className="mx-auto max-w-2xl text-center">
+            <h2 className="text-3xl leading-tight text-ivory-50 md:text-4xl">
+              Ready to Start Your Project?
+            </h2>
+            <p className="mt-5 text-base leading-relaxed text-ivory-200/90 md:text-lg">
+              Visit our showroom or get in touch — our team is ready to help you choose the
+              right materials for your space.
+            </p>
+            <div className="mt-9 flex flex-wrap justify-center gap-4">
+              <Button href="/contact" size="lg" variant="secondary">
+                Contact Us
+              </Button>
+              <Button
+                href="/products"
+                size="lg"
+                variant="outline"
+                className="border-ivory-100/40 text-ivory-50 hover:border-ivory-50 hover:bg-ivory-50/10"
+              >
+                Browse Products
+              </Button>
+            </div>
+          </AnimatedSection>
+        </Container>
+      </section>
+    </>
+  );
+}
