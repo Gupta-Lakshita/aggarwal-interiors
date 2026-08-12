@@ -39,6 +39,8 @@ export interface Brand {
   id: string;
   name: string;
   logo: string;
+  /** Extra zoom for logos that render small within the tile due to their aspect ratio. */
+  scale?: number;
 }
 
 export interface TeamPhoto {

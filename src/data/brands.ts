@@ -1,9 +1,9 @@
 import type { Brand } from "@/types";
 
 export const brands: Brand[] = [
-  { id: "b1", name: "OMNI", logo: "/brands/omni.png" },
+  { id: "b1", name: "OMNI", logo: "/brands/omni.png", scale: 1.5 },
   { id: "b2", name: "Saisurya Plywood & Block Board", logo: "/brands/saisurya.jpeg" },
-  { id: "b3", name: "Sunflame", logo: "/brands/sunflame.png" },
+  { id: "b3", name: "Sunflame", logo: "/brands/sunflame.png", scale: 1.4 },
   { id: "b4", name: "HLMK Frames", logo: "/brands/hlmk-frames.png" },
   { id: "b5", name: "Rider Ultima", logo: "/brands/rider-ultima.png" },
   { id: "b6", name: "Dörio", logo: "/brands/dorio.png" },
@@ -14,7 +14,7 @@ export const brands: Brand[] = [
   { id: "b11", name: "Action Tesa", logo: "/brands/action-tesa.png" },
   { id: "b12", name: "Hettich", logo: "/brands/hettich.png" },
   { id: "b13", name: "Jivanjor", logo: "/brands/jivanjor.png" },
-  { id: "b14", name: "Starrs", logo: "/brands/starrs.png" },
+  { id: "b14", name: "Starrs", logo: "/brands/starrs.png", scale: 1.4 },
   { id: "b15", name: "Galaxy", logo: "/brands/galaxy.png" },
   { id: "b16", name: "Yafa", logo: "/brands/yafa.png" },
   { id: "b17", name: "Sunshine", logo: "/brands/sunshine.png" },
