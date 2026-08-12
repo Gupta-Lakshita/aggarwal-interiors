@@ -19,39 +19,6 @@ export const metadata: Metadata = {
   alternates: { canonical: "/about" },
 };
 
-const milestones = [
-  {
-    year: "1988",
-    title: "A Single Storefront",
-    description:
-      "Prakash Aggarwal opens the first store on Dalhousie Road, Pathankot, with a simple promise: sell only what you'd use in your own home.",
-  },
-  {
-    year: "1999",
-    title: "Hardware Range Expands",
-    description:
-      "Growing demand from carpenters and contractors leads to a dedicated hardware division — hinges, handles, locks, and channels.",
-  },
-  {
-    year: "2010",
-    title: "In-House Manufacturing",
-    description:
-      "We launch our own manufacturing unit, producing bespoke modular kitchens and wardrobes using the same materials we sell.",
-  },
-  {
-    year: "2018",
-    title: "CNC & Glass Studio",
-    description:
-      "A precision CNC facility and glass studio are added, bringing 3D doors, jali work, and artisanal glass etching under one roof.",
-  },
-  {
-    year: "Today",
-    title: "A Full-Service Destination",
-    description:
-      "Three generations in, we serve architects, designers, and homeowners across the region with 60+ trusted brands and a 40,000 sq. ft. warehouse.",
-  },
-];
-
 const values = [
   {
     icon: "ShieldCheck",
@@ -71,7 +38,7 @@ const values = [
   {
     icon: "Users",
     title: "People, Not Transactions",
-    description: "Three generations of relationships built on remembering names, not just orders.",
+    description: "Relationships built on remembering names, not just orders.",
   },
 ];
 
@@ -118,9 +85,8 @@ export default function AboutPage() {
                 built our reputation in the first place.
               </p>
               <p className="mt-4 text-base leading-relaxed text-charcoal-700 md:text-lg">
-                Today, that promise is carried forward by the second and third generations of
-                the family, backed by a team that treats every enquiry — big or small — with the
-                same care.
+                That promise is what our team continues to build on today, treating every
+                enquiry — big or small — with the same care.
               </p>
             </AnimatedSection>
 
@@ -132,34 +98,6 @@ export default function AboutPage() {
               ))}
             </div>
           </div>
-        </Container>
-      </section>
-
-      <section className="bg-ivory-200 py-20 md:py-28">
-        <Container>
-          <SectionTitle
-            number="02"
-            eyebrow="Our Journey"
-            title="Milestones Along the Way"
-            align="center"
-            className="mx-auto"
-          />
-          <AnimatedSection
-            variants={staggerContainer}
-            className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-5"
-          >
-            {milestones.map((milestone) => (
-              <AnimatedSection key={milestone.year} variants={fadeUp} as="div" className="relative">
-                <div className="rounded-[16px] border border-border-subtle bg-surface p-6 h-full">
-                  <p className="font-heading text-2xl text-terracotta-600">{milestone.year}</p>
-                  <h3 className="mt-3 text-lg text-espresso-950">{milestone.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-charcoal-700">
-                    {milestone.description}
-                  </p>
-                </div>
-              </AnimatedSection>
-            ))}
-          </AnimatedSection>
         </Container>
       </section>
 
@@ -175,7 +113,7 @@ export default function AboutPage() {
         <Container className="relative z-10">
           <AnimatedSection variants={fadeUp} className="max-w-xl">
             <p className="mb-4 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-terracotta-400">
-              <span className="font-heading text-sm normal-case tracking-normal text-sage-400">03</span>
+              <span className="font-heading text-sm normal-case tracking-normal text-sage-400">02</span>
               <span className="h-px w-10 bg-ivory-100/30" />
               Craftsmanship
             </p>
@@ -183,9 +121,9 @@ export default function AboutPage() {
               Precision Isn&apos;t Outsourced Here
             </h2>
             <p className="mt-5 text-base leading-relaxed text-ivory-200/90 md:text-lg">
-              Our CNC, manufacturing, and glass studios sit under the same roof as our
-              showroom — so every measurement, cut, and finish is held to a standard we set
-              ourselves, not one we hope a vendor meets.
+              Our CNC machine work, in-house manufacturing, and glass studio bring precision
+              cutting, bespoke modular kitchens, and artisan glass work together — every
+              measurement, cut, and finish held to a standard we set ourselves.
             </p>
           </AnimatedSection>
         </Container>
@@ -194,9 +132,9 @@ export default function AboutPage() {
       <section className="bg-sage-100 py-20 md:py-32">
         <Container>
           <SectionTitle
-            number="04"
+            number="03"
             eyebrow="What We Stand For"
-            title="Values That Haven't Changed Since 1988"
+            title="The Values Behind Every Sale"
             align="center"
             className="mx-auto"
           />
@@ -228,7 +166,7 @@ export default function AboutPage() {
           <div>
             <AnimatedSection variants={fadeUp}>
               <p className="mb-4 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-terracotta-600">
-                <span className="font-heading text-sm normal-case tracking-normal text-sage-500">05</span>
+                <span className="font-heading text-sm normal-case tracking-normal text-sage-500">04</span>
                 <span className="h-px w-10 bg-border-subtle" />
                 The People Behind It
               </p>
