@@ -53,7 +53,7 @@ export default function AboutPage() {
         breadcrumb={[{ label: "Home", href: "/" }, { label: "About" }]}
       />
 
-      <section className="bg-surface py-20 md:py-28">
+      <section className="bg-ivory-100 py-20 md:py-28">
         <Container className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
           <AnimatedSection variants={fadeIn} className="relative aspect-[4/5] overflow-hidden rounded-[16px] lg:order-2">
             <SafeImage
@@ -126,7 +126,7 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      <section className="bg-sage-100 py-20 md:py-32">
+      <section className="bg-ivory-100 py-20 md:py-32">
         <Container>
           <SectionTitle
             eyebrow="What We Stand For"
@@ -147,7 +147,7 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      <section className="bg-surface py-20 md:py-28">
+      <section className="bg-ivory-100 py-20 md:py-28">
         <Container className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
           <AnimatedSection variants={fadeIn} className="relative aspect-[4/5] overflow-hidden rounded-[16px]">
             <SafeImage

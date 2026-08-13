@@ -1,13 +1,14 @@
 "use client";
 
-import { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
-import { ArrowDown } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { SafeImage } from "@/components/ui/SafeImage";
-import { fadeUp, fadeIn, staggerContainer } from "@/lib/animations";
+import { fadeUp, staggerContainer } from "@/lib/animations";
 import { company } from "@/data/company";
+
+const rotatingWords = ["considered", "intentional", "timeless", "personal"];
 
 export function Hero() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -18,6 +19,14 @@ export function Hero() {
   const imageY = useTransform(scrollYProgress, [0, 1], ["0%", "22%"]);
   const contentY = useTransform(scrollYProgress, [0, 1], ["0%", "12%"]);
   const contentOpacity = useTransform(scrollYProgress, [0, 0.7], [1, 0]);
+
+  const [wordIndex, setWordIndex] = useState(0);
+  useEffect(() => {
+    const id = setInterval(() => {
+      setWordIndex((i) => (i + 1) % rotatingWords.length);
+    }, 2200);
+    return () => clearInterval(id);
+  }, []);
 
   return (
     <section
@@ -64,7 +73,22 @@ export function Hero() {
               <br />
               <span className="italic text-sage-400">spaces that</span>
               <br />
-              feel considered.
+              feel{" "}
+              <span className="relative inline-block overflow-hidden align-bottom">
+                <AnimatePresence mode="wait">
+                  <motion.span
+                    key={rotatingWords[wordIndex]}
+                    initial={{ opacity: 0, y: 24 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -24 }}
+                    transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+                    className="inline-block"
+                  >
+                    {rotatingWords[wordIndex]}
+                  </motion.span>
+                </AnimatePresence>
+              </span>
+              .
             </motion.h1>
             <motion.p
               variants={fadeUp}
@@ -87,23 +111,6 @@ export function Hero() {
             </motion.div>
           </motion.div>
         </Container>
-      </motion.div>
-
-      <motion.div
-        variants={fadeIn}
-        initial="hidden"
-        animate="visible"
-        transition={{ delay: 1.2 }}
-        className="absolute bottom-8 left-1/2 z-10 -translate-x-1/2"
-      >
-        <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 1.8, repeat: Infinity, ease: "easeInOut" }}
-          className="flex flex-col items-center gap-2 text-ivory-100/80"
-        >
-          <span className="text-[10px] uppercase tracking-[0.2em]">Scroll to Explore</span>
-          <ArrowDown size={16} />
-        </motion.div>
       </motion.div>
     </section>
   );

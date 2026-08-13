@@ -26,7 +26,7 @@ export default function ProductsPage() {
         breadcrumb={[{ label: "Home", href: "/" }, { label: "Products" }]}
       />
 
-      <section className="bg-surface py-20 md:py-28">
+      <section className="bg-ivory-100 py-20 md:py-28">
         <Container>
           <AnimatedSection
             variants={staggerContainer}

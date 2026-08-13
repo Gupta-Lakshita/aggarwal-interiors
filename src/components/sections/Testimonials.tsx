@@ -17,7 +17,7 @@ export function Testimonials() {
   const visible = testimonials.slice(page * PAGE_SIZE, page * PAGE_SIZE + PAGE_SIZE);
 
   return (
-    <section className="wood-texture bg-ivory-200 py-20 md:py-32">
+    <section className="wood-texture bg-ivory-100 py-20 md:py-32">
       <Container>
         <SectionTitle
           eyebrow="Testimonials"

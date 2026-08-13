@@ -61,7 +61,7 @@ export default async function CategoryPage({
         ]}
       />
 
-      <section className="bg-surface py-16 md:py-20">
+      <section className="bg-ivory-100 py-16 md:py-20">
         <Container>
           <p className="max-w-3xl text-base leading-relaxed text-charcoal-700 md:text-lg">
             {category.description}
