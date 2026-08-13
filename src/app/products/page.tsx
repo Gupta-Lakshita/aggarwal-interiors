@@ -32,7 +32,7 @@ export default function ProductsPage() {
         <Container>
           <AnimatedSection
             variants={staggerContainer}
-            className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
+            className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 [&>*:nth-child(3n+2)]:lg:-mt-8"
           >
             {categories.map((category) => (
               <AnimatedSection key={category.id} variants={fadeUp} as="div">

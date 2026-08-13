@@ -10,7 +10,7 @@ export function RelatedCategories({ categories }: { categories: Category[] }) {
     <section className="bg-sage-100 py-20 md:py-28">
       <Container>
         <SectionTitle eyebrow="Explore More" title="Related Categories" />
-        <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 [&>*:nth-child(3n+2)]:lg:-mt-8">
           {categories.map((category) => (
             <CategoryCard key={category.id} category={category} />
           ))}

@@ -1,7 +1,11 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { icons } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
-import { FeatureCard } from "@/components/cards/FeatureCard";
 import { staggerContainer, fadeUp } from "@/lib/animations";
 
 const reasons = [
@@ -15,6 +19,35 @@ const reasons = [
   { icon: "ShieldCheck", title: "35+ Years of Trust", description: "Three generations of family ownership built on honest recommendations." },
 ];
 
+function ReasonRow({ reason, index }: { reason: (typeof reasons)[number]; index: number }) {
+  const Icon = (icons[reason.icon as keyof typeof icons] ?? icons.Sparkles) as LucideIcon;
+  return (
+    <motion.div
+      initial="rest"
+      whileHover="hover"
+      className="group flex items-start gap-5 border-b border-espresso-950/10 py-7 first:pt-0"
+    >
+      <span className="font-heading text-2xl leading-none text-terracotta-500/50 transition-colors duration-300 group-hover:text-terracotta-600">
+        {String(index + 1).padStart(2, "0")}
+      </span>
+      <div className="flex-1">
+        <div className="flex items-center gap-3">
+          <Icon size={18} className="shrink-0 text-olive-700" />
+          <h3 className="text-lg text-espresso-950">{reason.title}</h3>
+        </div>
+        <p className="mt-2 text-sm leading-relaxed text-charcoal-700">{reason.description}</p>
+      </div>
+      <motion.span
+        variants={{ rest: { x: 0, opacity: 0 }, hover: { x: 4, opacity: 1 } }}
+        transition={{ duration: 0.3 }}
+        className="hidden shrink-0 self-center text-terracotta-500 sm:block"
+      >
+        →
+      </motion.span>
+    </motion.div>
+  );
+}
+
 export function WhyChooseUs() {
   return (
     <section className="wood-texture bg-gold-100 py-20 md:py-32">
@@ -27,11 +60,11 @@ export function WhyChooseUs() {
         />
         <AnimatedSection
           variants={staggerContainer}
-          className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4"
+          className="mt-14 grid grid-cols-1 gap-x-12 md:grid-cols-2"
         >
-          {reasons.map((reason) => (
+          {reasons.map((reason, i) => (
             <AnimatedSection key={reason.title} variants={fadeUp} as="div">
-              <FeatureCard {...reason} />
+              <ReasonRow reason={reason} index={i} />
             </AnimatedSection>
           ))}
         </AnimatedSection>

@@ -45,7 +45,7 @@ export function About() {
             </Button>
           </AnimatedSection>
 
-          <div className="mt-12 grid grid-cols-2 gap-8">
+          <div className="mt-12 grid grid-cols-2 gap-x-8 gap-y-10 [&>*:nth-child(2n)]:border-l [&>*:nth-child(2n)]:border-espresso-950/10 [&>*:nth-child(2n)]:pl-8 [&>*:nth-child(n+3)]:border-t [&>*:nth-child(n+3)]:border-espresso-950/10 [&>*:nth-child(n+3)]:pt-8">
             {company.stats.map((stat, i) => (
               <AnimatedSection key={stat.label} variants={fadeUp} delay={i * 0.08}>
                 <StatCard value={stat.value} suffix={stat.suffix} label={stat.label} />
