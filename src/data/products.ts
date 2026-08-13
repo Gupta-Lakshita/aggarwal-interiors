@@ -323,7 +323,7 @@ export const products: Product[] = [
     name: "Shutter",
     categorySlug: "kitchen-hardware",
     brand: "Merino",
-    image: img("photo-1615874959473-8b6c2f3e4a1c"),
+    image: "/products/shutter.jpg",
     imageAlt: "Modular kitchen cabinet shutters",
     description:
       "Ready-to-fit cabinet shutters in a range of finishes, engineered for a precise fit and long-lasting hinge performance.",
@@ -537,7 +537,7 @@ export const products: Product[] = [
     name: "Heat-X",
     categorySlug: "wooden-adhesive",
     brand: "Fevicol",
-    image: img("photo-1581092162497-2c0f3d6a9b4e"),
+    image: "/products/heat-x.jpg",
     imageAlt: "Heat-X adhesive product",
     description:
       "Heat-activated adhesive designed for edge-banding applications, delivering a fast, durable bond.",
@@ -651,7 +651,7 @@ export const products: Product[] = [
     name: "Wooden & PVC Temples",
     categorySlug: "manufacturer",
     brand: "In-House Manufacturing",
-    image: img("photo-1600566753436-5c6d7e8f9a0b"),
+    image: "/products/wooden-pvc-temples.jpg",
     imageAlt: "Custom-built home temple unit",
     description:
       "Handcrafted wooden and PVC temple units designed to fit any home, combining traditional detailing with modern durability.",
@@ -723,7 +723,7 @@ export const products: Product[] = [
     name: "Wall Design",
     categorySlug: "cnc-machine-work",
     brand: "In-House CNC",
-    image: img("photo-1581092919425-1e2f3a4b5c6d"),
+    image: "/products/wall-design.png",
     imageAlt: "CNC cut decorative wall panel design",
     description:
       "Custom CNC-cut decorative wall panels for feature walls, adding depth and texture to interior spaces.",
@@ -767,7 +767,7 @@ export const products: Product[] = [
     name: "Colour Glass",
     categorySlug: "glass-type",
     brand: "Saint-Gobain",
-    image: img("photo-1600607687943-2b3c4d5e6f7a"),
+    image: "/products/colour-glass.jpg",
     imageAlt: "Coloured decorative glass panel",
     description:
       "Vibrant lacquered colour glass panels for kitchen backsplashes, partitions, and decorative accents.",
@@ -837,7 +837,7 @@ export const products: Product[] = [
     name: "LED Mirror",
     categorySlug: "glass-type",
     brand: "Local Fabricator",
-    image: img("photo-1519710184731-4d5e6f7a8b9c"),
+    image: "/products/led-mirror.jpg",
     imageAlt: "Backlit LED mirror panel",
     description:
       "Backlit LED mirrors combining functional lighting with a sleek, modern mirror surface for bathrooms and dressing areas.",
