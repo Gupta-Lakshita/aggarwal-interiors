@@ -153,33 +153,22 @@ export default function AboutPage() {
 
       <SectionBlend from="sage-100" to="terracotta-100" />
       <section className="bg-terracotta-100 py-20 md:py-28">
-        <Container className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
-          <AnimatedSection variants={fadeIn} className="relative aspect-[4/5] overflow-hidden rounded-[16px]">
-            <SafeImage
-              src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?q=80&w=1200&auto=format&fit=crop"
-              alt="Our team gathered together at the showroom"
-              fill
-              sizes="(min-width: 1024px) 50vw, 100vw"
-              className="object-cover"
-            />
+        <Container>
+          <AnimatedSection variants={fadeUp} className="mx-auto max-w-2xl text-center">
+            <p className="mb-4 flex items-center justify-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-terracotta-600">
+              <span className="h-px w-10 bg-border-subtle" />
+              The People Behind It
+              <span className="h-px w-10 bg-border-subtle" />
+            </p>
+            <h2 className="text-3xl leading-tight text-espresso-950 md:text-4xl lg:text-[2.75rem]">
+              A Team That Knows Your Project by Name
+            </h2>
+            <p className="mt-5 text-base leading-relaxed text-charcoal-700 md:text-lg">
+              {teamPhoto.name} and our team of material specialists, in-house carpenters,
+              and design consultants work together on every enquiry — from a single box of
+              handles to a full home fit-out.
+            </p>
           </AnimatedSection>
-
-          <div>
-            <AnimatedSection variants={fadeUp}>
-              <p className="mb-4 flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-terracotta-600">
-                <span className="h-px w-10 bg-border-subtle" />
-                The People Behind It
-              </p>
-              <h2 className="text-3xl leading-tight text-espresso-950 md:text-4xl lg:text-[2.75rem]">
-                A Team That Knows Your Project by Name
-              </h2>
-              <p className="mt-5 text-base leading-relaxed text-charcoal-700 md:text-lg">
-                {teamPhoto.name} and our team of material specialists, in-house carpenters,
-                and design consultants work together on every enquiry — from a single box of
-                handles to a full home fit-out.
-              </p>
-            </AnimatedSection>
-          </div>
         </Container>
       </section>
 
