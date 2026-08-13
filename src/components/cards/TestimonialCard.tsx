@@ -1,10 +1,19 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { Star, Quote } from "lucide-react";
-import { Card } from "@/components/ui/Card";
+import { hoverLift } from "@/lib/animations";
 import type { Testimonial } from "@/types";
 
 export function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
   return (
-    <Card className="flex h-full flex-col p-8">
+    <motion.div
+      initial="rest"
+      whileHover="hover"
+      animate="rest"
+      variants={hoverLift}
+      className="flex h-full flex-col rounded-[16px] border border-border-subtle bg-surface p-8"
+    >
       <Quote className="text-terracotta-500/40" size={32} />
       <p className="mt-4 flex-1 text-base leading-relaxed text-charcoal-800">
         &ldquo;{testimonial.quote}&rdquo;
@@ -22,6 +31,6 @@ export function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
         <p className="font-medium text-espresso-950">{testimonial.name}</p>
         <p className="text-sm text-charcoal-700">{testimonial.location}</p>
       </div>
-    </Card>
+    </motion.div>
   );
 }
