@@ -19,7 +19,7 @@ export function EditorialCategories() {
   const moreCategories = categories.filter((c) => !featuredSlugs.includes(c.slug as (typeof featuredSlugs)[number]));
 
   return (
-    <section className="bg-ivory-100 py-20 md:py-32">
+    <section className="bg-sage-100 py-20 md:py-32">
       <Container>
         <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
           <AnimatedSection variants={fadeUp} className="max-w-xl">

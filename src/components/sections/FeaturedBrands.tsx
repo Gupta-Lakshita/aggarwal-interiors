@@ -7,7 +7,7 @@ export function FeaturedBrands() {
   const loop = [...brands, ...brands];
 
   return (
-    <section className="bg-ivory-100 py-20 md:py-28">
+    <section className="bg-sage-100 py-20 md:py-28">
       <Container>
         <SectionTitle
           eyebrow="Featured Brands"

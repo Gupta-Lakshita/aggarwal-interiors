@@ -14,7 +14,7 @@ const highlights = [
 
 export function CompanyIntro() {
   return (
-    <section id="why-us" className="wood-texture bg-ivory-100 py-20 md:py-32">
+    <section id="why-us" className="wood-texture bg-sage-100 py-20 md:py-32">
       <Container className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
         <AnimatedSection
           variants={fadeIn}

@@ -4,6 +4,7 @@ import { Container } from "@/components/ui/Container";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { CategoryCard } from "@/components/cards/CategoryCard";
 import { CTASection } from "@/components/sections/CTASection";
+import { SectionBlend } from "@/components/ui/SectionBlend";
 import { staggerContainer, fadeUp } from "@/lib/animations";
 import { categories } from "@/data/categories";
 
@@ -26,7 +27,8 @@ export default function ProductsPage() {
         breadcrumb={[{ label: "Home", href: "/" }, { label: "Products" }]}
       />
 
-      <section className="bg-ivory-100 py-20 md:py-28">
+      <SectionBlend from="espresso-950" to="sage-100" />
+      <section className="bg-sage-100 py-20 md:py-28">
         <Container>
           <AnimatedSection
             variants={staggerContainer}
@@ -41,6 +43,7 @@ export default function ProductsPage() {
         </Container>
       </section>
 
+      <SectionBlend from="sage-100" to="espresso-950" />
       <CTASection />
     </>
   );

@@ -7,6 +7,7 @@ import { SafeImage } from "@/components/ui/SafeImage";
 import { StatCard } from "@/components/cards/StatCard";
 import { FeatureCard } from "@/components/cards/FeatureCard";
 import { Button } from "@/components/ui/Button";
+import { SectionBlend } from "@/components/ui/SectionBlend";
 import { fadeUp, fadeIn, staggerContainer } from "@/lib/animations";
 import { company } from "@/data/company";
 import { teamPhoto } from "@/data/team";
@@ -53,7 +54,8 @@ export default function AboutPage() {
         breadcrumb={[{ label: "Home", href: "/" }, { label: "About" }]}
       />
 
-      <section className="bg-ivory-100 py-20 md:py-28">
+      <SectionBlend from="espresso-950" to="terracotta-100" />
+      <section className="bg-terracotta-100 py-20 md:py-28">
         <Container className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
           <AnimatedSection variants={fadeIn} className="relative aspect-[4/5] overflow-hidden rounded-[16px] lg:order-2">
             <SafeImage
@@ -99,6 +101,7 @@ export default function AboutPage() {
         </Container>
       </section>
 
+      <SectionBlend from="terracotta-100" to="espresso-950" />
       <section className="relative overflow-hidden py-20 md:py-28">
         <SafeImage
           src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1920&auto=format&fit=crop"
@@ -126,7 +129,8 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      <section className="bg-ivory-100 py-20 md:py-32">
+      <SectionBlend from="espresso-950" to="sage-100" />
+      <section className="bg-sage-100 py-20 md:py-32">
         <Container>
           <SectionTitle
             eyebrow="What We Stand For"
@@ -147,7 +151,8 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      <section className="bg-ivory-100 py-20 md:py-28">
+      <SectionBlend from="sage-100" to="terracotta-100" />
+      <section className="bg-terracotta-100 py-20 md:py-28">
         <Container className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
           <AnimatedSection variants={fadeIn} className="relative aspect-[4/5] overflow-hidden rounded-[16px]">
             <SafeImage
@@ -178,6 +183,7 @@ export default function AboutPage() {
         </Container>
       </section>
 
+      <SectionBlend from="terracotta-100" to="espresso-950" />
       <section className="bg-espresso-950 py-20 md:py-28">
         <Container>
           <AnimatedSection variants={fadeUp} className="mx-auto max-w-2xl text-center">

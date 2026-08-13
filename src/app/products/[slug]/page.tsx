@@ -5,6 +5,7 @@ import { Container } from "@/components/ui/Container";
 import { ProductExplorer } from "@/components/products/ProductExplorer";
 import { RelatedCategories } from "@/components/sections/RelatedCategories";
 import { CTASection } from "@/components/sections/CTASection";
+import { SectionBlend } from "@/components/ui/SectionBlend";
 import { categories, getCategoryBySlug } from "@/data/categories";
 import { getProductsByCategory } from "@/data/products";
 
@@ -61,7 +62,8 @@ export default async function CategoryPage({
         ]}
       />
 
-      <section className="bg-ivory-100 py-16 md:py-20">
+      <SectionBlend from="espresso-950" to="terracotta-100" />
+      <section className="bg-terracotta-100 py-16 md:py-20">
         <Container>
           <p className="max-w-3xl text-base leading-relaxed text-charcoal-700 md:text-lg">
             {category.description}
@@ -69,13 +71,15 @@ export default async function CategoryPage({
         </Container>
       </section>
 
-      <section className="bg-ivory-100 pb-20 pt-4 md:pb-28">
+      <section className="bg-terracotta-100 pb-20 pt-4 md:pb-28">
         <Container>
           <ProductExplorer products={products} categoryTitle={category.title} />
         </Container>
       </section>
 
+      <SectionBlend from="terracotta-100" to="sage-100" />
       <RelatedCategories categories={related} />
+      <SectionBlend from="sage-100" to="espresso-950" />
       <CTASection />
     </>
   );

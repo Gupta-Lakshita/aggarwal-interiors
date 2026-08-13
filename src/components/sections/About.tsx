@@ -8,7 +8,7 @@ import { company } from "@/data/company";
 
 export function About() {
   return (
-    <section className="wood-texture bg-ivory-100 py-20 md:py-32">
+    <section className="wood-texture bg-terracotta-100 py-20 md:py-32">
       <Container className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
         <AnimatedSection variants={fadeIn} className="relative aspect-[4/5] overflow-hidden rounded-[16px]">
           <SafeImage

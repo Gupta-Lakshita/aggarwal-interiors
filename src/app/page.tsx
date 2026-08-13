@@ -7,6 +7,7 @@ import { FeaturedBrands } from "@/components/sections/FeaturedBrands";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { CompanyIntro } from "@/components/sections/CompanyIntro";
 import { CTASection } from "@/components/sections/CTASection";
+import { SectionBlend } from "@/components/ui/SectionBlend";
 
 export const metadata: Metadata = {
   title: "Premium Plywood, Laminates & Interior Hardware",
@@ -19,12 +20,19 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <SectionBlend from="espresso-950" to="terracotta-100" />
       <About />
+      <SectionBlend from="terracotta-100" to="sage-100" />
       <EditorialCategories />
+      <SectionBlend from="sage-100" to="terracotta-100" />
       <WhyChooseUs />
+      <SectionBlend from="terracotta-100" to="sage-100" />
       <FeaturedBrands />
+      <SectionBlend from="sage-100" to="terracotta-100" />
       <Testimonials />
+      <SectionBlend from="terracotta-100" to="sage-100" />
       <CompanyIntro />
+      <SectionBlend from="sage-100" to="espresso-950" />
       <CTASection />
     </>
   );
