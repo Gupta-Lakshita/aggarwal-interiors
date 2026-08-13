@@ -39,7 +39,7 @@ export const products: Product[] = [
     name: "Wooden Moulding",
     categorySlug: "wooden",
     brand: "Local Craft Mill",
-    image: img("photo-1601058268622-3e4f5a6b7c8d"),
+    image: "/products/wooden-moulding.jpg",
     imageAlt: "Decorative wooden moulding profiles",
     description:
       "Precision-milled decorative mouldings for ceilings, walls, and furniture edges, adding architectural detail to any interior.",
@@ -67,7 +67,7 @@ export const products: Product[] = [
     name: "Wooden Board",
     categorySlug: "wooden",
     brand: "Merino",
-    image: img("photo-1517816428104-797678c7cf0c"),
+    image: "/products/wooden-board.jpg",
     imageAlt: "Stacked wooden particle boards",
     description:
       "Dense, uniform particle and MDF boards suited for cabinetry, shelving, and furniture cores requiring a flat, stable substrate.",
@@ -81,7 +81,7 @@ export const products: Product[] = [
     name: "Flush Door",
     categorySlug: "wooden",
     brand: "CenturyPly",
-    image: img("photo-1509644851169-2acc08aa25b5"),
+    image: "/products/flush-door.jpg",
     imageAlt: "Flush wooden door leaning against a wall",
     description:
       "Solid-core flush doors offering excellent strength and acoustic insulation, ready for veneer or laminate finishing.",
@@ -153,7 +153,7 @@ export const products: Product[] = [
     name: "PVC Board",
     categorySlug: "pvc",
     brand: "Merino",
-    image: img("photo-1600607687920-4e2a09cf159d"),
+    image: "/products/pvc-board.jpg",
     imageAlt: "White PVC foam boards stacked",
     description:
       "Dense foam PVC boards used as a plywood alternative in moisture-prone areas such as bathrooms and utility spaces.",
@@ -167,7 +167,7 @@ export const products: Product[] = [
     name: "PVC Tape",
     categorySlug: "pvc",
     brand: "Local Supplier",
-    image: img("photo-1581091870622-1e7becc03d1b"),
+    image: "/products/pvc-tape.jpg",
     imageAlt: "Roll of PVC edge banding tape",
     description:
       "Edge-banding PVC tape used to seal and finish exposed board edges for a clean, durable, moisture-resistant edge.",
@@ -197,7 +197,7 @@ export const products: Product[] = [
     name: "Autolid Dustbin",
     categorySlug: "kitchen-hardware",
     brand: "Ebco",
-    image: img("photo-1584622650111-993a426fbf0a"),
+    image: "/products/autolid-dustbin.jpg",
     imageAlt: "Built-in kitchen autolid dustbin unit",
     description:
       "Soft-close, auto-lid pull-out dustbin unit designed to fit seamlessly into modular kitchen cabinetry.",
@@ -253,7 +253,7 @@ export const products: Product[] = [
     name: "Magic Corner",
     categorySlug: "kitchen-hardware",
     brand: "Hafele",
-    image: img("photo-1556909211-32a5b8c2d1a2"),
+    image: "/products/magic-corner.jpg",
     imageAlt: "Magic corner kitchen storage mechanism",
     description:
       "Rotating corner unit that transforms hard-to-reach cabinet corners into fully accessible storage.",
@@ -281,7 +281,7 @@ export const products: Product[] = [
     name: "Innotech",
     categorySlug: "kitchen-hardware",
     brand: "Hafele",
-    image: img("photo-1585909695072-9d3c5b3f5f7d"),
+    image: "/products/innotech.jpg",
     imageAlt: "Innotech drawer system components",
     description:
       "Premium drawer system with concealed runners and soft-close technology for a refined, quiet drawer experience.",
@@ -295,7 +295,7 @@ export const products: Product[] = [
     name: "Dish Rack",
     categorySlug: "kitchen-hardware",
     brand: "Ebco",
-    image: img("photo-1556909135-4b0e1a2c6f8e"),
+    image: "/products/dish-rack.jpg",
     imageAlt: "Overhead cabinet dish rack",
     description:
       "In-cabinet dish drying rack designed to keep crockery organised and out of sight while draining efficiently.",
@@ -365,7 +365,7 @@ export const products: Product[] = [
     name: "Chimney",
     categorySlug: "kitchen-hardware",
     brand: "Local Supplier",
-    image: img("photo-1556909190-eccf4a8bf97a"),
+    image: "/products/chimney.jpg",
     imageAlt: "Modern kitchen chimney installation",
     description:
       "High-suction kitchen chimney with efficient filtration, designed to keep modular kitchens smoke and odour free.",
@@ -451,7 +451,7 @@ export const products: Product[] = [
     name: "Handles",
     categorySlug: "hardware",
     brand: "Hafele",
-    image: img("photo-1620912189777-5b2f8e3c1a9d"),
+    image: "/products/handles.jpg",
     imageAlt: "Brushed metal cabinet handles",
     description:
       "Cabinet and door handles in brushed, matte, and polished finishes to complement any interior design language.",
@@ -507,7 +507,7 @@ export const products: Product[] = [
     name: "Handle Profiles",
     categorySlug: "hardware",
     brand: "Hafele",
-    image: img("photo-1620912189533-7d4f0a3c2e9b"),
+    image: "/products/handle-profiles.jpg",
     imageAlt: "Aluminium handle profile section",
     description:
       "Integrated aluminium handle profiles for handleless kitchen and wardrobe shutters, giving a seamless minimal look.",
@@ -781,7 +781,7 @@ export const products: Product[] = [
     name: "Lacquer Glass",
     categorySlug: "glass-type",
     brand: "Saint-Gobain",
-    image: img("photo-1519710184485-2b3c4d5e6f7a"),
+    image: "/products/lacquer-glass.jpg",
     imageAlt: "Glossy lacquered glass panel",
     description:
       "Back-painted lacquer glass with a smooth glossy finish, ideal for modern kitchen and furniture surfaces.",
@@ -867,7 +867,7 @@ export const products: Product[] = [
     name: "Beveling Work",
     categorySlug: "glass-work",
     brand: "In-House Artisans",
-    image: img("photo-1620121692152-7a8b9c0d1e2f"),
+    image: "/products/beveling-work.jpg",
     imageAlt: "Beveled edge glass panel",
     description:
       "Precision edge beveling that gives glass panels a refined, faceted border that catches and refracts light.",
