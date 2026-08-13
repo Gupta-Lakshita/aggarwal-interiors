@@ -2,9 +2,9 @@ export function SectionBlend({ from, to }: { from: string; to: string }) {
   return (
     <div
       aria-hidden
-      className="h-16 w-full md:h-24"
+      className="h-28 w-full md:h-44"
       style={{
-        background: `linear-gradient(to bottom, var(--color-${from}), var(--color-${to}))`,
+        background: `linear-gradient(in oklch to bottom, var(--color-${from}), var(--color-${to}))`,
       }}
     />
   );
