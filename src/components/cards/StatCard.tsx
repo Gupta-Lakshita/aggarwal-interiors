@@ -8,7 +8,7 @@ export function StatCard({
   label: string;
 }) {
   return (
-    <div className="text-center md:text-left">
+    <div className="min-w-0 text-center md:text-left">
       <p className="text-4xl text-espresso-950 md:text-5xl">
         {value.toLocaleString("en-IN")}
         <span className="text-terracotta-500">{suffix}</span>

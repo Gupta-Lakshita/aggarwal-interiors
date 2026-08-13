@@ -88,7 +88,7 @@ export default function AboutPage() {
               </p>
             </AnimatedSection>
 
-            <div className="mt-12 grid grid-cols-2 gap-8 sm:grid-cols-4">
+            <div className="mt-12 grid grid-cols-2 gap-8">
               {company.stats.map((stat, i) => (
                 <AnimatedSection key={stat.label} variants={fadeUp} delay={i * 0.08}>
                   <StatCard value={stat.value} suffix={stat.suffix} label={stat.label} />
@@ -151,7 +151,7 @@ export default function AboutPage() {
         <Container className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
           <AnimatedSection variants={fadeIn} className="relative aspect-[4/5] overflow-hidden rounded-[16px]">
             <SafeImage
-              src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1200&auto=format&fit=crop"
+              src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?q=80&w=1200&auto=format&fit=crop"
               alt="Our team gathered together at the showroom"
               fill
               sizes="(min-width: 1024px) 50vw, 100vw"

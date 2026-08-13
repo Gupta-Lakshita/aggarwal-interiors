@@ -1,9 +1,14 @@
+import Link from "next/link";
+import { icons, ArrowRight } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { EditorialCard } from "@/components/cards/EditorialCard";
 import { Button } from "@/components/ui/Button";
 import { fadeUp } from "@/lib/animations";
-import { getCategoryBySlug } from "@/data/categories";
+import { categories, getCategoryBySlug } from "@/data/categories";
+
+const featuredSlugs = ["wooden", "glass-type", "kitchen-hardware", "hardware", "pvc"] as const;
 
 export function EditorialCategories() {
   const wooden = getCategoryBySlug("wooden")!;
@@ -11,6 +16,7 @@ export function EditorialCategories() {
   const kitchen = getCategoryBySlug("kitchen-hardware")!;
   const hardware = getCategoryBySlug("hardware")!;
   const pvc = getCategoryBySlug("pvc")!;
+  const moreCategories = categories.filter((c) => !featuredSlugs.includes(c.slug as (typeof featuredSlugs)[number]));
 
   return (
     <section className="bg-surface py-20 md:py-32">
@@ -54,6 +60,31 @@ export function EditorialCategories() {
             <EditorialCard category={pvc} className="h-[300px] md:h-[360px]" />
           </AnimatedSection>
         </div>
+
+        <AnimatedSection variants={fadeUp} delay={0.2} className="mt-12 border-t border-border-subtle pt-8">
+          <p className="mb-5 text-xs font-semibold uppercase tracking-[0.2em] text-charcoal-700">
+            Also Available
+          </p>
+          <div className="flex flex-wrap gap-3">
+            {moreCategories.map((category) => {
+              const Icon = (icons[category.icon as keyof typeof icons] ?? icons.Sparkles) as LucideIcon;
+              return (
+                <Link
+                  key={category.slug}
+                  href={`/products/${category.slug}`}
+                  className="focus-ring group flex items-center gap-2 rounded-full border border-border-subtle bg-ivory-100 px-4 py-2.5 text-sm text-espresso-950 transition-colors hover:border-terracotta-500 hover:bg-terracotta-500/5"
+                >
+                  <Icon size={16} className="text-terracotta-500" />
+                  {category.title}
+                  <ArrowRight
+                    size={14}
+                    className="text-charcoal-700/50 transition-transform duration-300 group-hover:translate-x-0.5"
+                  />
+                </Link>
+              );
+            })}
+          </div>
+        </AnimatedSection>
 
         <Button href="/products" variant="outline" className="mt-10 w-full md:hidden">
           View All Categories
