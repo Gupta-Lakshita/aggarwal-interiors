@@ -11,7 +11,7 @@ export const products: Product[] = [
     name: "Ply",
     categorySlug: "wooden",
     brand: "CenturyPly",
-    image: img("photo-1595515107092-2d3e4f5a6b7c"),
+    image: "/products/ply.jpg",
     imageAlt: "Stack of premium plywood sheets",
     description:
       "BWP-grade structural plywood engineered for strength, moisture resistance, and long-term stability in furniture and construction applications.",
@@ -139,7 +139,7 @@ export const products: Product[] = [
     name: "UV Sheets",
     categorySlug: "pvc",
     brand: "Greenlam",
-    image: img("photo-1615874959474-d609969a20ed"),
+    image: "/products/uv-sheets.jpg",
     imageAlt: "Glossy UV coated sheet surface",
     description:
       "High-gloss UV-coated sheets delivering a mirror-like finish for modular kitchen shutters and wardrobe fronts.",
@@ -181,7 +181,7 @@ export const products: Product[] = [
     name: "ACP Sheets",
     categorySlug: "pvc",
     brand: "Local Supplier",
-    image: img("photo-1486944936014-9a76e9e4dc9d"),
+    image: "/products/acp-sheets.jpg",
     imageAlt: "Aluminium composite panel sheets",
     description:
       "Aluminium composite panels for facades, signage, and exterior cladding — combining rigidity with a sleek, weatherproof finish.",
@@ -211,7 +211,7 @@ export const products: Product[] = [
     name: "Detergent Rack",
     categorySlug: "kitchen-hardware",
     brand: "Hettich",
-    image: img("photo-1556910633-5099dc3d1f0f"),
+    image: "/products/detergent-rack.jpg",
     imageAlt: "Pull-out detergent storage rack",
     description:
       "Compact pull-out rack for organising detergents and cleaning supplies within sink-base cabinets.",
@@ -309,7 +309,7 @@ export const products: Product[] = [
     name: "Kitchen Socket",
     categorySlug: "kitchen-hardware",
     brand: "Local Supplier",
-    image: img("photo-1556909172-54557c7e4fb7"),
+    image: "/products/kitchen-socket.jpg",
     imageAlt: "Pop-up kitchen countertop socket",
     description:
       "Pop-up countertop socket unit providing discreet, convenient power access on kitchen worktops.",
@@ -337,7 +337,7 @@ export const products: Product[] = [
     name: "Wicker Basket",
     categorySlug: "kitchen-hardware",
     brand: "Ebco",
-    image: img("photo-1595259230685-333f9c7a8e9c"),
+    image: "/products/wicker-basket.jpg",
     imageAlt: "Wicker-style kitchen storage basket",
     description:
       "Ventilated wicker-pattern pull-out basket ideal for storing vegetables and produce with airflow to extend freshness.",
@@ -579,7 +579,7 @@ export const products: Product[] = [
     name: "Silicon",
     categorySlug: "wooden-adhesive",
     brand: "Local Supplier",
-    image: img("photo-1616627562311-6a4d7b0e3f8c"),
+    image: "/products/silicon.jpg",
     imageAlt: "Silicon sealant cartridge",
     description:
       "Weatherproof silicon sealant for glass, wood, and metal joints requiring a flexible, waterproof seal.",
