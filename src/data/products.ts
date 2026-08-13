@@ -225,7 +225,7 @@ export const products: Product[] = [
     name: "Bottle Pull Out (BPO)",
     categorySlug: "kitchen-hardware",
     brand: "Hafele",
-    image: img("photo-1590794056739-3b729b3cbc47"),
+    image: "/products/bottle-pull-out.jpg",
     imageAlt: "Bottle pull-out kitchen organiser",
     description:
       "Space-saving bottle pull-out unit that maximises narrow cabinet spaces for bottle and jar storage.",
@@ -267,7 +267,7 @@ export const products: Product[] = [
     name: "S-Corner",
     categorySlug: "kitchen-hardware",
     brand: "Hafele",
-    image: img("photo-1585909695284-32d2985ac9c0"),
+    image: "/products/s-corner.jpg",
     imageAlt: "S-corner kitchen cabinet mechanism",
     description:
       "S-shaped sliding corner mechanism offering smooth, space-efficient access to blind corner cabinets.",
@@ -351,7 +351,7 @@ export const products: Product[] = [
     name: "Gas Stove",
     categorySlug: "kitchen-hardware",
     brand: "Local Supplier",
-    image: img("photo-1556910638-6a2f9c7e3d5b"),
+    image: "/products/gas-stove.jpg",
     imageAlt: "Built-in modular kitchen gas stove",
     description:
       "Built-in hob designed for seamless integration into modular kitchen countertops with reliable, even flame performance.",
@@ -379,7 +379,7 @@ export const products: Product[] = [
     name: "Sink",
     categorySlug: "kitchen-hardware",
     brand: "Local Supplier",
-    image: img("photo-1584622781564-1d987f7333c1"),
+    image: "/products/sink.jpg",
     imageAlt: "Stainless steel kitchen sink",
     description:
       "Deep-bowl stainless steel kitchen sinks engineered for durability, scratch resistance, and quiet drainage.",
@@ -465,7 +465,7 @@ export const products: Product[] = [
     name: "Tower Bolt",
     categorySlug: "hardware",
     brand: "Godrej Locking",
-    image: img("photo-1620127807934-0a7b3d6f5e2c"),
+    image: "/products/tower-bolt.jpg",
     imageAlt: "Tower bolt door lock fitting",
     description:
       "Heavy-duty tower bolts for doors and windows offering reliable, tamper-resistant securing.",
