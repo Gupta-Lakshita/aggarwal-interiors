@@ -27,8 +27,8 @@ export default function ProductsPage() {
         breadcrumb={[{ label: "Home", href: "/" }, { label: "Products" }]}
       />
 
-      <SectionBlend from="espresso-950" to="sage-100" />
-      <section className="bg-sage-100 py-20 md:py-28">
+      <SectionBlend from="espresso-950" to="gold-100" />
+      <section className="bg-gold-100 py-20 md:py-28">
         <Container>
           <AnimatedSection
             variants={staggerContainer}
@@ -43,7 +43,7 @@ export default function ProductsPage() {
         </Container>
       </section>
 
-      <SectionBlend from="sage-100" to="espresso-950" />
+      <SectionBlend from="gold-100" to="espresso-950" />
       <CTASection />
     </>
   );

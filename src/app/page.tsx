@@ -20,17 +20,17 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <SectionBlend from="espresso-950" to="terracotta-100" />
+      <SectionBlend from="espresso-950" to="stone-50" />
       <About />
-      <SectionBlend from="terracotta-100" to="sage-100" />
+      <SectionBlend from="stone-50" to="sage-100" />
       <EditorialCategories />
-      <SectionBlend from="sage-100" to="terracotta-100" />
+      <SectionBlend from="sage-100" to="gold-100" />
       <WhyChooseUs />
-      <SectionBlend from="terracotta-100" to="sage-100" />
+      <SectionBlend from="gold-100" to="terracotta-100" />
       <FeaturedBrands />
-      <SectionBlend from="sage-100" to="terracotta-100" />
+      <SectionBlend from="terracotta-100" to="stone-50" />
       <Testimonials />
-      <SectionBlend from="terracotta-100" to="sage-100" />
+      <SectionBlend from="stone-50" to="sage-100" />
       <CompanyIntro />
       <SectionBlend from="sage-100" to="espresso-950" />
       <CTASection />

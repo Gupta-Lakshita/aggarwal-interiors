@@ -26,8 +26,8 @@ export default function ContactPage() {
         breadcrumb={[{ label: "Home", href: "/" }, { label: "Contact" }]}
       />
 
-      <SectionBlend from="espresso-950" to="terracotta-100" />
-      <section className="bg-terracotta-100 py-20 md:py-28">
+      <SectionBlend from="espresso-950" to="stone-50" />
+      <section className="bg-stone-50 py-20 md:py-28">
         <Container className="grid grid-cols-1 gap-16 lg:grid-cols-[minmax(0,380px)_1fr]">
           <div>
             <h2 className="text-2xl text-espresso-950">Visit or Reach Us</h2>

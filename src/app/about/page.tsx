@@ -151,8 +151,8 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      <SectionBlend from="sage-100" to="terracotta-100" />
-      <section className="bg-terracotta-100 py-20 md:py-28">
+      <SectionBlend from="sage-100" to="gold-100" />
+      <section className="bg-gold-100 py-20 md:py-28">
         <Container>
           <AnimatedSection variants={fadeUp} className="mx-auto max-w-2xl text-center">
             <p className="mb-4 flex items-center justify-center gap-3 text-xs font-semibold uppercase tracking-[0.2em] text-terracotta-600">
@@ -172,7 +172,7 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      <SectionBlend from="terracotta-100" to="espresso-950" />
+      <SectionBlend from="gold-100" to="espresso-950" />
       <section className="bg-espresso-950 py-20 md:py-28">
         <Container>
           <AnimatedSection variants={fadeUp} className="mx-auto max-w-2xl text-center">

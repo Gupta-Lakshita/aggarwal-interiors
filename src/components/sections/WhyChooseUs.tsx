@@ -17,7 +17,7 @@ const reasons = [
 
 export function WhyChooseUs() {
   return (
-    <section className="wood-texture bg-terracotta-100 py-20 md:py-32">
+    <section className="wood-texture bg-gold-100 py-20 md:py-32">
       <Container>
         <SectionTitle
           eyebrow="Why Choose Us"
