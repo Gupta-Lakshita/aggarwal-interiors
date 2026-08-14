@@ -34,7 +34,7 @@ export function Testimonials() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -12 }}
               transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-              className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 [&>*:nth-child(2n)]:lg:mt-8"
+              className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4"
             >
               {visible.map((testimonial) => (
                 <TestimonialCard key={testimonial.id} testimonial={testimonial} />
