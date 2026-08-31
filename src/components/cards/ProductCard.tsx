@@ -39,10 +39,7 @@ export function ProductCard({
         </div>
       </div>
       <div className="flex flex-1 flex-col p-5">
-        <p className="text-xs font-medium uppercase tracking-wide text-terracotta-600">
-          {product.brand}
-        </p>
-        <h3 className="mt-1 text-lg text-espresso-950">{product.name}</h3>
+        <h3 className="text-lg text-espresso-950">{product.name}</h3>
         <p className="mt-2 text-sm leading-relaxed text-charcoal-700">
           {product.description}
         </p>
@@ -54,10 +51,6 @@ export function ProductCard({
             </li>
           ))}
         </ul>
-        <div className="mt-4 flex items-center justify-between gap-3 text-xs text-charcoal-700">
-          <span>{product.availability}</span>
-          {product.material && <span className="text-right">{product.material}</span>}
-        </div>
         <button
           type="button"
           onClick={() => onEnquire(product)}

@@ -18,7 +18,7 @@ export function EnquiryModal({
   if (!product) return null;
 
   const whatsappMessage = encodeURIComponent(
-    `Hi, I'm interested in "${product.name}" (${product.brand}). Could you share more details and pricing?`
+    `Hi, I'm interested in "${product.name}". Could you share more details and pricing?`
   );
   const whatsappHref = `https://wa.me/${company.whatsapp}?text=${whatsappMessage}`;
 
@@ -92,7 +92,7 @@ export function EnquiryModal({
               <textarea
                 id="enq-message"
                 rows={3}
-                defaultValue={`I'm interested in ${product.name} (${product.brand}).`}
+                defaultValue={`I'm interested in ${product.name}.`}
                 className="focus-ring mt-1.5 w-full resize-none rounded-[10px] border border-border-subtle bg-surface px-3 py-2.5 text-sm text-espresso-950"
               />
             </div>

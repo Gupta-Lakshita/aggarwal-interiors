@@ -75,12 +75,10 @@ export const categories: Category[] = [
     shortDescription: "Nails, hinges, handles, locks, and channels for every build.",
     description:
       "The hardware that holds an interior together deserves as much attention as the furniture it supports. Our range spans hinges, handles, locks, sliding channels, and railing systems built for smooth, silent, long-lasting operation.",
-    heroImage:
-      "https://images.unsplash.com/photo-1620127807580-990c3ecebefb?q=80&w=1920&auto=format&fit=crop",
+    heroImage: "/categories/hardware.jpg",
     heroImageAlt: "Assortment of premium door and cabinet hardware",
-    featuredImage:
-      "https://images.unsplash.com/photo-1609205807107-171dabc73d17?q=80&w=1200&auto=format&fit=crop",
-    featuredImageAlt: "Brushed brass cabinet handle detail",
+    featuredImage: "/categories/hardware.jpg",
+    featuredImageAlt: "Assortment of premium cabinet handles on a wood surface",
     productCount: 9,
     seo: {
       title: "Hardware — Hinges, Handles, Locks & Channels",
