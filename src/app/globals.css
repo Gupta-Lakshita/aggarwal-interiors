@@ -11,22 +11,25 @@
   --color-charcoal-800: #2c2419;
   --color-charcoal-700: #55503f;
 
-  --color-olive-700: #384026;
-  --color-olive-600: #48542f;
-  --color-sage-500: #5c6a44;
-  --color-sage-400: #71805a;
-  --color-sage-100: #dfe6d4;
-  --color-sage-50: #eaeee0;
+  /* olive drab */
+  --color-olive-700: #33401a;
+  --color-olive-600: #4b5d24;
+  --color-sage-500: #6b8e23;
+  --color-sage-400: #87a344;
+  --color-sage-100: #e1e8cb;
+  --color-sage-50: #eef1de;
 
-  --color-terracotta-600: #6f4a2c;
-  --color-terracotta-500: #855c39;
-  --color-terracotta-400: #9c7048;
-  --color-terracotta-100: #cdd9c2;
-  --color-clay-600: #855c39;
+  /* plum wine */
+  --color-terracotta-700: #43152f;
+  --color-terracotta-600: #5b2340;
+  --color-terracotta-500: #74294f;
+  --color-terracotta-400: #8e4468;
+  --color-terracotta-100: #ead7df;
+  --color-clay-600: #5b2340;
 
-  --color-gold-600: #8c7550;
-  --color-gold-500: #a8926e;
-  --color-gold-100: #e9e2d1;
+  --color-gold-600: #6b2a47;
+  --color-gold-500: #85385c;
+  --color-gold-100: #f1e2e8;
 
   --color-stone-400: #b0a082;
   --color-stone-300: #c2b499;
@@ -34,12 +37,13 @@
   --color-stone-100: #e5dcc9;
   --color-stone-50: #f2efe4;
 
-  --color-ivory-500: #dcd3bf;
-  --color-ivory-400: #e6dfcd;
-  --color-ivory-300: #ede7d8;
-  --color-ivory-200: #f0ebde;
-  --color-ivory-100: #f3efe2;
-  --color-ivory-50: #f8f5ec;
+  /* alabaster gleam */
+  --color-ivory-500: #cdbfa3;
+  --color-ivory-400: #ded3bc;
+  --color-ivory-300: #e9e2ce;
+  --color-ivory-200: #f0ebdc;
+  --color-ivory-100: #f6f2e8;
+  --color-ivory-50: #fbf9f4;
 
   --background: var(--color-ivory-100);
   --foreground: var(--color-espresso-950);
@@ -81,6 +85,7 @@
   --color-sage-100: var(--color-sage-100);
   --color-sage-50: var(--color-sage-50);
 
+  --color-terracotta-700: var(--color-terracotta-700);
   --color-terracotta-600: var(--color-terracotta-600);
   --color-terracotta-500: var(--color-terracotta-500);
   --color-terracotta-400: var(--color-terracotta-400);
