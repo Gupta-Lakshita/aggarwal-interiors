@@ -29,12 +29,10 @@ export const categories: Category[] = [
     shortDescription: "Moisture-proof PVC panels, louvers, and cladding solutions.",
     description:
       "Modern interiors demand materials that resist moisture, termites, and warping without sacrificing aesthetics. Our PVC range — from fluted panels to WPC louvers and ACP sheets — brings contemporary design language to kitchens, bathrooms, and facades.",
-    heroImage:
-      "https://images.unsplash.com/photo-1631679706909-1844bbd07221?q=80&w=1920&auto=format&fit=crop",
-    heroImageAlt: "Modern interior wall with fluted panel cladding",
-    featuredImage:
-      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1200&auto=format&fit=crop",
-    featuredImageAlt: "Textured PVC wall panel detail",
+    heroImage: "/products/pvc-board.jpg",
+    heroImageAlt: "Stack of dense white PVC foam boards",
+    featuredImage: "/products/pvc-board.jpg",
+    featuredImageAlt: "Stack of dense white PVC foam boards",
     productCount: 7,
     seo: {
       title: "PVC Products — Panels, Louvers & ACP Sheets",
@@ -51,12 +49,10 @@ export const categories: Category[] = [
     shortDescription: "Functional, elegant hardware for modern modular kitchens.",
     description:
       "From pull-out baskets to magic corners and premium sinks, our kitchen hardware collection is built for daily use and long-term reliability — sourced from India's most trusted modular kitchen accessory brands.",
-    heroImage:
-      "https://images.unsplash.com/photo-1556909212-d5b604d0c90d?q=80&w=1920&auto=format&fit=crop",
-    heroImageAlt: "Modern modular kitchen with premium hardware fittings",
-    featuredImage:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
-    featuredImageAlt: "Kitchen pull-out basket hardware detail",
+    heroImage: "/products/sink.jpg",
+    heroImageAlt: "Premium kitchen sink with gold fixtures",
+    featuredImage: "/products/sink.jpg",
+    featuredImageAlt: "Premium kitchen sink with gold fixtures",
     productCount: 14,
     seo: {
       title: "Kitchen Hardware — Modular Kitchen Accessories",
@@ -93,12 +89,10 @@ export const categories: Category[] = [
     shortDescription: "Industrial-grade adhesives and sealants for woodwork.",
     description:
       "A strong bond is invisible but essential. Our adhesive range includes trusted names for wood bonding, lamination, and sealing — chosen for reliability on every job site, big or small.",
-    heroImage:
-      "https://images.unsplash.com/photo-1616627561950-9f746e330187?q=80&w=1920&auto=format&fit=crop",
-    heroImageAlt: "Carpenter applying wood adhesive to a panel joint",
-    featuredImage:
-      "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1200&auto=format&fit=crop",
-    featuredImageAlt: "Adhesive tube and applicator on a workbench",
+    heroImage: "/products/heat-x.jpg",
+    heroImageAlt: "Heat-X heatproof wood adhesive tin",
+    featuredImage: "/products/heat-x.jpg",
+    featuredImageAlt: "Heat-X heatproof wood adhesive tin",
     productCount: 7,
     seo: {
       title: "Wooden Adhesives — Fevicol, Silicon & Sealants",
@@ -115,12 +109,10 @@ export const categories: Category[] = [
     shortDescription: "In-house manufacturing of modular kitchens and wardrobes.",
     description:
       "Beyond retail, we design and manufacture bespoke modular kitchens, wardrobes, and wooden or PVC temple units — engineered in our own facility with the same materials we sell, and finished to exacting standards.",
-    heroImage:
-      "https://images.unsplash.com/photo-1556911220-bff31c812dba?q=80&w=1920&auto=format&fit=crop",
-    heroImageAlt: "Custom modular wardrobe manufacturing workshop",
-    featuredImage:
-      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=1200&auto=format&fit=crop",
-    featuredImageAlt: "Finished modular kitchen cabinetry",
+    heroImage: "/products/wooden-pvc-temples.jpg",
+    heroImageAlt: "Custom-built wooden and PVC home temple unit",
+    featuredImage: "/products/wooden-pvc-temples.jpg",
+    featuredImageAlt: "Custom-built wooden and PVC home temple unit",
     productCount: 3,
     seo: {
       title: "Manufacturer — Modular Kitchens & Wardrobes",
@@ -137,12 +129,10 @@ export const categories: Category[] = [
     shortDescription: "Precision CNC cutting and 3D/2D door design services.",
     description:
       "Our in-house CNC facility delivers precision cutting and intricate design work — from HDHMR doors and jali patterns to 3D and 2D door faces and decorative wall designs — with tolerances that hand tools simply can't match.",
-    heroImage:
-      "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?q=80&w=1920&auto=format&fit=crop",
-    heroImageAlt: "CNC machine cutting a wooden panel with precision",
-    featuredImage:
-      "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=1200&auto=format&fit=crop",
-    featuredImageAlt: "Intricately CNC-carved wooden door panel",
+    heroImage: "/products/wall-design.png",
+    heroImageAlt: "Intricately CNC-cut decorative wall panel design",
+    featuredImage: "/products/wall-design.png",
+    featuredImageAlt: "Intricately CNC-cut decorative wall panel design",
     productCount: 5,
     seo: {
       title: "CNC Machine Work — 3D Doors, Jali & Wall Design",
@@ -159,12 +149,10 @@ export const categories: Category[] = [
     shortDescription: "Decorative and functional glass for modern interiors.",
     description:
       "From fluted and lacquered finishes to toughened safety glass and LED mirrors, our glass collection brings light, texture, and reflection into every space with precision-cut, premium-grade sheets.",
-    heroImage:
-      "https://images.unsplash.com/photo-1600607687644-c7171b42498f?q=80&w=1920&auto=format&fit=crop",
-    heroImageAlt: "Decorative fluted glass panel with soft lighting",
-    featuredImage:
-      "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?q=80&w=1200&auto=format&fit=crop",
-    featuredImageAlt: "Close-up of textured glass surface",
+    heroImage: "/products/colour-glass.jpg",
+    heroImageAlt: "Colourful decorative glass panel installation",
+    featuredImage: "/products/colour-glass.jpg",
+    featuredImageAlt: "Colourful decorative glass panel installation",
     productCount: 8,
     seo: {
       title: "Glass Products — Fluted, Toughened & LED Mirrors",
@@ -181,12 +169,10 @@ export const categories: Category[] = [
     shortDescription: "Artisanal etching, beveling, and crystal glass work.",
     description:
       "Our glass artisans specialise in etching, beveling, crystal, and colour work — turning plain glass into a signature design element for doors, partitions, and decorative panels.",
-    heroImage:
-      "https://images.unsplash.com/photo-1617104551722-3b2d51366400?q=80&w=1920&auto=format&fit=crop",
-    heroImageAlt: "Artisan etching a decorative pattern into glass",
-    featuredImage:
-      "https://images.unsplash.com/photo-1620121692029-d088224ddc74?q=80&w=1200&auto=format&fit=crop",
-    featuredImageAlt: "Beveled glass edge catching the light",
+    heroImage: "/products/beveling-work.jpg",
+    heroImageAlt: "Beveled glass door panel catching the light",
+    featuredImage: "/products/beveling-work.jpg",
+    featuredImageAlt: "Beveled glass door panel catching the light",
     productCount: 4,
     seo: {
       title: "Glass Work — Etching, Beveling & Crystal Work",
