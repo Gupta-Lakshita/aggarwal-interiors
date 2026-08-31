@@ -25,7 +25,7 @@ export const products: Product[] = [
     name: "Laminates",
     categorySlug: "wooden",
     brand: "Greenlam",
-    image: img("photo-1615529182904-14819c35db37"),
+    image: "/products/laminates.jpg",
     imageAlt: "Sample swatches of decorative laminates",
     description:
       "High-pressure decorative laminates in a wide palette of textures and finishes, designed to resist scratches, heat, and daily wear.",
@@ -97,7 +97,7 @@ export const products: Product[] = [
     name: "PVC Panels",
     categorySlug: "pvc",
     brand: "Merino",
-    image: img("photo-1618221196345-1e4b0c8f2a3d"),
+    image: "/products/pvc-panels.jpg",
     imageAlt: "Textured PVC wall panels",
     description:
       "Lightweight, waterproof PVC wall panels ideal for kitchens, bathrooms, and false ceilings where moisture resistance is essential.",
@@ -238,8 +238,8 @@ export const products: Product[] = [
     slug: "cutlery",
     name: "Cutlery",
     categorySlug: "kitchen-hardware",
-    brand: "Hettich",
-    image: img("photo-1590794056486-58c2f14dfb85"),
+    brand: "Rider Ultima",
+    image: "/products/cutlery.jpg",
     imageAlt: "Cutlery organiser tray insert",
     description:
       "Modular cutlery tray insert with segmented compartments for organised, accessible drawer storage.",
