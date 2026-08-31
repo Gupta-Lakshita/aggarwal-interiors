@@ -423,7 +423,7 @@ export const products: Product[] = [
     name: "Hinges",
     categorySlug: "hardware",
     brand: "Hettich",
-    image: img("photo-1620127807695-8e5f1b4d3c0a"),
+    image: "/products/hinges.jpg",
     imageAlt: "Cabinet door hinges close-up",
     description:
       "Soft-close concealed hinges engineered for smooth, silent cabinet door operation over hundreds of thousands of cycles.",
@@ -479,7 +479,7 @@ export const products: Product[] = [
     name: "Locks",
     categorySlug: "hardware",
     brand: "Godrej Locking",
-    image: img("photo-1620912189925-6c3e9f2a1b8d"),
+    image: "/products/locks.jpg",
     imageAlt: "Door lock and key set",
     description:
       "Mortise and cylindrical locks providing dependable security for main doors, bedrooms, and cabinets.",
@@ -493,7 +493,7 @@ export const products: Product[] = [
     name: "Sliding Channels",
     categorySlug: "hardware",
     brand: "Ebco",
-    image: img("photo-1620127808055-1b8c4e7a6f3d"),
+    image: "/products/sliding-channels.jpg",
     imageAlt: "Drawer sliding channel hardware",
     description:
       "Ball-bearing sliding channels for drawers and sliding doors delivering smooth, quiet, full-extension movement.",
