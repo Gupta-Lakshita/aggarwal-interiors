@@ -9,12 +9,10 @@ export const categories: Category[] = [
     shortDescription: "Plywood, laminates, boards, and doors built to last generations.",
     description:
       "Our wooden range covers everything from structural plywood to decorative laminates, wooden mouldings, and flush doors. Every product is sourced from trusted mills and tested for durability, moisture resistance, and finish quality — the foundation of any premium interior.",
-    heroImage:
-      "https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?q=80&w=1920&auto=format&fit=crop",
-    heroImageAlt: "Stacked sheets of premium plywood in a warehouse",
-    featuredImage:
-      "https://images.unsplash.com/photo-1601058268499-e52658b8bb88?q=80&w=1200&auto=format&fit=crop",
-    featuredImageAlt: "Close-up of walnut wood grain texture",
+    heroImage: "/products/ply.jpg",
+    heroImageAlt: "Stack of premium plywood sheets showing wood grain",
+    featuredImage: "/products/ply.jpg",
+    featuredImageAlt: "Stack of premium plywood sheets showing wood grain",
     productCount: 6,
     seo: {
       title: "Wooden Products — Plywood, Laminates & Boards",
