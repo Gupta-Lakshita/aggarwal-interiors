@@ -111,7 +111,7 @@ export const products: Product[] = [
     name: "WPC Louvers",
     categorySlug: "pvc",
     brand: "Local Fabricator",
-    image: img("photo-1631679707032-2f5c1d9a4b6e"),
+    image: "/products/wpc-louvers.jpg",
     imageAlt: "WPC louver wall cladding",
     description:
       "Wood-plastic composite louvers that bring warm timber aesthetics with the durability and low maintenance of PVC.",
@@ -395,7 +395,7 @@ export const products: Product[] = [
     name: "Nails",
     categorySlug: "hardware",
     brand: "Local Supplier",
-    image: img("photo-1609205594505-2c3a0b6f9d7e"),
+    image: "/products/nails.jpg",
     imageAlt: "Assorted nails in a hardware bin",
     description:
       "A full range of nails for carpentry, framing, and finishing work, sized for every application from trim to structural.",
@@ -437,7 +437,7 @@ export const products: Product[] = [
     name: "Railings",
     categorySlug: "hardware",
     brand: "Local Fabricator",
-    image: img("photo-1620127807812-9f6a2c5e4d1b"),
+    image: "/products/railings.jpg",
     imageAlt: "Modern staircase railing hardware",
     description:
       "Sturdy railing hardware and fittings for staircases, balconies, and partitions with a refined, modern profile.",
@@ -681,7 +681,7 @@ export const products: Product[] = [
     name: "HDHMR Doors & Jali",
     categorySlug: "cnc-machine-work",
     brand: "In-House CNC",
-    image: img("photo-1581092919179-9c0d1e2f3a4b"),
+    image: "/products/hdhmr-doors-jali.jpg",
     imageAlt: "CNC cut HDHMR jali door panel",
     description:
       "High-density HDHMR doors and decorative jali panels, CNC-machined for intricate, durable pattern work.",
@@ -881,7 +881,7 @@ export const products: Product[] = [
     name: "Crystal Work",
     categorySlug: "glass-work",
     brand: "In-House Artisans",
-    image: img("photo-1617104551968-6f7a8b9c0d1e"),
+    image: "/products/crystal-work.jpg",
     imageAlt: "Crystal cut decorative glass",
     description:
       "Ornamental crystal-cut glass work adding a luxurious, faceted sparkle to doors and decorative panels.",
@@ -895,7 +895,7 @@ export const products: Product[] = [
     name: "Colour Work",
     categorySlug: "glass-work",
     brand: "In-House Artisans",
-    image: img("photo-1620121692275-8b9c0d1e2f3a"),
+    image: "/products/colour-work.jpg",
     imageAlt: "Coloured artistic glass work",
     description:
       "Hand-applied colour work on glass, creating bespoke artistic patterns for doors, partitions, and feature panels.",
