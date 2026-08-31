@@ -623,7 +623,7 @@ export const products: Product[] = [
     name: "Modular Kitchen",
     categorySlug: "manufacturer",
     brand: "In-House Manufacturing",
-    image: img("photo-1600566753313-4b5c6d7e8f9a"),
+    image: "/products/modular-kitchen.jpg",
     imageAlt: "Custom-built modular kitchen",
     description:
       "End-to-end custom modular kitchen design and manufacturing, from layout planning to hardware fitting and finishing.",
@@ -795,7 +795,7 @@ export const products: Product[] = [
     name: "Toughened Glass",
     categorySlug: "glass-type",
     brand: "Saint-Gobain",
-    image: img("photo-1600607688066-3c4d5e6f7a8b"),
+    image: "/products/toughened-glass.jpg",
     imageAlt: "Toughened safety glass panel",
     description:
       "Heat-treated toughened glass offering significantly greater strength and safety than standard annealed glass.",
