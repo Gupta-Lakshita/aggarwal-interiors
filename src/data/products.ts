@@ -125,7 +125,7 @@ export const products: Product[] = [
     name: "Fluted Panels",
     categorySlug: "pvc",
     brand: "Merino",
-    image: img("photo-1618220179551-3a6d2e0b5c7f"),
+    image: "/products/fluted-panels.jpg",
     imageAlt: "Fluted panel wall texture",
     description:
       "Vertically grooved fluted panels for statement walls and cabinetry fronts, available in a range of matte and textured finishes.",
@@ -188,6 +188,20 @@ export const products: Product[] = [
     features: ["Weatherproof & UV stable", "Rigid aluminium composite core", "Wide colour range"],
     availability: "On Request",
     material: "Aluminium Composite",
+  },
+  {
+    id: "p64",
+    slug: "pu-stone",
+    name: "PU Stone Panels",
+    categorySlug: "pvc",
+    brand: "Local Fabricator",
+    image: "/products/pu-stone.jpg",
+    imageAlt: "Textured PU stone-effect wall panel",
+    description:
+      "Lightweight polyurethane panels with a realistic natural-stone texture, giving feature walls an authentic rock finish without the weight or cost of real stone.",
+    features: ["Realistic natural-stone texture", "Lightweight & easy installation", "Weather & impact resistant"],
+    availability: "Made to Order",
+    material: "Polyurethane (PU)",
   },
 
   // Kitchen Hardware
