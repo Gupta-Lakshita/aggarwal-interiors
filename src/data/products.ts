@@ -53,7 +53,7 @@ export const products: Product[] = [
     name: "Margin",
     categorySlug: "wooden",
     brand: "Local Craft Mill",
-    image: img("photo-1533090161767-e6ffed986c88"),
+    image: "/products/margin.jpg",
     imageAlt: "Wooden margin trim strips",
     description:
       "Edge margin strips used to finish plywood and board edges cleanly, protecting against moisture ingress and chipping.",
@@ -423,7 +423,7 @@ export const products: Product[] = [
     name: "Screw",
     categorySlug: "hardware",
     brand: "Local Supplier",
-    image: img("photo-1609205594662-4b6c2f9e1a3d"),
+    image: "/products/screw.jpg",
     imageAlt: "Assorted screws organised by size",
     description:
       "Precision-threaded wood and machine screws in a wide range of sizes for furniture assembly and fixing work.",
@@ -651,7 +651,7 @@ export const products: Product[] = [
     name: "Wardrobe",
     categorySlug: "manufacturer",
     brand: "In-House Manufacturing",
-    image: img("photo-1556911220401-4b7e3f1c6d8a"),
+    image: "/products/wardrobe.jpg",
     imageAlt: "Custom-built wardrobe interior",
     description:
       "Bespoke wardrobe manufacturing tailored to your space, with configurable interior storage systems and finishes.",
@@ -681,7 +681,7 @@ export const products: Product[] = [
     name: "PVC Cutting",
     categorySlug: "cnc-machine-work",
     brand: "In-House CNC",
-    image: img("photo-1565193566296-2f3a4b5c6d7e"),
+    image: "/products/pvc-cutting.jpg",
     imageAlt: "CNC machine cutting PVC sheet",
     description:
       "Precision CNC PVC cutting service for panels, signage, and decorative applications with tight tolerances.",
@@ -709,7 +709,7 @@ export const products: Product[] = [
     name: "3D Doors",
     categorySlug: "cnc-machine-work",
     brand: "In-House CNC",
-    image: img("photo-1581092919302-0d1e2f3a4b5c"),
+    image: "/products/3d-doors.jpg",
     imageAlt: "3D CNC carved wooden door",
     description:
       "Sculptural 3D-carved door faces created with precision CNC machining for a striking architectural statement.",
@@ -723,7 +723,7 @@ export const products: Product[] = [
     name: "2D Doors",
     categorySlug: "cnc-machine-work",
     brand: "In-House CNC",
-    image: img("photo-1565193566419-3a4b5c6d7e8f"),
+    image: "/products/2d-doors.jpg",
     imageAlt: "2D CNC engraved wooden door",
     description:
       "Flat-panel CNC-engraved door designs offering subtle texture and pattern for a refined, contemporary look.",
@@ -767,7 +767,7 @@ export const products: Product[] = [
     name: "Looking Glass",
     categorySlug: "glass-type",
     brand: "Saint-Gobain",
-    image: img("photo-1519710184362-1a2b3c4d5e6f"),
+    image: "/products/looking-glass.jpg",
     imageAlt: "Clear mirror looking glass",
     description:
       "High-clarity mirror glass for wardrobes, dressing areas, and decorative wall applications.",
@@ -823,7 +823,7 @@ export const products: Product[] = [
     name: "Plain Glass",
     categorySlug: "glass-type",
     brand: "Saint-Gobain",
-    image: img("photo-1519710184608-3c4d5e6f7a8b"),
+    image: "/products/plain-glass.jpg",
     imageAlt: "Clear plain glass sheet",
     description:
       "Standard clear float glass suited for windows, cabinet doors, and general glazing applications.",
@@ -837,7 +837,7 @@ export const products: Product[] = [
     name: "Brick Glass",
     categorySlug: "glass-type",
     brand: "Saint-Gobain",
-    image: img("photo-1600607688189-4d5e6f7a8b9c"),
+    image: "/products/brick-glass.jpg",
     imageAlt: "Textured brick pattern glass panel",
     description:
       "Textured brick-pattern glass adding architectural character to partitions, doors, and decorative windows.",
@@ -867,7 +867,7 @@ export const products: Product[] = [
     name: "Etching Work",
     categorySlug: "glass-work",
     brand: "In-House Artisans",
-    image: img("photo-1617104551845-5e6f7a8b9c0d"),
+    image: "/products/etching-work.jpg",
     imageAlt: "Etched pattern on decorative glass",
     description:
       "Custom acid and sandblast etching work creating frosted patterns and motifs on glass surfaces.",
