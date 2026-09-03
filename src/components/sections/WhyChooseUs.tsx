@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { icons } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { Container } from "@/components/ui/Container";
@@ -22,11 +21,7 @@ const reasons = [
 function ReasonRow({ reason, index }: { reason: (typeof reasons)[number]; index: number }) {
   const Icon = (icons[reason.icon as keyof typeof icons] ?? icons.Sparkles) as LucideIcon;
   return (
-    <motion.div
-      initial="rest"
-      whileHover="hover"
-      className="group flex items-start gap-5 border-b border-espresso-950/10 py-7 first:pt-0"
-    >
+    <div className="group flex items-start gap-5 border-b border-espresso-950/10 py-7 first:pt-0">
       <span className="font-heading text-2xl leading-none text-terracotta-500/50 transition-colors duration-300 group-hover:text-terracotta-600">
         {String(index + 1).padStart(2, "0")}
       </span>
@@ -37,14 +32,7 @@ function ReasonRow({ reason, index }: { reason: (typeof reasons)[number]; index:
         </div>
         <p className="mt-2 text-sm leading-relaxed text-charcoal-700">{reason.description}</p>
       </div>
-      <motion.span
-        variants={{ rest: { x: 0, opacity: 0 }, hover: { x: 4, opacity: 1 } }}
-        transition={{ duration: 0.3 }}
-        className="hidden shrink-0 self-center text-terracotta-500 sm:block"
-      >
-        →
-      </motion.span>
-    </motion.div>
+    </div>
   );
 }
 
