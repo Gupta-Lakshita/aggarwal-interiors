@@ -1,8 +1,5 @@
 import type { Product } from "@/types";
 
-const img = (id: string) =>
-  `https://images.unsplash.com/${id}?q=80&w=1000&auto=format&fit=crop`;
-
 export const products: Product[] = [
   // Wooden
   {
@@ -537,8 +534,6 @@ export const products: Product[] = [
     name: "Fevicol",
     categorySlug: "wooden-adhesive",
     brand: "Fevicol",
-    image: img("photo-1581092162384-1b9e2c5f8a3d"),
-    imageAlt: "Fevicol wood adhesive bottle",
     description:
       "India's most trusted wood adhesive, delivering a strong, durable bond for furniture and carpentry applications.",
     features: ["High bond strength", "Water-resistant formula", "Easy application"],
@@ -551,8 +546,6 @@ export const products: Product[] = [
     name: "Heat-X",
     categorySlug: "wooden-adhesive",
     brand: "Fevicol",
-    image: "/products/heat-x.jpg",
-    imageAlt: "Heat-X adhesive product",
     description:
       "Heat-activated adhesive designed for edge-banding applications, delivering a fast, durable bond.",
     features: ["Fast heat activation", "Strong edge bond", "Suitable for automated edge banders"],
@@ -565,8 +558,6 @@ export const products: Product[] = [
     name: "Lock N Lock",
     categorySlug: "wooden-adhesive",
     brand: "Fevicol",
-    image: img("photo-1616627562189-5f3c6a9d2e7b"),
-    imageAlt: "Lock N Lock adhesive tube",
     description:
       "Instant-grip contact adhesive for laminate and veneer bonding, offering strong initial tack and lasting hold.",
     features: ["Instant grip strength", "Ideal for laminate bonding", "Long-lasting bond"],
@@ -579,8 +570,6 @@ export const products: Product[] = [
     name: "Ezee Spray",
     categorySlug: "wooden-adhesive",
     brand: "Fevicol",
-    image: img("photo-1581092162715-3d1a4e7b0c5f"),
-    imageAlt: "Ezee Spray adhesive can",
     description:
       "Spray-on contact adhesive offering fast, even coverage for large laminate and veneer surfaces.",
     features: ["Even spray coverage", "Fast tack time", "Ideal for large surface bonding"],
@@ -593,8 +582,6 @@ export const products: Product[] = [
     name: "Silicon",
     categorySlug: "wooden-adhesive",
     brand: "Local Supplier",
-    image: "/products/silicon.jpg",
-    imageAlt: "Silicon sealant cartridge",
     description:
       "Weatherproof silicon sealant for glass, wood, and metal joints requiring a flexible, waterproof seal.",
     features: ["Weatherproof seal", "Flexible cured joint", "UV resistant"],
@@ -607,8 +594,6 @@ export const products: Product[] = [
     name: "Fevi Kwik 463",
     categorySlug: "wooden-adhesive",
     brand: "Fevicol",
-    image: img("photo-1581092162839-4e2b5f8c1d6a"),
-    imageAlt: "Fevi Kwik instant adhesive",
     description:
       "Instant-bond adhesive for quick fixes and small repairs across wood, plastic, and metal surfaces.",
     features: ["Instant bonding", "Multi-surface compatibility", "Compact precision applicator"],
@@ -621,8 +606,6 @@ export const products: Product[] = [
     name: "Marinkoat",
     categorySlug: "wooden-adhesive",
     brand: "Local Supplier",
-    image: img("photo-1616627562433-7b5e8c1f4a9d"),
-    imageAlt: "Marinkoat wood coating product",
     description:
       "Protective marine-grade coating for wood surfaces exposed to moisture, offering a durable, glossy finish.",
     features: ["Marine-grade protection", "Glossy weatherproof finish", "UV & moisture resistant"],
@@ -753,7 +736,7 @@ export const products: Product[] = [
     name: "Fluted Glass",
     categorySlug: "glass-type",
     brand: "Saint-Gobain",
-    image: img("photo-1600607687820-1a2b3c4d5e6f"),
+    image: "/products/fluted-glass.jpg",
     imageAlt: "Fluted textured glass panel",
     description:
       "Vertically ribbed fluted glass offering privacy with diffused light transmission, popular for partitions and cabinet fronts.",

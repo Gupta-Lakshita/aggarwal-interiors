@@ -27,8 +27,8 @@ export interface Product {
   name: string;
   categorySlug: string;
   brand: string;
-  image: string;
-  imageAlt: string;
+  image?: string;
+  imageAlt?: string;
   description: string;
   features: string[];
   availability: Availability;

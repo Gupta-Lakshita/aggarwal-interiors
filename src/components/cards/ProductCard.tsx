@@ -24,21 +24,28 @@ export function ProductCard({
       variants={hoverLift}
       className="flex h-full flex-col overflow-hidden rounded-[16px] border border-border-subtle bg-surface"
     >
-      <div className="relative aspect-[4/3] overflow-hidden">
-        <motion.div variants={imageZoom} className="h-full w-full">
-          <SafeImage
-            src={product.image}
-            alt={product.imageAlt}
-            fill
-            sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
-            className="object-cover"
-          />
-        </motion.div>
-        <div className="absolute left-4 top-4">
-          <Badge tone="neutral">{categoryTitle}</Badge>
+      {product.image && (
+        <div className="relative aspect-[4/3] overflow-hidden">
+          <motion.div variants={imageZoom} className="h-full w-full">
+            <SafeImage
+              src={product.image}
+              alt={product.imageAlt ?? product.name}
+              fill
+              sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
+              className="object-cover"
+            />
+          </motion.div>
+          <div className="absolute left-4 top-4">
+            <Badge tone="neutral">{categoryTitle}</Badge>
+          </div>
         </div>
-      </div>
+      )}
       <div className="flex flex-1 flex-col p-5">
+        {!product.image && (
+          <div className="mb-3">
+            <Badge tone="neutral">{categoryTitle}</Badge>
+          </div>
+        )}
         <h3 className="text-lg text-espresso-950">{product.name}</h3>
         <p className="mt-2 text-sm leading-relaxed text-charcoal-700">
           {product.description}
