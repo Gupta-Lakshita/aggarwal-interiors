@@ -22,9 +22,6 @@ export function Footer() {
           <div className="mt-6 flex gap-3">
             {[
               { icon: "instagram" as const, href: company.social.instagram, label: "Instagram" },
-              { icon: "facebook" as const, href: company.social.facebook, label: "Facebook" },
-              { icon: "linkedin" as const, href: company.social.linkedin, label: "LinkedIn" },
-              { icon: "youtube" as const, href: company.social.youtube, label: "YouTube" },
             ].map(({ icon, href, label }) => (
               <a
                 key={label}

@@ -13,12 +13,44 @@ import { fadeUp } from "@/lib/animations";
 import { categories } from "@/data/categories";
 import type { Category } from "@/types";
 
-const sizeClasses = {
-  lg: "h-36 w-36 sm:h-48 sm:w-48 md:h-60 md:w-60",
-  sm: "h-24 w-24 sm:h-32 sm:w-32 md:h-40 md:w-40",
+type TileSize = "xl" | "lg" | "md" | "sm";
+
+const sizeClasses: Record<TileSize, string> = {
+  xl: "h-44 w-44 sm:h-56 sm:w-56 md:h-72 md:w-72",
+  lg: "h-32 w-32 sm:h-44 sm:w-44 md:h-56 md:w-56",
+  md: "h-24 w-24 sm:h-32 sm:w-32 md:h-44 md:w-44",
+  sm: "h-20 w-20 sm:h-24 sm:w-24 md:h-32 md:w-32",
 };
 
-function CircleTile({ category, size, index }: { category: Category; size: "lg" | "sm"; index: number }) {
+const offsetClasses = {
+  up: "md:-translate-y-8",
+  down: "md:translate-y-8",
+  none: "",
+};
+
+const collageLayout: { size: TileSize; offset: "up" | "down" | "none" }[] = [
+  { size: "xl", offset: "none" }, // Wooden
+  { size: "md", offset: "down" }, // PVC
+  { size: "lg", offset: "up" }, // Kitchen Hardware
+  { size: "sm", offset: "down" }, // Hardware
+  { size: "md", offset: "up" }, // Wooden Adhesive
+  { size: "sm", offset: "down" }, // Manufacturer
+  { size: "lg", offset: "up" }, // CNC Machine Work
+  { size: "sm", offset: "down" }, // Glass Type
+  { size: "md", offset: "up" }, // Glass Work
+];
+
+function CircleTile({
+  category,
+  size,
+  offset,
+  index,
+}: {
+  category: Category;
+  size: TileSize;
+  offset: "up" | "down" | "none";
+  index: number;
+}) {
   const Icon = (icons[category.icon as keyof typeof icons] ?? icons.Sparkles) as LucideIcon;
 
   return (
@@ -31,7 +63,10 @@ function CircleTile({ category, size, index }: { category: Category; size: "lg" 
         delay: index * 0.15,
       }}
     >
-      <Link href={`/products/${category.slug}`} className="focus-ring group flex flex-col items-center">
+      <Link
+        href={`/products/${category.slug}`}
+        className={cn("focus-ring group flex shrink-0 flex-col items-center", offsetClasses[offset])}
+      >
         <motion.div
           initial="rest"
           whileHover="hover"
@@ -103,17 +138,16 @@ export function EditorialCategories() {
         <AnimatedSection
           variants={fadeUp}
           delay={0.08}
-          className="mx-auto mt-16 grid max-w-3xl grid-cols-3 place-items-center gap-x-4 gap-y-10 sm:gap-x-8 md:gap-x-12"
+          className="mx-auto mt-16 flex max-w-4xl flex-wrap items-start justify-center gap-x-6 gap-y-10 sm:gap-x-8 md:gap-x-10"
         >
           {categories.map((category, i) => {
-            const row = Math.floor(i / 3);
-            const col = i % 3;
-            const isCheckered = (row + col) % 2 === 0;
+            const layout = collageLayout[i % collageLayout.length];
             return (
               <CircleTile
                 key={category.slug}
                 category={category}
-                size={isCheckered ? "lg" : "sm"}
+                size={layout.size}
+                offset={layout.offset}
                 index={i}
               />
             );
