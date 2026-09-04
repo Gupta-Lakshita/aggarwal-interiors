@@ -1,44 +1,118 @@
 "use client";
 
 import Link from "next/link";
-import { useRef, useState, useEffect } from "react";
-import { motion, useScroll, useSpring } from "framer-motion";
-import { icons, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import { motion } from "framer-motion";
+import { icons, ArrowRight } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
-import { EditorialCard } from "@/components/cards/EditorialCard";
+import { SafeImage } from "@/components/ui/SafeImage";
 import { Button } from "@/components/ui/Button";
+import { cn } from "@/lib/utils";
 import { fadeUp } from "@/lib/animations";
 import { categories } from "@/data/categories";
+import type { Category } from "@/types";
+
+type ShapeName = "arch" | "circle" | "blob" | "hexagon" | "squircle";
+
+const SHAPE_STYLE: Record<ShapeName, React.CSSProperties> = {
+  arch: { borderRadius: "50% 50% 0 0 / 100% 100% 0 0" },
+  circle: { borderRadius: "9999px" },
+  blob: { borderRadius: "63% 37% 54% 46% / 43% 65% 35% 57%" },
+  hexagon: {
+    clipPath: "polygon(25% 3%, 75% 3%, 100% 50%, 75% 97%, 25% 97%, 0% 50%)",
+    borderRadius: "18px",
+  },
+  squircle: { borderRadius: "22%" },
+};
+
+const tileLayout: {
+  shape: ShapeName;
+  size: "lg" | "md";
+  offset: "up" | "down" | "none";
+}[] = [
+  { shape: "arch", size: "lg", offset: "none" },
+  { shape: "circle", size: "md", offset: "down" },
+  { shape: "blob", size: "md", offset: "up" },
+  { shape: "hexagon", size: "md", offset: "down" },
+  { shape: "squircle", size: "md", offset: "up" },
+  { shape: "circle", size: "md", offset: "down" },
+  { shape: "blob", size: "md", offset: "up" },
+  { shape: "hexagon", size: "md", offset: "down" },
+  { shape: "squircle", size: "md", offset: "up" },
+];
+
+const sizeClasses = {
+  lg: "h-64 w-56 sm:h-80 sm:w-64 md:h-[26rem] md:w-72",
+  md: "h-40 w-40 sm:h-48 sm:w-48 md:h-56 md:w-56",
+};
+
+const offsetClasses = {
+  up: "md:-translate-y-6",
+  down: "md:translate-y-6",
+  none: "",
+};
+
+function ShapeTile({
+  category,
+  shape,
+  size,
+  offset,
+}: {
+  category: Category;
+  shape: ShapeName;
+  size: "lg" | "md";
+  offset: "up" | "down" | "none";
+}) {
+  const Icon = (icons[category.icon as keyof typeof icons] ?? icons.Sparkles) as LucideIcon;
+
+  return (
+    <Link
+      href={`/products/${category.slug}`}
+      className={cn("focus-ring group flex shrink-0 flex-col items-center", offsetClasses[offset])}
+    >
+      <motion.div
+        initial="rest"
+        whileHover="hover"
+        animate="rest"
+        variants={{ rest: { scale: 1 }, hover: { scale: 1.05 } }}
+        transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+        style={SHAPE_STYLE[shape]}
+        className={cn("relative overflow-hidden bg-espresso-950", sizeClasses[size])}
+      >
+        <motion.div
+          variants={{ rest: { scale: 1 }, hover: { scale: 1.12 } }}
+          transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+          className="absolute inset-0"
+        >
+          <SafeImage
+            src={category.featuredImage}
+            alt={category.featuredImageAlt}
+            fill
+            sizes="(min-width: 768px) 380px, 260px"
+            className="object-cover"
+          />
+        </motion.div>
+        <div className="absolute inset-0 bg-espresso-950/25 transition-colors duration-300 group-hover:bg-espresso-950/10" />
+        <motion.span
+          variants={{ rest: { opacity: 0, scale: 0.6 }, hover: { opacity: 1, scale: 1 } }}
+          transition={{ duration: 0.3 }}
+          className="absolute right-4 top-4 flex h-9 w-9 items-center justify-center rounded-full bg-ivory-50 text-espresso-950 shadow-md"
+        >
+          <Icon size={16} />
+        </motion.span>
+      </motion.div>
+      <div className="mt-4 max-w-[11rem] text-center">
+        <h3 className="text-base text-espresso-950 md:text-lg">{category.title}</h3>
+        <p className="mt-0.5 text-xs uppercase tracking-[0.14em] text-charcoal-700/70">
+          {category.productCount} Products
+        </p>
+      </div>
+    </Link>
+  );
+}
 
 export function EditorialCategories() {
-  const scrollRef = useRef<HTMLDivElement>(null);
-  const [atStart, setAtStart] = useState(true);
-  const [atEnd, setAtEnd] = useState(false);
-
-  const { scrollXProgress } = useScroll({ container: scrollRef });
-  const progress = useSpring(scrollXProgress, { stiffness: 300, damping: 40 });
-
-  function updateEdges() {
-    const el = scrollRef.current;
-    if (!el) return;
-    setAtStart(el.scrollLeft < 8);
-    setAtEnd(el.scrollLeft + el.clientWidth > el.scrollWidth - 8);
-  }
-
-  useEffect(() => {
-    updateEdges();
-  }, []);
-
-  function scrollByCard(direction: 1 | -1) {
-    const el = scrollRef.current;
-    if (!el) return;
-    const card = el.querySelector("[data-rail-card]") as HTMLElement | null;
-    const amount = (card?.offsetWidth ?? 340) + 24;
-    el.scrollBy({ left: amount * direction, behavior: "smooth" });
-  }
-
   return (
     <section className="bg-sage-100 py-20 md:py-32">
       <Container>
@@ -61,59 +135,26 @@ export function EditorialCategories() {
         </div>
       </Container>
 
-      <AnimatedSection variants={fadeUp} delay={0.08} className="mt-14">
-        <div
-          ref={scrollRef}
-          onScroll={updateEdges}
-          className="no-scrollbar flex snap-x snap-mandatory gap-6 overflow-x-auto scroll-smooth px-6 pb-2 sm:px-[max(1.5rem,calc((100vw-1152px)/2+1.5rem))]"
+      <Container>
+        <AnimatedSection
+          variants={fadeUp}
+          delay={0.08}
+          className="mt-16 flex flex-wrap items-start justify-center gap-x-8 gap-y-10 md:gap-x-10"
         >
-          {categories.map((category) => (
-            <div
-              key={category.slug}
-              data-rail-card
-              className="w-[280px] shrink-0 snap-start sm:w-[340px] md:w-[380px]"
-            >
-              <EditorialCard
+          {categories.map((category, i) => {
+            const layout = tileLayout[i % tileLayout.length];
+            return (
+              <ShapeTile
+                key={category.slug}
                 category={category}
-                className="h-[420px] md:h-[480px]"
-                imageSizes="(min-width: 768px) 380px, 280px"
+                shape={layout.shape}
+                size={layout.size}
+                offset={layout.offset}
               />
-            </div>
-          ))}
-          <div className="w-px shrink-0" aria-hidden />
-        </div>
-
-        <Container>
-          <div className="mt-6 flex items-center gap-4">
-            <div className="h-1 flex-1 overflow-hidden rounded-full bg-espresso-950/10">
-              <motion.div
-                className="h-full origin-left rounded-full bg-terracotta-500"
-                style={{ scaleX: progress }}
-              />
-            </div>
-            <div className="flex shrink-0 gap-2">
-              <button
-                type="button"
-                onClick={() => scrollByCard(-1)}
-                disabled={atStart}
-                aria-label="Scroll categories left"
-                className="focus-ring flex h-10 w-10 items-center justify-center rounded-full border border-espresso-950/15 text-espresso-950 transition-colors hover:bg-surface disabled:opacity-30"
-              >
-                <ChevronLeft size={18} />
-              </button>
-              <button
-                type="button"
-                onClick={() => scrollByCard(1)}
-                disabled={atEnd}
-                aria-label="Scroll categories right"
-                className="focus-ring flex h-10 w-10 items-center justify-center rounded-full border border-espresso-950/15 text-espresso-950 transition-colors hover:bg-surface disabled:opacity-30"
-              >
-                <ChevronRight size={18} />
-              </button>
-            </div>
-          </div>
-        </Container>
-      </AnimatedSection>
+            );
+          })}
+        </AnimatedSection>
+      </Container>
 
       <Container>
         <AnimatedSection variants={fadeUp} delay={0.2} className="mt-12 border-t border-border-subtle pt-8">
