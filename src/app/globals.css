@@ -37,6 +37,13 @@
   --color-stone-100: #e5dcc9;
   --color-stone-50: #f2efe4;
 
+  /* sky */
+  --color-sky-600: #3d6b7a;
+  --color-sky-500: #4f8296;
+  --color-sky-400: #6fa0b3;
+  --color-sky-100: #dcebee;
+  --color-sky-50: #eef6f8;
+
   /* alabaster gleam */
   --color-ivory-500: #cdbfa3;
   --color-ivory-400: #ded3bc;
@@ -95,6 +102,12 @@
   --color-gold-600: var(--color-gold-600);
   --color-gold-500: var(--color-gold-500);
   --color-gold-100: var(--color-gold-100);
+
+  --color-sky-600: var(--color-sky-600);
+  --color-sky-500: var(--color-sky-500);
+  --color-sky-400: var(--color-sky-400);
+  --color-sky-100: var(--color-sky-100);
+  --color-sky-50: var(--color-sky-50);
 
   --color-stone-400: var(--color-stone-400);
   --color-stone-300: var(--color-stone-300);
@@ -198,4 +211,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .animate-marquee {
   animation: marquee 55s linear infinite;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }

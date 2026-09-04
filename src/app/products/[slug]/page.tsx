@@ -9,6 +9,20 @@ import { SectionBlend } from "@/components/ui/SectionBlend";
 import { categories, getCategoryBySlug } from "@/data/categories";
 import { getProductsByCategory } from "@/data/products";
 
+const categoryTint: Record<string, { token: string; bg: string }> = {
+  wooden: { token: "stone-50", bg: "bg-stone-50" },
+  pvc: { token: "sky-100", bg: "bg-sky-100" },
+  "kitchen-hardware": { token: "gold-100", bg: "bg-gold-100" },
+  hardware: { token: "ivory-200", bg: "bg-ivory-200" },
+  "wooden-adhesive": { token: "sage-50", bg: "bg-sage-50" },
+  manufacturer: { token: "terracotta-100", bg: "bg-terracotta-100" },
+  "cnc-machine-work": { token: "sky-50", bg: "bg-sky-50" },
+  "glass-type": { token: "sage-100", bg: "bg-sage-100" },
+  "glass-work": { token: "stone-100", bg: "bg-stone-100" },
+};
+
+const defaultTint = { token: "ivory-100", bg: "bg-ivory-100" };
+
 export function generateStaticParams() {
   return categories.map((category) => ({ slug: category.slug }));
 }
@@ -46,6 +60,7 @@ export default async function CategoryPage({
 
   const products = getProductsByCategory(category.slug);
   const related = categories.filter((c) => c.slug !== category.slug).slice(0, 3);
+  const tint = categoryTint[category.slug] ?? defaultTint;
 
   return (
     <>
@@ -62,8 +77,8 @@ export default async function CategoryPage({
         ]}
       />
 
-      <SectionBlend from="espresso-950" to="gold-100" />
-      <section className="bg-gold-100 py-16 md:py-20">
+      <SectionBlend from="espresso-950" to={tint.token} />
+      <section className={`${tint.bg} py-16 md:py-20`}>
         <Container>
           <p className="max-w-3xl text-base leading-relaxed text-charcoal-700 md:text-lg">
             {category.description}
@@ -71,13 +86,13 @@ export default async function CategoryPage({
         </Container>
       </section>
 
-      <section className="bg-gold-100 pb-20 pt-4 md:pb-28">
+      <section className={`${tint.bg} pb-20 pt-4 md:pb-28`}>
         <Container>
           <ProductExplorer products={products} categoryTitle={category.title} />
         </Container>
       </section>
 
-      <SectionBlend from="gold-100" to="sage-100" />
+      <SectionBlend from={tint.token} to="sage-100" />
       <RelatedCategories categories={related} />
       <SectionBlend from="sage-100" to="espresso-950" />
       <CTASection />

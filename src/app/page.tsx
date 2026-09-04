@@ -26,9 +26,9 @@ export default function Home() {
       <EditorialCategories />
       <SectionBlend from="sage-100" to="gold-100" />
       <WhyChooseUs />
-      <SectionBlend from="gold-100" to="terracotta-100" />
+      <SectionBlend from="gold-100" to="sky-100" />
       <FeaturedBrands />
-      <SectionBlend from="terracotta-100" to="stone-50" />
+      <SectionBlend from="sky-100" to="stone-50" />
       <Testimonials />
       <SectionBlend from="stone-50" to="sage-100" />
       <CompanyIntro />
