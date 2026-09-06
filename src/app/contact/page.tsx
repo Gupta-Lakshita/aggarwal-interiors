@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, ExternalLink } from "lucide-react";
 import { PageHero } from "@/components/ui/PageHero";
 import { Container } from "@/components/ui/Container";
 import { SocialIcon } from "@/components/ui/SocialIcon";
@@ -92,15 +92,18 @@ export default function ContactPage() {
               ))}
             </div>
 
-            <div className="mt-10 aspect-video overflow-hidden rounded-[16px] border border-border-subtle">
-              <iframe
-                src={company.mapEmbed}
-                title="Map showing our showroom location"
-                loading="lazy"
-                className="h-full w-full"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-            </div>
+            <a
+              href={company.googleBusinessUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="focus-ring mt-10 flex items-center justify-between gap-4 rounded-[16px] border border-border-subtle bg-surface px-6 py-4 text-espresso-950 transition-colors hover:border-terracotta-500 hover:text-terracotta-600"
+            >
+              <span className="flex items-center gap-3">
+                <MapPin size={20} className="shrink-0 text-terracotta-500" />
+                <span className="text-sm font-medium">View us on Google</span>
+              </span>
+              <ExternalLink size={16} className="shrink-0" />
+            </a>
           </div>
 
           <div className="rounded-[16px] border border-border-subtle bg-ivory-100 p-8 md:p-10">
