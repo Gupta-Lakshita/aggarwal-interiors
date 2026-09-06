@@ -24,9 +24,9 @@ export default function Home() {
       <About />
       <SectionBlend from="stone-50" to="sage-100" />
       <EditorialCategories />
-      <SectionBlend from="sage-100" to="gold-100" />
+      <SectionBlend from="sage-100" to="apricot-100" />
       <WhyChooseUs />
-      <SectionBlend from="gold-100" to="sky-100" />
+      <SectionBlend from="apricot-100" to="sky-100" />
       <FeaturedBrands />
       <SectionBlend from="sky-100" to="stone-50" />
       <Testimonials />

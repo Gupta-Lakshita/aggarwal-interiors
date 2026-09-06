@@ -13,12 +13,12 @@ const categoryTint: Record<string, { token: string; bg: string }> = {
   wooden: { token: "stone-50", bg: "bg-stone-50" },
   pvc: { token: "sky-100", bg: "bg-sky-100" },
   "kitchen-hardware": { token: "gold-100", bg: "bg-gold-100" },
-  hardware: { token: "ivory-200", bg: "bg-ivory-200" },
-  "wooden-adhesive": { token: "sage-50", bg: "bg-sage-50" },
+  hardware: { token: "popcorn-100", bg: "bg-popcorn-100" },
+  "wooden-adhesive": { token: "vanilla-100", bg: "bg-vanilla-100" },
   manufacturer: { token: "terracotta-100", bg: "bg-terracotta-100" },
-  "cnc-machine-work": { token: "sky-50", bg: "bg-sky-50" },
+  "cnc-machine-work": { token: "cerulean-100", bg: "bg-cerulean-100" },
   "glass-type": { token: "sage-100", bg: "bg-sage-100" },
-  "glass-work": { token: "stone-100", bg: "bg-stone-100" },
+  "glass-work": { token: "apricot-100", bg: "bg-apricot-100" },
 };
 
 const defaultTint = { token: "ivory-100", bg: "bg-ivory-100" };

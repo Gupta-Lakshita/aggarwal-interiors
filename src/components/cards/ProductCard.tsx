@@ -5,7 +5,14 @@ import { Check, MessageCircle } from "lucide-react";
 import { hoverLift, imageZoom } from "@/lib/animations";
 import { Badge } from "@/components/ui/Badge";
 import { SafeImage } from "@/components/ui/SafeImage";
-import type { Product } from "@/types";
+import type { Availability, Product } from "@/types";
+
+const availabilityTone: Record<Availability, "olive" | "cerulean" | "blush" | "gold"> = {
+  "In Stock": "olive",
+  "Limited Stock": "gold",
+  "On Request": "cerulean",
+  "Made to Order": "blush",
+};
 
 export function ProductCard({
   product,
@@ -46,7 +53,12 @@ export function ProductCard({
             <Badge tone="neutral">{categoryTitle}</Badge>
           </div>
         )}
-        <h3 className="text-lg text-espresso-950">{product.name}</h3>
+        <div className="flex items-center justify-between gap-2">
+          <h3 className="text-lg text-espresso-950">{product.name}</h3>
+          <Badge tone={availabilityTone[product.availability]} className="shrink-0">
+            {product.availability}
+          </Badge>
+        </div>
         <p className="mt-2 text-sm leading-relaxed text-charcoal-700">
           {product.description}
         </p>

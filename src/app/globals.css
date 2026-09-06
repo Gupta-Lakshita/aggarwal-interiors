@@ -52,6 +52,26 @@
   --color-ivory-100: #f6f2e8;
   --color-ivory-50: #fbf9f4;
 
+  /* vanilla custard / popcorn */
+  --color-vanilla-200: #f0dfc0;
+  --color-vanilla-100: #f7ecd7;
+  --color-popcorn-500: #ecc25e;
+  --color-popcorn-100: #f8e8bd;
+
+  /* flamingo plume / brandy brown */
+  --color-blush-600: #a85f66;
+  --color-blush-500: #cf8188;
+  --color-blush-100: #f2dcdd;
+
+  /* cerulean / dress blues */
+  --color-cerulean-700: #232d43;
+  --color-cerulean-600: #4f6f8f;
+  --color-cerulean-100: #dde6ee;
+
+  /* apricot illusion */
+  --color-apricot-400: #d9a878;
+  --color-apricot-100: #f3e1cc;
+
   --background: var(--color-ivory-100);
   --foreground: var(--color-espresso-950);
 
@@ -121,6 +141,22 @@
   --color-ivory-200: var(--color-ivory-200);
   --color-ivory-100: var(--color-ivory-100);
   --color-ivory-50: var(--color-ivory-50);
+
+  --color-vanilla-200: var(--color-vanilla-200);
+  --color-vanilla-100: var(--color-vanilla-100);
+  --color-popcorn-500: var(--color-popcorn-500);
+  --color-popcorn-100: var(--color-popcorn-100);
+
+  --color-blush-600: var(--color-blush-600);
+  --color-blush-500: var(--color-blush-500);
+  --color-blush-100: var(--color-blush-100);
+
+  --color-cerulean-700: var(--color-cerulean-700);
+  --color-cerulean-600: var(--color-cerulean-600);
+  --color-cerulean-100: var(--color-cerulean-100);
+
+  --color-apricot-400: var(--color-apricot-400);
+  --color-apricot-100: var(--color-apricot-100);
 
   --font-heading: var(--font-playfair);
   --font-sans: var(--font-inter);

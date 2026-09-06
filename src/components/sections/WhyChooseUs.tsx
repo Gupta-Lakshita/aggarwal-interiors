@@ -6,6 +6,7 @@ import { Container } from "@/components/ui/Container";
 import { SectionTitle } from "@/components/ui/SectionTitle";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { staggerContainer, fadeUp } from "@/lib/animations";
+import { cn } from "@/lib/utils";
 
 const reasons = [
   { icon: "Gem", title: "Premium Materials", description: "Every product is vetted for quality, durability, and finish before it reaches our shelves." },
@@ -18,6 +19,8 @@ const reasons = [
   { icon: "ShieldCheck", title: "35+ Years of Trust", description: "Three generations of family ownership built on honest recommendations." },
 ];
 
+const iconAccents = ["text-olive-700", "text-cerulean-600", "text-blush-600"];
+
 function ReasonRow({ reason, index }: { reason: (typeof reasons)[number]; index: number }) {
   const Icon = (icons[reason.icon as keyof typeof icons] ?? icons.Sparkles) as LucideIcon;
   return (
@@ -27,7 +30,7 @@ function ReasonRow({ reason, index }: { reason: (typeof reasons)[number]; index:
       </span>
       <div className="flex-1">
         <div className="flex items-center gap-3">
-          <Icon size={18} className="shrink-0 text-olive-700" />
+          <Icon size={18} className={cn("shrink-0", iconAccents[index % iconAccents.length])} />
           <h3 className="text-lg text-espresso-950">{reason.title}</h3>
         </div>
         <p className="mt-2 text-sm leading-relaxed text-charcoal-700">{reason.description}</p>
@@ -38,7 +41,7 @@ function ReasonRow({ reason, index }: { reason: (typeof reasons)[number]; index:
 
 export function WhyChooseUs() {
   return (
-    <section className="wood-texture bg-gold-100 py-20 md:py-32">
+    <section className="wood-texture bg-apricot-100 py-20 md:py-32">
       <Container>
         <SectionTitle
           eyebrow="Why Choose Us"
