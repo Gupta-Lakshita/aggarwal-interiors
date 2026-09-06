@@ -19,7 +19,7 @@ const reasons = [
   { icon: "ShieldCheck", title: "35+ Years of Trust", description: "Three generations of family ownership built on honest recommendations." },
 ];
 
-const iconAccents = ["text-olive-700", "text-cerulean-600", "text-blush-600"];
+const iconAccents = ["text-olive-700", "text-terracotta-500", "text-blush-600"];
 
 function ReasonRow({ reason, index }: { reason: (typeof reasons)[number]; index: number }) {
   const Icon = (icons[reason.icon as keyof typeof icons] ?? icons.Sparkles) as LucideIcon;
