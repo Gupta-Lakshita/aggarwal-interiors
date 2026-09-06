@@ -35,8 +35,8 @@ export async function POST(request: Request) {
       from: `${company.name} Website <onboarding@resend.dev>`,
       to: company.email,
       replyTo: email,
-      subject: `New Enquiry: ${subject}`,
-      text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nSubject: ${subject}\n\n${message}`,
+      subject: subject ? `New Enquiry: ${subject}` : "New Enquiry",
+      text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nSubject: ${subject ?? "(none)"}\n\n${message ?? "(no message)"}`,
     });
 
     return NextResponse.json({ success: true });

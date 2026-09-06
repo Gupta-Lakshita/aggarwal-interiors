@@ -91,7 +91,7 @@ export function ContactForm() {
             className={inputClass(Boolean(errors.phone))}
           />
         </Field>
-        <Field label="Subject" htmlFor="subject" error={errors.subject?.message}>
+        <Field label="Subject (Optional)" htmlFor="subject" error={errors.subject?.message}>
           <input
             id="subject"
             type="text"
@@ -101,7 +101,7 @@ export function ContactForm() {
         </Field>
       </div>
 
-      <Field label="Message" htmlFor="message" error={errors.message?.message}>
+      <Field label="Message (Optional)" htmlFor="message" error={errors.message?.message}>
         <textarea
           id="message"
           rows={5}

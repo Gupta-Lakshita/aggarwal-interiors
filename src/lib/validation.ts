@@ -8,8 +8,8 @@ export const contactSchema = z.object({
     .trim()
     .min(7, "Please enter a valid phone number")
     .max(20, "Please enter a valid phone number"),
-  subject: z.string().trim().min(2, "Please enter a subject"),
-  message: z.string().trim().min(10, "Message should be at least 10 characters"),
+  subject: z.string().trim().optional(),
+  message: z.string().trim().optional(),
   company: z.string().max(0, "Spam detected").optional(),
 });
 
