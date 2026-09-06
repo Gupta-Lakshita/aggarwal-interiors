@@ -1,23 +1,32 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Loader2, CheckCircle2, AlertCircle, Send } from "lucide-react";
 import { contactSchema, type ContactFormValues } from "@/lib/validation";
 import { cn } from "@/lib/utils";
 
+const RESUBMIT_DELAY_MS = 60_000;
+
 export function ContactForm() {
   const {
     register,
     handleSubmit,
     reset,
-    formState: { errors, isSubmitting, isSubmitSuccessful },
+    formState: { errors, isSubmitting },
   } = useForm<ContactFormValues>({
     resolver: zodResolver(contactSchema),
   });
 
   const [submitError, setSubmitError] = useState<string | null>(null);
+  const [justSubmitted, setJustSubmitted] = useState(false);
+
+  useEffect(() => {
+    if (!justSubmitted) return;
+    const timer = setTimeout(() => setJustSubmitted(false), RESUBMIT_DELAY_MS);
+    return () => clearTimeout(timer);
+  }, [justSubmitted]);
 
   async function onSubmit(values: ContactFormValues) {
     setSubmitError(null);
@@ -32,12 +41,13 @@ export function ContactForm() {
         throw new Error(data.error ?? "Something went wrong. Please try again.");
       }
       reset();
+      setJustSubmitted(true);
     } catch (err) {
       setSubmitError(err instanceof Error ? err.message : "Something went wrong.");
     }
   }
 
-  if (isSubmitSuccessful && !submitError) {
+  if (justSubmitted && !submitError) {
     return (
       <div className="flex flex-col items-center gap-4 rounded-[16px] border border-border-subtle bg-surface p-12 text-center">
         <CheckCircle2 size={44} className="text-olive-700" />
