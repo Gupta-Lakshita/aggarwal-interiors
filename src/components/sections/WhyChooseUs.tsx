@@ -41,7 +41,7 @@ function ReasonRow({ reason, index }: { reason: (typeof reasons)[number]; index:
 
 export function WhyChooseUs() {
   return (
-    <section className="wood-texture bg-apricot-100 py-20 md:py-32">
+    <section className="wood-texture bg-stone-50 py-20 md:py-32">
       <Container>
         <SectionTitle
           eyebrow="Why Choose Us"
