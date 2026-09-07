@@ -15,11 +15,12 @@ export const company = {
   whatsapp: "919417635709",
   email: "aggarwalhardwareplywood@gmail.com",
   hours: [
-    { day: "Monday – Saturday", time: "9:30 AM – 7:30 PM" },
-    { day: "Sunday", time: "10:00 AM – 2:00 PM" },
+    { day: "Monday – Saturday", time: "10:00 AM – 8:00 PM" },
+    { day: "Sunday", time: "11:00 AM – 3:00 PM" },
   ],
   social: {
-    instagram: "https://instagram.com",
+    instagram:
+      "https://www.instagram.com/annpurnakitchenindustry?stkn=MXNyNmU0NGMwOW1yZw%3D%3D",
   },
   googleBusinessUrl: "https://share.google/qFbuh7Jl30LuOBpij",
   stats: [
