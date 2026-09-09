@@ -53,7 +53,7 @@ export function Modal({
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 24, scale: 0.97 }}
             transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-            className="relative z-10 w-full max-w-lg rounded-[16px] bg-surface p-6 shadow-2xl md:p-8"
+            className="relative z-10 max-h-[90vh] w-full max-w-lg overflow-y-auto rounded-[16px] bg-surface p-6 shadow-2xl md:p-8"
           >
             <div className="mb-4 flex items-center justify-between">
               <h2 id="modal-title" className="text-xl text-espresso-950">
@@ -63,7 +63,7 @@ export function Modal({
                 type="button"
                 onClick={onClose}
                 aria-label="Close dialog"
-                className="focus-ring rounded-full p-1.5 text-charcoal-700 hover:bg-ivory-300"
+                className="focus-ring flex h-11 w-11 items-center justify-center rounded-full text-charcoal-700 hover:bg-ivory-300"
               >
                 <X size={20} />
               </button>

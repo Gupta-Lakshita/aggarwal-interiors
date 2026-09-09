@@ -68,8 +68,10 @@ const organizationJsonLd = {
   "@type": "HomeAndConstructionBusiness",
   name: company.name,
   url: siteUrl,
+  image: `${siteUrl}/logo.svg`,
   telephone: company.phone,
   email: company.email,
+  priceRange: "₹₹",
   address: {
     "@type": "PostalAddress",
     streetAddress: company.address.line1,
@@ -78,6 +80,7 @@ const organizationJsonLd = {
     postalCode: "145001",
     addressCountry: company.address.country,
   },
+  openingHours: ["Mo-Sa 10:00-20:00", "Su 11:00-15:00"],
   sameAs: Object.values(company.social),
 };
 
