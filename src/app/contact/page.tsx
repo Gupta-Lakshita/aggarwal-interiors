@@ -75,35 +75,30 @@ export default function ContactPage() {
               </li>
             </ul>
 
-            <div className="mt-8 flex gap-3">
-              {[
-                { icon: "instagram" as const, href: company.social.instagram, label: "Instagram" },
-              ].map(({ icon, href, label }) => (
-                <a
-                  key={label}
-                  href={href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={label}
-                  className="focus-ring flex h-10 w-10 items-center justify-center rounded-full border border-border-subtle text-espresso-950 transition-colors hover:border-terracotta-500 hover:text-terracotta-600"
-                >
-                  <SocialIcon name={icon} />
-                </a>
-              ))}
-            </div>
+            <div className="mt-10 flex flex-col gap-3 sm:flex-row">
+              <a
+                href={company.social.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="focus-ring flex flex-1 items-center gap-3 rounded-[16px] border border-border-subtle bg-surface px-6 py-4 text-espresso-950 transition-colors hover:border-terracotta-500 hover:text-terracotta-600"
+              >
+                <SocialIcon name="instagram" className="shrink-0 text-terracotta-500" size={20} />
+                <span className="text-sm font-medium">Instagram</span>
+              </a>
 
-            <a
-              href={company.googleBusinessUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="focus-ring mt-10 flex items-center justify-between gap-4 rounded-[16px] border border-border-subtle bg-surface px-6 py-4 text-espresso-950 transition-colors hover:border-terracotta-500 hover:text-terracotta-600"
-            >
-              <span className="flex items-center gap-3">
-                <MapPin size={20} className="shrink-0 text-terracotta-500" />
-                <span className="text-sm font-medium">View us on Google</span>
-              </span>
-              <ExternalLink size={16} className="shrink-0" />
-            </a>
+              <a
+                href={company.googleBusinessUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="focus-ring flex flex-1 items-center justify-between gap-4 rounded-[16px] border border-border-subtle bg-surface px-6 py-4 text-espresso-950 transition-colors hover:border-terracotta-500 hover:text-terracotta-600"
+              >
+                <span className="flex items-center gap-3">
+                  <MapPin size={20} className="shrink-0 text-terracotta-500" />
+                  <span className="text-sm font-medium">View us on Google</span>
+                </span>
+                <ExternalLink size={16} className="shrink-0" />
+              </a>
+            </div>
           </div>
 
           <div className="rounded-[16px] border border-border-subtle bg-ivory-100 p-8 md:p-10">
