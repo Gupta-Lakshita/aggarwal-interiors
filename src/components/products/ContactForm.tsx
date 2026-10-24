@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useId, useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Loader2, CheckCircle2, AlertCircle, Send } from "lucide-react";
@@ -9,7 +9,13 @@ import { cn } from "@/lib/utils";
 
 const RESUBMIT_DELAY_MS = 60_000;
 
-export function ContactForm() {
+export function ContactForm({
+  defaultValues,
+}: {
+  defaultValues?: Partial<ContactFormValues>;
+} = {}) {
+  // Prefix field ids so the form can render on any page without id clashes.
+  const id = useId();
   const {
     register,
     handleSubmit,
@@ -17,6 +23,7 @@ export function ContactForm() {
     formState: { errors, isSubmitting },
   } = useForm<ContactFormValues>({
     resolver: zodResolver(contactSchema),
+    defaultValues,
   });
 
   const [submitError, setSubmitError] = useState<string | null>(null);
@@ -74,17 +81,17 @@ export function ContactForm() {
       />
 
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
-        <Field label="Full Name" htmlFor="name" error={errors.name?.message}>
+        <Field label="Full Name" htmlFor={`${id}-name`} error={errors.name?.message}>
           <input
-            id="name"
+            id={`${id}-name`}
             type="text"
             {...register("name")}
             className={inputClass(Boolean(errors.name))}
           />
         </Field>
-        <Field label="Email Address" htmlFor="email" error={errors.email?.message}>
+        <Field label="Email Address" htmlFor={`${id}-email`} error={errors.email?.message}>
           <input
-            id="email"
+            id={`${id}-email`}
             type="email"
             {...register("email")}
             className={inputClass(Boolean(errors.email))}
@@ -93,17 +100,17 @@ export function ContactForm() {
       </div>
 
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
-        <Field label="Phone Number" htmlFor="phone" error={errors.phone?.message}>
+        <Field label="Phone Number" htmlFor={`${id}-phone`} error={errors.phone?.message}>
           <input
-            id="phone"
+            id={`${id}-phone`}
             type="tel"
             {...register("phone")}
             className={inputClass(Boolean(errors.phone))}
           />
         </Field>
-        <Field label="Subject (Optional)" htmlFor="subject" error={errors.subject?.message}>
+        <Field label="Subject (Optional)" htmlFor={`${id}-subject`} error={errors.subject?.message}>
           <input
-            id="subject"
+            id={`${id}-subject`}
             type="text"
             {...register("subject")}
             className={inputClass(Boolean(errors.subject))}
@@ -111,9 +118,9 @@ export function ContactForm() {
         </Field>
       </div>
 
-      <Field label="Message (Optional)" htmlFor="message" error={errors.message?.message}>
+      <Field label="Message (Optional)" htmlFor={`${id}-message`} error={errors.message?.message}>
         <textarea
-          id="message"
+          id={`${id}-message`}
           rows={5}
           {...register("message")}
           className={cn(inputClass(Boolean(errors.message)), "resize-none")}
