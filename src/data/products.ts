@@ -37,7 +37,7 @@ export const products: Product[] = [
     categorySlug: "wooden",
     brand: "Local Craft Mill",
     image: "/products/wooden-moulding.jpg",
-    imageAlt: "Display board of decorative moulding profiles",
+    imageAlt: "Decorative wooden moulding profiles",
     description:
       "Precision-milled decorative mouldings for ceilings, walls, and furniture edges, adding architectural detail to any interior.",
     features: ["Multiple profile designs", "Pre-primed for easy finishing", "Custom lengths available"],
@@ -129,6 +129,20 @@ export const products: Product[] = [
     features: ["Deep ribbed profile", "Moisture resistant", "Multiple finish options"],
     availability: "In Stock",
     material: "Charcoal Composite",
+  },
+  {
+    id: "p66",
+    slug: "pvc-moulding",
+    name: "PVC Moulding",
+    categorySlug: "pvc",
+    brand: "HLMK",
+    image: "/products/pvc-moulding.jpg",
+    imageAlt: "Display board of HLMK PVC moulding profiles",
+    description:
+      "Lightweight PVC mouldings for ceilings, walls, and frames, giving a crisp decorative finish that won't warp, rot, or attract termites.",
+    features: ["Waterproof & termite proof", "Multiple profile designs", "Easy to cut & install"],
+    availability: "In Stock",
+    material: "PVC",
   },
   {
     id: "p9",
