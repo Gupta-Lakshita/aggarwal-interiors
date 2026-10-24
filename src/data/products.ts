@@ -7,9 +7,9 @@ export const products: Product[] = [
     slug: "ply",
     name: "Ply",
     categorySlug: "wooden",
-    brand: "CenturyPly",
+    brand: "Saisurya",
     image: "/products/ply.jpg",
-    imageAlt: "Stack of premium plywood sheets",
+    imageAlt: "Saisurya 710 marine plywood sheets",
     description:
       "BWP-grade structural plywood engineered for strength, moisture resistance, and long-term stability in furniture and construction applications.",
     features: ["Boiling waterproof (BWP) grade", "Termite & borer resistant", "Available in multiple thicknesses"],
@@ -37,7 +37,7 @@ export const products: Product[] = [
     categorySlug: "wooden",
     brand: "Local Craft Mill",
     image: "/products/wooden-moulding.jpg",
-    imageAlt: "Decorative wooden moulding profiles",
+    imageAlt: "Display board of decorative moulding profiles",
     description:
       "Precision-milled decorative mouldings for ceilings, walls, and furniture edges, adding architectural detail to any interior.",
     features: ["Multiple profile designs", "Pre-primed for easy finishing", "Custom lengths available"],
@@ -79,7 +79,7 @@ export const products: Product[] = [
     categorySlug: "wooden",
     brand: "CenturyPly",
     image: "/products/flush-door.jpg",
-    imageAlt: "Flush wooden door leaning against a wall",
+    imageAlt: "Edge view of flush doors showing the wood veneer finish",
     description:
       "Solid-core flush doors offering excellent strength and acoustic insulation, ready for veneer or laminate finishing.",
     features: ["Solid engineered core", "Warp resistant", "Ready for custom finishing"],
@@ -109,12 +109,26 @@ export const products: Product[] = [
     categorySlug: "pvc",
     brand: "Local Fabricator",
     image: "/products/wpc-louvers.jpg",
-    imageAlt: "WPC louver wall cladding",
+    imageAlt: "Collage of louver wall panels in marble and wood finishes",
     description:
       "Wood-plastic composite louvers that bring warm timber aesthetics with the durability and low maintenance of PVC.",
     features: ["Termite proof", "UV stable finish", "Wood-like texture"],
     availability: "In Stock",
     material: "WPC",
+  },
+  {
+    id: "p65",
+    slug: "charcoal-louvers",
+    name: "Charcoal Louvers",
+    categorySlug: "pvc",
+    brand: "HLMK",
+    image: "/products/charcoal-louvers.jpg",
+    imageAlt: "Collage of charcoal louver panel samples",
+    description:
+      "Charcoal louver panels with a deep, ribbed profile for bold feature walls, TV units, and partitions in a range of stone and wood finishes.",
+    features: ["Deep ribbed profile", "Moisture resistant", "Multiple finish options"],
+    availability: "In Stock",
+    material: "Charcoal Composite",
   },
   {
     id: "p9",
@@ -123,7 +137,7 @@ export const products: Product[] = [
     categorySlug: "pvc",
     brand: "Merino",
     image: "/products/fluted-panels.jpg",
-    imageAlt: "Fluted panel wall texture",
+    imageAlt: "Fluted wall panels in wood and metallic finishes",
     description:
       "Vertically grooved fluted panels for statement walls and cabinetry fronts, available in a range of matte and textured finishes.",
     features: ["Consistent groove profile", "Scratch resistant coating", "Multiple finish options"],
@@ -137,7 +151,7 @@ export const products: Product[] = [
     categorySlug: "pvc",
     brand: "Greenlam",
     image: "/products/uv-sheets.jpg",
-    imageAlt: "Glossy UV coated sheet surface",
+    imageAlt: "Collage of printed UV sheets with moon, Buddha and floral designs",
     description:
       "High-gloss UV-coated sheets delivering a mirror-like finish for modular kitchen shutters and wardrobe fronts.",
     features: ["High-gloss mirror finish", "Scratch & stain resistant", "Fingerprint-resistant coating available"],
@@ -463,7 +477,7 @@ export const products: Product[] = [
     categorySlug: "hardware",
     brand: "Hafele",
     image: "/products/handles.jpg",
-    imageAlt: "Brushed metal cabinet handles",
+    imageAlt: "Collage of door pull handles and a cabinet handle display",
     description:
       "Cabinet and door handles in brushed, matte, and polished finishes to complement any interior design language.",
     features: ["Multiple finish options", "Ergonomic grip profile", "Standard & custom centre-to-centre sizes"],
