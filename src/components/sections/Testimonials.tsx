@@ -44,7 +44,7 @@ export function Testimonials() {
         </div>
 
         <div className="mt-10 flex items-center justify-center gap-6">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center">
             {Array.from({ length: totalPages }).map((_, i) => (
               <button
                 key={i}
@@ -52,11 +52,15 @@ export function Testimonials() {
                 onClick={() => setPage(i)}
                 aria-label={`Show reviews ${i * PAGE_SIZE + 1} to ${Math.min((i + 1) * PAGE_SIZE, testimonials.length)}`}
                 aria-current={i === page ? "true" : undefined}
-                className={cn(
-                  "focus-ring h-2 rounded-full transition-all duration-300",
-                  i === page ? "w-6 bg-terracotta-500" : "w-2 bg-terracotta-500/30 hover:bg-terracotta-500/50"
-                )}
-              />
+                className="focus-ring group flex h-11 items-center justify-center rounded-full px-1.5"
+              >
+                <span
+                  className={cn(
+                    "h-2 rounded-full transition-all duration-300",
+                    i === page ? "w-6 bg-terracotta-500" : "w-2 bg-terracotta-500/30 group-hover:bg-terracotta-500/50"
+                  )}
+                />
+              </button>
             ))}
           </div>
           <button

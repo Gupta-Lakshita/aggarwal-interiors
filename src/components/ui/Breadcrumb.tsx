@@ -25,7 +25,7 @@ export function Breadcrumb({
                 <Link
                   href={item.href}
                   className={cn(
-                    "focus-ring rounded transition-colors hover:text-terracotta-500",
+                    "focus-ring rounded py-2 transition-colors hover:text-terracotta-500",
                     inverted ? "text-ivory-200/80" : "text-charcoal-700"
                   )}
                 >

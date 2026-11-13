@@ -23,6 +23,8 @@ const categoryTint: Record<string, { token: string; bg: string }> = {
 
 const defaultTint = { token: "ivory-100", bg: "bg-ivory-100" };
 
+const siteUrl = "https://www.aggarwalhardware.in";
+
 export function generateStaticParams() {
   return categories.map((category) => ({ slug: category.slug }));
 }
@@ -62,8 +64,35 @@ export default async function CategoryPage({
   const related = categories.filter((c) => c.slug !== category.slug).slice(0, 3);
   const tint = categoryTint[category.slug] ?? defaultTint;
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: siteUrl },
+          { "@type": "ListItem", position: 2, name: "Products", item: `${siteUrl}/products` },
+          { "@type": "ListItem", position: 3, name: category.title, item: `${siteUrl}/products/${category.slug}` },
+        ],
+      },
+      {
+        "@type": "ItemList",
+        name: category.title,
+        itemListElement: products.map((product, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          name: product.name,
+        })),
+      },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <PageHero
         eyebrow="Category"
         title={category.title}

@@ -29,7 +29,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={label}
-                className="focus-ring flex h-9 w-9 items-center justify-center rounded-full border border-ivory-200/20 text-ivory-100 transition-colors hover:border-terracotta-400 hover:text-terracotta-400"
+                className="focus-ring flex h-11 w-11 items-center justify-center rounded-full border border-ivory-200/20 text-ivory-100 transition-colors hover:border-terracotta-400 hover:text-terracotta-400"
               >
                 <SocialIcon name={icon} />
               </a>
@@ -42,12 +42,12 @@ export function Footer() {
             <p className="text-sm font-semibold uppercase tracking-wide text-ivory-50">
               {group.title}
             </p>
-            <ul className="mt-4 space-y-2.5">
+            <ul className="mt-3">
               {group.links.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="focus-ring rounded text-sm text-ivory-200/80 transition-colors hover:text-terracotta-400"
+                    className="focus-ring inline-block rounded py-2 text-sm text-ivory-200/80 transition-colors hover:text-terracotta-400"
                   >
                     {link.label}
                   </Link>
@@ -72,13 +72,13 @@ export function Footer() {
             </li>
             <li className="flex gap-2.5">
               <Phone size={16} className="mt-0.5 shrink-0 text-terracotta-400" />
-              <a href={`tel:${company.phone}`} className="focus-ring rounded hover:text-terracotta-400">
+              <a href={`tel:${company.phone}`} className="focus-ring inline-block rounded py-1.5 hover:text-terracotta-400">
                 {company.phone}
               </a>
             </li>
             <li className="flex gap-2.5">
               <Mail size={16} className="mt-0.5 shrink-0 text-terracotta-400" />
-              <a href={`mailto:${company.email}`} className="focus-ring rounded hover:text-terracotta-400">
+              <a href={`mailto:${company.email}`} className="focus-ring inline-block break-all rounded py-1.5 hover:text-terracotta-400">
                 {company.email}
               </a>
             </li>

@@ -57,7 +57,7 @@ export default function ContactPage() {
                 <Mail size={20} className="mt-0.5 shrink-0 text-terracotta-500" />
                 <div>
                   <p className="font-medium text-espresso-950">Email</p>
-                  <a href={`mailto:${company.email}`} className="focus-ring mt-1 block rounded text-sm text-charcoal-700 hover:text-terracotta-600">
+                  <a href={`mailto:${company.email}`} className="focus-ring mt-1 block break-all rounded text-sm text-charcoal-700 hover:text-terracotta-600">
                     {company.email}
                   </a>
                 </div>

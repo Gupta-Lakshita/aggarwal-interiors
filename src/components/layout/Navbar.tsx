@@ -48,7 +48,7 @@ export function Navbar() {
             alt={`${company.name} logo`}
             width={52}
             height={48}
-            className="h-11 w-auto shrink-0"
+            className={cn("h-11 w-auto shrink-0 rounded-lg transition-colors", !solid && "bg-ivory-50/90 p-1")}
             priority
           />
           <span
@@ -61,7 +61,7 @@ export function Navbar() {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-9 md:flex" aria-label="Primary">
+        <nav className="hidden items-center gap-9 lg:flex" aria-label="Primary">
           {primaryNav.map((link) => {
             const active = pathname === link.href;
             return (
@@ -86,7 +86,7 @@ export function Navbar() {
           })}
         </nav>
 
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <Button href="/contact" size="sm" variant={solid ? "primary" : "secondary"}>
             Get a Quote
           </Button>
@@ -98,7 +98,7 @@ export function Navbar() {
           aria-expanded={open}
           aria-label={open ? "Close menu" : "Open menu"}
           className={cn(
-            "focus-ring rounded-full p-2 md:hidden",
+            "focus-ring flex h-11 w-11 items-center justify-center rounded-full lg:hidden",
             solid ? "text-espresso-950" : "text-ivory-50"
           )}
         >
@@ -113,7 +113,7 @@ export function Navbar() {
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-            className="overflow-hidden bg-surface md:hidden"
+            className="overflow-hidden bg-surface lg:hidden"
           >
             <Container className="flex flex-col gap-1 py-4">
               {primaryNav.map((link) => (

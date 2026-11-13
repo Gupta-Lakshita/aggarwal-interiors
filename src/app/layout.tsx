@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     description: company.supportingCopy,
     images: [
       {
-        url: "https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?q=80&w=1200&auto=format&fit=crop",
+        url: "/categories/hardware.jpg",
         width: 1200,
         height: 630,
         alt: company.name,
@@ -58,9 +58,12 @@ export const metadata: Metadata = {
     title: `${company.name} | Premium Plywood, Laminates & Hardware`,
     description: company.supportingCopy,
   },
-  alternates: {
-    canonical: siteUrl,
-  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#241f1a",
 };
 
 const organizationJsonLd = {
